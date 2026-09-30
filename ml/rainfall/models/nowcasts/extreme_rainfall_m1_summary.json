@@ -1,0 +1,19 @@
+{
+  "forecast_horizon_minutes": 180,
+  "issue_time_utc": "2026-09-19T19:54:04Z",
+  "observation_time_utc": "2026-09-19T14:30:00",
+  "source_latency_minutes": 240.0,
+  "data_quality": "GOOD",
+  "expected_rainfall_15min_max_mm": 0.0,
+  "expected_rainfall_1h_max_mm": 0.0,
+  "expected_rainfall_3h_max_mm": 0.0,
+  "maximum_forecast_rate_mm_hr": 0.0,
+  "probability_exceedance_moderate_1h": 0.0,
+  "probability_exceedance_extreme_1h": 0.0,
+  "risk_level": "LOW",
+  "confidence": "MODERATE_PROTOTYPE",
+  "scientific_status": "PROTOTYPE_NOT_VALIDATED",
+  "threshold_calibration_status": "PROVISIONAL_UNVALIDATED",
+  "recommended_action": "Routine Prototype Surveillance",
+  "limitations_disclaimer": "Decision support indicator only. Uncalibrated satellite data cannot guarantee flash-flood warning precision at village scale without IMD radar or gauge telemetry."
+}

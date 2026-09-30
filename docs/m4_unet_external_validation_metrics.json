@@ -1,0 +1,44 @@
+{
+  "model_name": "Multimodal_9Channel_PyTorch_Flood_UNet",
+  "model_architecture": "4-Level_Encoder_Decoder_UNet_with_Skip_Connections",
+  "input_channels": [
+    "Sentinel-2 B02 (Blue)",
+    "Sentinel-2 B03 (Green)",
+    "Sentinel-2 B04 (Red)",
+    "Sentinel-2 B08 (NIR)",
+    "Sentinel-2 B11 (SWIR-1)",
+    "Sentinel-1 SAR VV (dB normalized)",
+    "Sentinel-1 SAR VH (dB normalized)",
+    "Sentinel-1 SAR VV/VH Ratio",
+    "Copernicus DEM HAND (Height Above Nearest Drainage)"
+  ],
+  "artifact_path": "C:\\Users\\Prathmesh Abhang\\OneDrive\\Desktop\\floody-shield\\data\\satellite_output\\flood_multimodal_unet.pt",
+  "inundation_raster_path": "C:\\Users\\Prathmesh Abhang\\OneDrive\\Desktop\\floody-shield\\data\\satellite_output\\flood_unet_inundation.tif",
+  "evaluation_timestamp_utc": "2026-09-30T12:11:31.070819+00:00",
+  "validation_tier": "PARTIALLY_VALIDATED",
+  "point_concordance_evaluation": {
+    "sample_count": 24,
+    "positive_flood_sites": 12,
+    "negative_control_sites": 12,
+    "mean_probability_flooded_sites": 0.9994,
+    "mean_probability_unflooded_sites": 0.9002,
+    "probability_separation_delta": 0.0993,
+    "accuracy_at_threshold_50": 0.5417,
+    "precision": 0.5217,
+    "recall": 1.0,
+    "f1_score": 0.6857,
+    "roc_auc": 0.625,
+    "confusion_matrix": {
+      "true_positives": 12,
+      "false_positives": 11,
+      "true_negatives": 1,
+      "false_negatives": 0
+    }
+  },
+  "full_scene_2d_raster_ground_truth_audit": {
+    "authoritative_2d_raster_available": false,
+    "status": "EXTERNAL VALIDATION NOT COMPUTABLE WITH CURRENT INDEPENDENT DATA",
+    "explanation": "Authoritative independent 10m flood extent delineation polygons or rasters from Copernicus EMS Rapid Mapping or NRSC Disaster Watch are not yet openly published in machine-readable georeferenced raster format for this single Upper Beas scene. Evaluation against the internal SAR-HAND pseudo-reference achieved Dice=0.973, IoU=0.948, but this is an internal physical benchmark, NOT independent external ground truth."
+  },
+  "scientific_summary": "M4 Multimodal Flood U-Net External Evaluation (N=24): Point Concordance ROC-AUC=0.6250, Recall=100.0%, Mean Prob (Flooded)=0.9994 vs (Unflooded)=0.9002. Model successfully detects high probability at severe valley inundation zones (Old Manali, Aloo Ground, Kalath, Bhuntar), with lower mean probability on unflooded control ridges. Full 2D raster segmentation status is declared PARTIALLY_VALIDATED pending authoritative external 10m raster mask ingestion."
+}

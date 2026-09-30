@@ -1,0 +1,67 @@
+# FLOODY SHIELD Station Profile: ST_AUT_01
+station:
+  station_id: "ST_AUT_01"
+  name: "Aut Gorge Geotechnical & Highway Corridor Station"
+  station_type: "GEOTECHNICAL_HIGHWAY_MONITOR"
+  deployment_status: "PLANNED"
+  provenance: "PLANNED_CONFIGURATION"
+  coordinates:
+    latitude: 31.745
+    longitude: 77.180
+    elevation_m: 960.0
+  river_basin: "Upper Beas Basin"
+  corridor: "NH-3 Aut-Larji River Highway Corridor"
+  risk_profile: "DEBRIS_FLOW_ROCKFALL_AND_ROAD_WASHOUT"
+
+device:
+  device_id: "DEV_AUT_01"
+  serial_number: "FS-HW-AUT-2026-004"
+  device_type: "DUAL_CELLULAR_LORA_GATEWAY"
+  protocol: "LORAWAN_WITH_SATELLITE_IRIDIUM_FALLBACK"
+  manufacturer: "FloodyShield-Hardware"
+  firmware_version: "v3.5.0-pilot"
+  battery_type: "EXTENDED_CYCLE_SOLAR_24V"
+  heartbeat_interval_sec: 30
+
+sensors:
+  - sensor_id: "SNS_AUT_PWP_01"
+    sensor_type: "PORE_WATER_PRESSURE"
+    hardware_model: "Vibrating Wire Piezometer Geokon 4500"
+    unit: "kPa"
+    sampling_interval_sec: 60
+    range_min: -50.0
+    range_max: 350.0
+    alert_thresholds:
+      elevated_pressure_kpa: 45.0
+      critical_liquefaction_kpa: 80.0
+
+  - sensor_id: "SNS_AUT_TILT_01"
+    sensor_type: "TILT"
+    hardware_model: "Biaxial MEMS Inclinometer BeanAir Wilow"
+    unit: "deg"
+    sampling_interval_sec: 60
+    range_min: -15.0
+    range_max: 15.0
+    alert_thresholds:
+      creep_rate_deg_hr: 0.1
+      rapid_failure_deg_hr: 0.8
+
+  - sensor_id: "SNS_AUT_STAGE_01"
+    sensor_type: "WATER_LEVEL"
+    hardware_model: "Down-Looking Radar Stage Gauge"
+    unit: "m"
+    sampling_interval_sec: 30
+    range_min: 0.0
+    range_max: 16.0
+    datum_elevation_m: 955.0
+    alert_thresholds:
+      nh3_roadbed_overtopping_m: 7.2
+      extreme_surge_m: 8.5
+
+  - sensor_id: "SNS_AUT_RAIN_01"
+    sensor_type: "RAIN_GAUGE"
+    hardware_model: "Heated Tipping Bucket 0.2mm"
+    unit: "mm/h"
+    sampling_interval_sec: 60
+    range_min: 0.0
+    range_max: 300.0

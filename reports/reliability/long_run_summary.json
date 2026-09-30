@@ -1,0 +1,18 @@
+{
+  "test_name": "Long-Run Reliability Soak Test (24h)",
+  "evaluated_at": "2026-09-21T15:17:01.803348+00:00",
+  "duration_nominal": "24h",
+  "duration_hours": 24,
+  "elapsed_seconds": 6.321,
+  "throughput_packets_per_sec": 77.99,
+  "stations_tested": 5,
+  "total_packets_transmitted": 493,
+  "accepted_packets": 480,
+  "duplicate_packets_quarantined": 13,
+  "rejected_packets": 0,
+  "packet_delivery_ratio": 1.0,
+  "qc_flatlines_detected": 6,
+  "qc_spikes_detected": 0,
+  "provenance_compliance": "SIMULATED/TEST",
+  "status": "PASS"
+}

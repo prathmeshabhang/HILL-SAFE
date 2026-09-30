@@ -1,0 +1,58 @@
+# FLOODY SHIELD Station Profile: ST_KULLU_01
+station:
+  station_id: "ST_KULLU_01"
+  name: "Kullu District HQ & Sarvari Confluence Gauge"
+  station_type: "HYDROLOGICAL_PRIMARY"
+  deployment_status: "PLANNED"
+  provenance: "PLANNED_CONFIGURATION"
+  coordinates:
+    latitude: 31.960
+    longitude: 77.112
+    elevation_m: 1220.0
+  river_basin: "Upper Beas Basin"
+  corridor: "Kullu Valley Urban Core"
+  risk_profile: "POPULATION_INUNDATION_AND_BANK_EROSION"
+
+device:
+  device_id: "DEV_KULLU_01"
+  serial_number: "FS-HW-KLU-2026-002"
+  device_type: "CELLULAR_4G_GATEWAY"
+  protocol: "CELLULAR_4G_MQTT"
+  manufacturer: "FloodyShield-Hardware"
+  firmware_version: "v3.5.0-pilot"
+  battery_type: "GRID_BACKED_UPS_12V_100AH"
+  heartbeat_interval_sec: 30
+
+sensors:
+  - sensor_id: "SNS_KULLU_STAGE_01"
+    sensor_type: "WATER_LEVEL"
+    hardware_model: "Submerged Pressure Transducer + Non-Contact Radar"
+    unit: "m"
+    sampling_interval_sec: 30
+    range_min: 0.0
+    range_max: 20.0
+    datum_elevation_m: 1215.0
+    alert_thresholds:
+      warning_level_m: 4.0
+      danger_level_m: 6.0
+      extreme_level_m: 8.5
+
+  - sensor_id: "SNS_KULLU_DISCHARGE_01"
+    sensor_type: "WATER_FLOW"
+    hardware_model: "Side-Looking Acoustic Doppler Velocity Meter (ADVM)"
+    unit: "m3/s"
+    sampling_interval_sec: 60
+    range_min: 5.0
+    range_max: 5000.0
+    alert_thresholds:
+      warning_flow_m3s: 600.0
+      danger_flow_m3s: 1200.0
+      extreme_flow_m3s: 2000.0
+
+  - sensor_id: "SNS_KULLU_RAIN_01"
+    sensor_type: "RAIN_GAUGE"
+    hardware_model: "Dual-Chamber Tipping Bucket 0.2mm"
+    unit: "mm/h"
+    sampling_interval_sec: 60
+    range_min: 0.0
+    range_max: 250.0

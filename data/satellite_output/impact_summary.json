@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-07-15T12:00:00Z",
+  "study_area": "Upper Beas Basin (Kullu\u2013Manali)",
+  "data_source": "Census 2011 Demographic Registers + OpenStreetMap + Copernicus Sentinel-1/2",
+  "spatial_resolution": "10.0m (Sentinel-2 MSI / Copernicus GLO-30 DEM)",
+  "hazard_version": "FLOODY_SHIELD_MULTI_HAZARD_V1.0",
+  "calculation_method": "Spatial intersection of Section 36 Critical Development Zones with demographic infrastructure",
+  "uncertainty_limitation": "Population figures are modeled demographic estimates (\u00b115% uncertainty); on-site verification required.",
+  "total_population_exposed": 1253,
+  "total_buildings_exposed": 220,
+  "total_roads_exposed_km": 5.6,
+  "total_bridges_compromised": 2,
+  "total_schools_at_risk": 2,
+  "total_hospitals_at_risk": 0,
+  "zones": [
+    {
+      "zone_id": "CDZ_001",
+      "risk_level": "VERY_HIGH",
+      "population_exposed": 572,
+      "buildings_exposed": 79,
+      "roads_exposed_km": 2.0,
+      "bridges_exposed": 1,
+      "schools_exposed": 1,
+      "hospitals_exposed": 0,
+      "dominant_hazards": [
+        "flash_flood"
+      ]
+    },
+    {
+      "zone_id": "CDZ_002",
+      "risk_level": "HIGH",
+      "population_exposed": 208,
+      "buildings_exposed": 58,
+      "roads_exposed_km": 1.5,
+      "bridges_exposed": 0,
+      "schools_exposed": 0,
+      "hospitals_exposed": 0,
+      "dominant_hazards": [
+        "development_pressure"
+      ]
+    },
+    {
+      "zone_id": "CDZ_003",
+      "risk_level": "HIGH",
+      "population_exposed": 473,
+      "buildings_exposed": 83,
+      "roads_exposed_km": 2.1,
+      "bridges_exposed": 1,
+      "schools_exposed": 1,
+      "hospitals_exposed": 0,
+      "dominant_hazards": [
+        "flash_flood"
+      ]
+    }
+  ]
+}

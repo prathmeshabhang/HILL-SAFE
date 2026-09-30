@@ -1,0 +1,210 @@
+{
+  "model": "M7_LightGBM_Dynamic_Landslide_Trigger",
+  "dataset_name": "upper_beas_july2023_event_forcing_dataset",
+  "validation_tier": "PARTIALLY_VALIDATED",
+  "primary_validation_unit": "spatial_sample",
+  "spatial_independence": {
+    "total_samples": 22,
+    "independent_count": 11,
+    "non_independent_count": 11,
+    "unknown_count": 0,
+    "distance_threshold_m": 500.0,
+    "primary_evaluation_subset": "SPATIAL_SAMPLES_UNDER_SINGLE_STORM (N=22)"
+  },
+  "class_balance": {
+    "total_count": 22,
+    "positive_count": 11,
+    "negative_count": 11,
+    "class_prevalence": 0.5,
+    "is_single_class": false,
+    "single_class_label": null
+  },
+  "event_audit": {
+    "total_points": 22,
+    "total_events": 1,
+    "is_clustered_forcing": true,
+    "forcing_description": "Clustered spatial forcing: 22 spatial points observed across 1 distinct event(s).",
+    "primary_unit": "spatial_sample",
+    "event_ids": [
+      "STORM_JULY_2023_HP"
+    ]
+  },
+  "control_quality": null,
+  "metrics": {
+    "roc_auc": {
+      "metric": "roc_auc",
+      "value": 0.1983,
+      "status": "VALID",
+      "reason": null,
+      "n": 22,
+      "unit": "spatial_sample",
+      "is_threshold_dependent": false,
+      "confidence_interval": {
+        "lower": null,
+        "upper": null,
+        "confidence_level": 0.95,
+        "method": "not_estimable",
+        "sample_size": 1,
+        "unit": "event",
+        "is_reliable": false,
+        "reason": "Event bootstrap CI not reliable: unique events count (1) < 15."
+      }
+    },
+    "pr_auc": {
+      "metric": "pr_auc",
+      "value": 0.343,
+      "status": "VALID",
+      "reason": null,
+      "n": 22,
+      "unit": "spatial_sample",
+      "is_threshold_dependent": false,
+      "confidence_interval": {
+        "lower": null,
+        "upper": null,
+        "confidence_level": 0.95,
+        "method": "not_estimable",
+        "sample_size": 1,
+        "unit": "event",
+        "is_reliable": false,
+        "reason": "Event bootstrap CI not reliable: unique events count (1) < 15."
+      }
+    },
+    "brier_score": {
+      "metric": "brier_score",
+      "value": 0.4991,
+      "status": "VALID",
+      "reason": null,
+      "n": 22,
+      "unit": "spatial_sample",
+      "is_threshold_dependent": false,
+      "confidence_interval": {
+        "lower": null,
+        "upper": null,
+        "confidence_level": 0.95,
+        "method": "not_estimable",
+        "sample_size": 1,
+        "unit": "event",
+        "is_reliable": false,
+        "reason": "Event bootstrap CI not reliable: unique events count (1) < 15."
+      }
+    },
+    "recall": {
+      "metric": "recall",
+      "value": 1.0,
+      "status": "VALID",
+      "reason": null,
+      "n": 11,
+      "unit": "spatial_sample",
+      "is_threshold_dependent": true,
+      "threshold": 0.5,
+      "threshold_source": "Predefined model operational trigger threshold (locked before external evaluation)",
+      "confidence_interval": {
+        "lower": 0.7151,
+        "upper": 1.0,
+        "confidence_level": 0.95,
+        "method": "exact_clopper_pearson",
+        "sample_size": 11,
+        "unit": "spatial_sample",
+        "is_reliable": true,
+        "reason": null
+      }
+    },
+    "specificity": {
+      "metric": "specificity",
+      "value": 0.0,
+      "status": "VALID",
+      "reason": null,
+      "n": 11,
+      "unit": "spatial_sample",
+      "is_threshold_dependent": true,
+      "threshold": 0.5,
+      "threshold_source": "Predefined model operational trigger threshold (locked before external evaluation)",
+      "confidence_interval": {
+        "lower": 0.0,
+        "upper": 0.2849,
+        "confidence_level": 0.95,
+        "method": "exact_clopper_pearson",
+        "sample_size": 11,
+        "unit": "spatial_sample",
+        "is_reliable": true,
+        "reason": null
+      }
+    },
+    "precision": {
+      "metric": "precision",
+      "value": 0.5,
+      "status": "VALID",
+      "reason": null,
+      "n": 22,
+      "unit": "spatial_sample",
+      "is_threshold_dependent": true,
+      "threshold": 0.5,
+      "threshold_source": "Predefined model operational trigger threshold (locked before external evaluation)",
+      "confidence_interval": {
+        "lower": 0.2822,
+        "upper": 0.7178,
+        "confidence_level": 0.95,
+        "method": "exact_clopper_pearson",
+        "sample_size": 22,
+        "unit": "spatial_sample",
+        "is_reliable": true,
+        "reason": null
+      }
+    },
+    "f1_score": {
+      "metric": "f1_score",
+      "value": 0.6667,
+      "status": "VALID",
+      "reason": null,
+      "n": 22,
+      "unit": "spatial_sample",
+      "is_threshold_dependent": true,
+      "threshold": 0.5,
+      "threshold_source": "Predefined model operational trigger threshold (locked before external evaluation)"
+    },
+    "accuracy": {
+      "metric": "accuracy",
+      "value": 0.5,
+      "status": "VALID",
+      "reason": null,
+      "n": 22,
+      "unit": "spatial_sample",
+      "is_threshold_dependent": true,
+      "threshold": 0.5,
+      "threshold_source": "Predefined model operational trigger threshold (locked before external evaluation)",
+      "confidence_interval": {
+        "lower": 0.2822,
+        "upper": 0.7178,
+        "confidence_level": 0.95,
+        "method": "exact_clopper_pearson",
+        "sample_size": 22,
+        "unit": "spatial_sample",
+        "is_reliable": true,
+        "reason": null
+      }
+    },
+    "event_level_roc_auc": {
+      "metric": "event_level_roc_auc",
+      "value": null,
+      "status": "NOT_ESTIMABLE",
+      "reason": "not_estimable_due_to_single_event: evaluation dataset covers only 1 event(s) (22 spatial points). Point-level spatial discrimination cannot be reported as independent event-level validation.",
+      "n": 1,
+      "unit": "event",
+      "is_threshold_dependent": false
+    }
+  },
+  "limitations": [
+    "All 22 spatial points were exposed to the same single July 9\u201310, 2023 storm event (Events=1, Points=22).",
+    "Event-level ROC-AUC is NOT ESTIMABLE because evaluation across multiple independent storm epochs is required.",
+    "Catchment-wide extreme rainfall (R1h 35-65mm, R3d 140-210mm) caused widespread saturation, triggering on valley floor benches.",
+    "Validation represents spatial performance under one extreme disaster scenario, not generalized multi-storm validation."
+  ],
+  "claims_supported": [
+    "Under catastrophic monsoonal rainfall forcing (July 9\u201310, 2023), Model M7 triggered across all evaluated historical failure locations (Observed Recall: 100.0%, 95% exact CI: [71.5%, 100.0%], N=11).",
+    "Point-level spatial discrimination under heavy storm forcing is limited: extreme catchment-wide precipitation causes widespread high trigger probabilities across both steep failure corridors and valley benches."
+  ],
+  "claims_unsupported": [
+    "Evaluation across 22 spatial points during the July 9\u201310, 2023 disaster does NOT constitute 22 independent validation events. All observations share a single monsoonal cloudburst forcing epoch.",
+    "Event-level ROC-AUC CANNOT be scientifically computed (only 1 disaster event observed)."
+  ]
+}

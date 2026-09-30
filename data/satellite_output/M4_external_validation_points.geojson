@@ -1,0 +1,486 @@
+{
+  "type": "FeatureCollection",
+  "name": "M4_UNet_External_Validation_Points",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1855,
+          32.2536
+        ]
+      },
+      "properties": {
+        "event_id": "FL_01",
+        "location_name": "Old Manali Club House Beas",
+        "observed_inundation": 1,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 91,
+        "raster_pixel_col": 237,
+        "is_concordant": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1782,
+          32.2858
+        ]
+      },
+      "properties": {
+        "event_id": "FL_02",
+        "location_name": "Nehru Kund Bahang Corridor",
+        "observed_inundation": 1,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 71,
+        "raster_pixel_col": 232,
+        "is_concordant": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1895,
+          32.2312
+        ]
+      },
+      "properties": {
+        "event_id": "FL_03",
+        "location_name": "Aloo Ground Siyal Manali",
+        "observed_inundation": 1,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 105,
+        "raster_pixel_col": 239,
+        "is_concordant": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.195,
+          32.1985
+        ]
+      },
+      "properties": {
+        "event_id": "FL_04",
+        "location_name": "Kalath Green Tax Barrier",
+        "observed_inundation": 1,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 125,
+        "raster_pixel_col": 243,
+        "is_concordant": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.172,
+          32.129
+        ]
+      },
+      "properties": {
+        "event_id": "FL_05",
+        "location_name": "15 Mile Patli Kuhal Terrace",
+        "observed_inundation": 1,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 169,
+        "raster_pixel_col": 228,
+        "is_concordant": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.151,
+          32.0585
+        ]
+      },
+      "properties": {
+        "event_id": "FL_06",
+        "location_name": "Raison Adventure Camps Terrace",
+        "observed_inundation": 1,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 213,
+        "raster_pixel_col": 215,
+        "is_concordant": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1085,
+          31.9615
+        ]
+      },
+      "properties": {
+        "event_id": "FL_07",
+        "location_name": "Akhara Bazar Kullu Confluence",
+        "observed_inundation": 1,
+        "unet_flood_probability": 0.9935,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 274,
+        "raster_pixel_col": 189,
+        "is_concordant": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.154,
+          31.879
+        ]
+      },
+      "properties": {
+        "event_id": "FL_08",
+        "location_name": "Bhuntar Airport Parbati Confluence",
+        "observed_inundation": 1,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 325,
+        "raster_pixel_col": 217,
+        "is_concordant": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.208,
+          31.745
+        ]
+      },
+      "properties": {
+        "event_id": "FL_09",
+        "location_name": "Aut Tunnel Highway Approach",
+        "observed_inundation": 1,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 409,
+        "raster_pixel_col": 251,
+        "is_concordant": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.225,
+          31.716
+        ]
+      },
+      "properties": {
+        "event_id": "FL_10",
+        "location_name": "Thalout Bazaar Reservoir Margins",
+        "observed_inundation": 1,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 427,
+        "raster_pixel_col": 261,
+        "is_concordant": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.305,
+          31.782
+        ]
+      },
+      "properties": {
+        "event_id": "FL_11",
+        "location_name": "Sainj Valley Market Larji Margin",
+        "observed_inundation": 1,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 386,
+        "raster_pixel_col": 310,
+        "is_concordant": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.158,
+          32.316
+        ]
+      },
+      "properties": {
+        "event_id": "FL_12",
+        "location_name": "Palchan Solang Confluence",
+        "observed_inundation": 1,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 52,
+        "raster_pixel_col": 220,
+        "is_concordant": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.192,
+          32.268
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_01",
+        "location_name": "Vashisht Upper Village Ridge",
+        "observed_inundation": 0,
+        "unet_flood_probability": 0.9934,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 82,
+        "raster_pixel_col": 241,
+        "is_concordant": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.175,
+          32.118
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_02",
+        "location_name": "Naggar Castle Heritage Ridge",
+        "observed_inundation": 0,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 176,
+        "raster_pixel_col": 230,
+        "is_concordant": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.21,
+          32.195
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_03",
+        "location_name": "Jagatsukh Upper Village",
+        "observed_inundation": 0,
+        "unet_flood_probability": 0.9982,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 128,
+        "raster_pixel_col": 252,
+        "is_concordant": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.112,
+          31.956
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_04",
+        "location_name": "Kullu Dhalpur Upper Ground",
+        "observed_inundation": 0,
+        "unet_flood_probability": 0.2705,
+        "unet_predicted_class": 0,
+        "raster_pixel_row": 277,
+        "raster_pixel_col": 191,
+        "is_concordant": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.149,
+          32.321
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_05",
+        "location_name": "Solang Village Upper Moraine",
+        "observed_inundation": 0,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 49,
+        "raster_pixel_col": 214,
+        "is_concordant": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.159,
+          31.851
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_06",
+        "location_name": "Bajaura Upper Temple Ridge",
+        "observed_inundation": 0,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 343,
+        "raster_pixel_col": 220,
+        "is_concordant": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.348,
+          32.027
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_07",
+        "location_name": "Manikaran Upper Slope",
+        "observed_inundation": 0,
+        "unet_flood_probability": 0.9999,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 233,
+        "raster_pixel_col": 337,
+        "is_concordant": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.342,
+          31.637
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_08",
+        "location_name": "Banjar Upper Town Ridge",
+        "observed_inundation": 0,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 476,
+        "raster_pixel_col": 333,
+        "is_concordant": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.398,
+          31.65
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_09",
+        "location_name": "Gushaini Upper Terrace",
+        "observed_inundation": 0,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 468,
+        "raster_pixel_col": 367,
+        "is_concordant": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.185,
+          32.148
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_10",
+        "location_name": "Haripur Upper Ridge",
+        "observed_inundation": 0,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 157,
+        "raster_pixel_col": 236,
+        "is_concordant": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.228,
+          32.355
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_11",
+        "location_name": "Marhi Alpine Meadow",
+        "observed_inundation": 0,
+        "unet_flood_probability": 0.54,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 28,
+        "raster_pixel_col": 263,
+        "is_concordant": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.315,
+          32.01
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_12",
+        "location_name": "Kasol Upper Forest Bench",
+        "observed_inundation": 0,
+        "unet_flood_probability": 1.0,
+        "unet_predicted_class": 1,
+        "raster_pixel_row": 243,
+        "raster_pixel_col": 316,
+        "is_concordant": false
+      }
+    }
+  ]
+}

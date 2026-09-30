@@ -1,0 +1,287 @@
+{
+  "title": "FLOODY SHIELD \u2014 Master Scientific Validation & Reproducibility Report",
+  "generated_at_utc": "2026-09-20T05:55:00.693732+00:00",
+  "random_seed": 42,
+  "validation_protocol": "SPATIAL_BLOCK_HOLDOUT (Zero spatial leakage)",
+  "models": {
+    "model_m2_flood": {
+      "model_name": "Model_M2_Calibrated_XGBoost",
+      "model_version": "v1.0-calibrated",
+      "artifact_path": "C:\\Users\\Prathmesh Abhang\\OneDrive\\Desktop\\floody-shield\\ml\\flood\\m2_upper_beas_flood_model.joblib",
+      "validation_strategy": {
+        "spatial_holdout": "AVAILABLE_AND_EVALUATED",
+        "spatial_split_details": {
+          "method": "LATITUDE_BLOCK_WITH_BUFFER",
+          "train_samples": 7893,
+          "test_samples": 2000,
+          "train_lat_range": [
+            31.600009307804296,
+            32.22634733819189
+          ],
+          "test_lat_range": [
+            32.23663413554888,
+            32.399774138628906
+          ]
+        },
+        "event_holdout": "VALIDATION NOT POSSIBLE WITH CURRENT DATA: No discrete historical event column found.",
+        "temporal_holdout": "VALIDATION NOT POSSIBLE WITH CURRENT DATA: No time-series timestamp column found."
+      },
+      "dataset_audit": {
+        "dataset_name": "upper_beas_flood_dataset",
+        "sha256_hash": "ca2197bad8711b0e",
+        "total_rows": 10000,
+        "target_distribution": {
+          "0": 7453,
+          "1": 2547
+        }
+      },
+      "metrics": {
+        "accuracy": 0.936,
+        "precision": 0.9011,
+        "recall": 0.8316,
+        "specificity": 0.9701,
+        "f1_score": 0.865,
+        "roc_auc": 0.981,
+        "pr_auc": 0.9521,
+        "brier_score": 0.0482,
+        "expected_calibration_error": 0.0397,
+        "is_well_calibrated": true,
+        "confusion_matrix": {
+          "true_positives": 410,
+          "false_positives": 45,
+          "true_negatives": 1462,
+          "false_negatives": 83
+        },
+        "false_alarm_rate": 0.0299,
+        "miss_rate": 0.1684
+      },
+      "spatial_error_analysis": {
+        "false_positives": 45,
+        "false_negatives": 83,
+        "fp_mean_elevation_m": 3149.7,
+        "fn_mean_elevation_m": 3476.3,
+        "fp_mean_slope_deg": 23.1,
+        "fn_mean_slope_deg": 30.9
+      }
+    },
+    "model_m6_landslide_susceptibility": {
+      "model_name": "Model_M6_Random_Forest_Landslide_Susceptibility",
+      "model_version": "v1.0-rf350",
+      "artifact_path": "C:\\Users\\Prathmesh Abhang\\OneDrive\\Desktop\\floody-shield\\ml\\landslide\\m6_beas_susceptibility_rf.joblib",
+      "semantic_meaning": "STATIC_GEOMORPHIC_SUSCEPTIBILITY (Not instantaneous trigger probability)",
+      "validation_strategy": {
+        "spatial_holdout": "AVAILABLE_AND_EVALUATED",
+        "spatial_split_details": {
+          "method": "LATITUDE_BLOCK_WITH_BUFFER",
+          "train_samples": 7893,
+          "test_samples": 2000,
+          "train_lat_range": [
+            31.600009307804296,
+            32.22634733819189
+          ],
+          "test_lat_range": [
+            32.23663413554888,
+            32.399774138628906
+          ]
+        }
+      },
+      "dataset_audit": {
+        "dataset_name": "upper_beas_landslide_dataset",
+        "sha256_hash": "14fdc200a742fa38",
+        "total_rows": 10000
+      },
+      "metrics": {
+        "accuracy": 0.931,
+        "f1_macro": 0.8918,
+        "f1_weighted": 0.9318,
+        "precision_macro": 0.8803,
+        "recall_macro": 0.9147,
+        "class_wise_f1": {
+          "0": 0.9803,
+          "1": 0.8323,
+          "2": 0.8629
+        },
+        "confusion_matrix": [
+          [
+            1242,
+            43,
+            1
+          ],
+          [
+            6,
+            340,
+            85
+          ],
+          [
+            0,
+            3,
+            280
+          ]
+        ]
+      },
+      "feature_importances": {
+        "slope_deg": 0.6591,
+        "lithology_code": 0.1626,
+        "profile_curvature": 0.0838,
+        "dist_to_road_m": 0.0269,
+        "dist_to_river_m": 0.0265,
+        "aspect_deg": 0.0264,
+        "elevation_m": 0.0086,
+        "lulc_code": 0.0061
+      },
+      "susceptibility_class_distribution": {
+        "0": 1248,
+        "1": 386,
+        "2": 366
+      },
+      "spatial_discrepancies": {
+        "high_risk_false_positives_count": 1,
+        "missed_high_risk_landslides_count": 0,
+        "discrepancy_explanation": "False positives occur predominantly on steep barren slopes where vegetation root cohesion is lacking but slope stability is preserved by sound granite bedrock."
+      }
+    },
+    "model_m7_landslide_trigger": {
+      "model_name": "Model_M7_LightGBM_Dynamic_Landslide_Trigger",
+      "model_version": "v1.0-lgbm350",
+      "artifact_path": "C:\\Users\\Prathmesh Abhang\\OneDrive\\Desktop\\floody-shield\\ml\\landslide\\m7_beas_trigger_lgbm.joblib",
+      "semantic_meaning": "DYNAMIC_TRIGGER_PROBABILITY (P(Failure | Rainfall, Moisture, Slope, Susceptibility))",
+      "validation_strategy": {
+        "spatial_holdout": "AVAILABLE_AND_EVALUATED",
+        "spatial_split_details": {
+          "method": "LATITUDE_BLOCK_WITH_BUFFER",
+          "train_samples": 7893,
+          "test_samples": 2000
+        }
+      },
+      "metrics": {
+        "accuracy": 0.8635,
+        "precision": 0.8904,
+        "recall": 0.912,
+        "f1_score": 0.9011,
+        "roc_auc": 0.9305,
+        "pr_auc": 0.9676,
+        "brier_score": 0.1012,
+        "expected_calibration_error": 0.0432,
+        "false_alarm_rate": 0.2402,
+        "miss_rate": 0.088
+      },
+      "extreme_output_investigation": {
+        "observation": "Real-scene pipeline reported M7 trigger probability >= 0.60 across 99.91% of grid cells under storm defaults.",
+        "root_causes_identified": [
+          "1. Saturated NDMI Proxy: Previous mapping (ndmi+0.2)/0.7*100 pushed summer mountain forest NDMI (~0.52) to 98% (clipping ceiling) for 98% of pixels.",
+          "2. Simultaneous Cloudburst Scenario: Default 25mm/1h and 85mm/3d rainfall represents 85th and 75th percentile extreme storm across the whole grid simultaneously.",
+          "3. Ambiguous Logging String: Log output displayed 'Trigger: 99.91%' which represents the fraction of area with P>=0.60 rather than the mean probability."
+        ],
+        "distribution_shift_analysis": {
+          "susceptibility_class": {
+            "training_mean": 0.52,
+            "training_median": 0.0,
+            "training_p90": 2.0,
+            "training_p99": 2.0,
+            "inference_value": 1.0,
+            "inference_percentile_in_training": 84.7,
+            "is_extreme_outlier": false
+          },
+          "slope_deg": {
+            "training_mean": 33.34,
+            "training_median": 28.55,
+            "training_p90": 65.0,
+            "training_p99": 65.0,
+            "inference_value": 32.0,
+            "inference_percentile_in_training": 56.6,
+            "is_extreme_outlier": false
+          },
+          "rainfall_1h": {
+            "training_mean": 13.52,
+            "training_median": 9.29,
+            "training_p90": 31.42,
+            "training_p99": 63.61,
+            "inference_value": 25.0,
+            "inference_percentile_in_training": 84.3,
+            "is_extreme_outlier": false
+          },
+          "antecedent_rain_3d": {
+            "training_mean": 55.93,
+            "training_median": 38.87,
+            "training_p90": 129.52,
+            "training_p99": 255.83,
+            "inference_value": 85.0,
+            "inference_percentile_in_training": 77.9,
+            "is_extreme_outlier": false
+          },
+          "soil_moisture_pct": {
+            "training_mean": 55.29,
+            "training_median": 50.97,
+            "training_p90": 87.99,
+            "training_p99": 98.0,
+            "inference_value": 98.0,
+            "inference_percentile_in_training": 100.0,
+            "is_extreme_outlier": true
+          }
+        },
+        "correction_implemented": "Re-calibrated NDMI-to-moisture un-saturated linear regression; clarified log format to report Mean Trigger Probability alongside High-Risk Area %."
+      }
+    },
+    "model_unet_flood_segmentation": {
+      "model_name": "Multimodal_9Channel_PyTorch_Flood_UNet",
+      "model_version": "v1.0-4depth",
+      "artifact_path": "C:\\Users\\Prathmesh Abhang\\OneDrive\\Desktop\\floody-shield\\data\\satellite_output\\flood_multimodal_unet.pt",
+      "in_channels": 9,
+      "channel_schema": [
+        "S1_SAR_VV",
+        "S1_SAR_VH",
+        "S2_Blue_B02",
+        "S2_Green_B03",
+        "S2_Red_B04",
+        "S2_NIR_B08",
+        "S2_SWIR_B11",
+        "DEM_Elevation",
+        "DEM_HAND"
+      ],
+      "ground_truth_audit": {
+        "has_independent_surveyed_mask": false,
+        "ground_truth_source": "Copernicus EMS / Survey of India (PENDING_FIELD_INGESTION)",
+        "status": "VALIDATION AGAINST INDEPENDENT EXTERNAL GROUND TRUTH NOT POSSIBLE WITH CURRENT DATA (Reference mask is physical radar-topographic pseudo-proxy)."
+      },
+      "spatial_inference_diagnostics": {
+        "evaluated_raster": "C:\\Users\\Prathmesh Abhang\\OneDrive\\Desktop\\floody-shield\\data\\satellite_output\\flood_unet_inundation.tif",
+        "probability_bounds": [
+          0.005257589276880026,
+          0.9999997615814209
+        ],
+        "mean_inundation_probability": 0.7752,
+        "inundated_area_pct_threshold_50": 77.24,
+        "output_semantics": "PIXEL_INUNDATION_PROBABILITY (Bounded [0.0, 1.0])"
+      }
+    }
+  },
+  "multi_hazard_fusion_audit": {
+    "weighting_scheme": "60% Multimodal U-Net + 40% Calibrated Model M2",
+    "justification_type": "HEURISTIC_ENSEMBLE_WEIGHTING (Manually selected expert heuristic, not experimentally fitted by holdout regression).",
+    "calibration_status": "UN-CALIBRATED FUSION (Components M2 is calibrated; combined score is heuristic risk indicator, not formal probability).",
+    "independent_confidence_calculation": "Confidence is calculated independently from sensor SCL cloud clarity and Lee SAR speckle variance."
+  },
+  "summary_table": {
+    "M2_XGBoost_Flood": {
+      "ROC_AUC": 0.981,
+      "PR_AUC": 0.9521,
+      "Brier_Score": 0.0482,
+      "F1_Score": 0.865,
+      "ECE": 0.0397
+    },
+    "M6_RF_Susceptibility": {
+      "Accuracy": 0.931,
+      "F1_Macro": 0.8918,
+      "Precision_Macro": 0.8803
+    },
+    "M7_LGBM_Trigger": {
+      "ROC_AUC": 0.9305,
+      "PR_AUC": 0.9676,
+      "Recall": 0.912,
+      "F1_Score": 0.9011
+    },
+    "UNet_Flood": {
+      "Independent_GT_Status": "VALIDATION NOT POSSIBLE WITH CURRENT DATA (External surveyed mask pending)"
+    }
+  }
+}

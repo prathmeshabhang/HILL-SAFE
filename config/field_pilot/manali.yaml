@@ -1,0 +1,60 @@
+# FLOODY SHIELD Station Profile: ST_MANALI_01
+station:
+  station_id: "ST_MANALI_01"
+  name: "Manali Catchment & Upper Precipitation Station"
+  station_type: "METEOROLOGICAL_HYDROLOGICAL"
+  deployment_status: "PLANNED"
+  provenance: "PLANNED_CONFIGURATION"
+  coordinates:
+    latitude: 32.255
+    longitude: 77.185
+    elevation_m: 2050.0
+  river_basin: "Upper Beas Basin"
+  corridor: "Solang-Manali Catchment"
+  risk_profile: "FLASH_FLOOD_ORIGIN_AND_DEBRIS_FLOW"
+
+device:
+  device_id: "DEV_MANALI_01"
+  serial_number: "FS-HW-MNL-2026-001"
+  device_type: "CELLULAR_LORA_GATEWAY"
+  protocol: "CELLULAR_4G_FALLBACK_LORAWAN"
+  manufacturer: "FloodyShield-Hardware"
+  firmware_version: "v3.5.0-pilot"
+  battery_type: "12V_SOLAR_BACKED_LIFEPO4"
+  heartbeat_interval_sec: 60
+
+sensors:
+  - sensor_id: "SNS_MANALI_RAIN_01"
+    sensor_type: "RAIN_GAUGE"
+    hardware_model: "Tipping Bucket Optical Rain Sensor TB4"
+    unit: "mm/h"
+    sampling_interval_sec: 60
+    range_min: 0.0
+    range_max: 300.0
+    alert_thresholds:
+      warning_mmh: 30.0
+      severe_mmh: 65.0
+      cloudburst_mmh: 100.0
+
+  - sensor_id: "SNS_MANALI_STAGE_01"
+    sensor_type: "WATER_LEVEL"
+    hardware_model: "Radar River Gauge RL-15"
+    unit: "m"
+    sampling_interval_sec: 60
+    range_min: 0.0
+    range_max: 15.0
+    datum_elevation_m: 2045.0
+    alert_thresholds:
+      warning_level_m: 3.5
+      danger_level_m: 5.0
+      extreme_level_m: 7.0
+
+  - sensor_id: "SNS_MANALI_SOIL_01"
+    sensor_type: "SOIL_MOISTURE"
+    hardware_model: "FDR Soil Moisture Probe CS655"
+    unit: "%"
+    sampling_interval_sec: 300
+    range_min: 0.0
+    range_max: 100.0
+    alert_thresholds:
+      saturation_threshold: 85.0

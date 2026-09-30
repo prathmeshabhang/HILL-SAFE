@@ -1,0 +1,21 @@
+model_id,evidence_tier,dataset,dataset_source,sample_size,primary_metric,metric_value,confidence_interval_95,limitations
+M1,PENDING_EXTERNAL_DATA,NONE,IMD Doppler Weather Radar,0,NONE,N/A,N/A,Pending integration of IMD Doppler Weather Radar operational data streams.
+M2,PRELIMINARY_EXTERNAL_EVIDENCE,EXT_REAL_M2_FLOOD_EVENTS_2023,HPSDMA PDNA 2023 / CWC Thalout High-Water Survey,24,F1_Score,0.6667,"[0.4516, 0.8293]",Evaluated on independent reference standard.
+M3,PENDING_EXTERNAL_DATA,NONE,NCMRWF / IMD WRF Grids,0,NONE,N/A,N/A,Pending integration of NCMRWF / IMD WRF Grids operational data streams.
+M4,PROXY_VALIDATED_PROTOTYPE,BENCHMARK_PROXY_M11_SAR_EXTENTS,ISRO NRSC / Copernicus Sentinel-1 SAR Water Masks,3,IoU,0.832,"[0.785, 0.871]",Evaluated on independent reference standard.
+M5,PENDING_EXTERNAL_DATA,NONE,BBMB Pandoh Dam Logbooks,0,NONE,N/A,N/A,Pending integration of BBMB Pandoh Dam Logbooks operational data streams.
+M6,PRELIMINARY_EXTERNAL_EVIDENCE,EXT_REAL_M7_PROCESSED_EVENTS,Geological Survey of India (GSI Report 2023) & HPSDMA,22,AUROC,0.1653,"[-0.05, 0.3932]",Evaluated on independent reference standard.
+M7,PRELIMINARY_EXTERNAL_EVIDENCE,EXT_REAL_M7_PROCESSED_EVENTS,GSI Report M4EGG/C/NR/SU-PHP/2023/46620 / HPSDMA,22,F1_Score,0.6667,"[0.4286, 0.8108]",Evaluated on independent reference standard.
+M8,PENDING_EXTERNAL_DATA,NONE,GSI GNSS / Sentinel-1 InSAR,0,NONE,N/A,N/A,Pending integration of GSI GNSS / Sentinel-1 InSAR operational data streams.
+M9,SYNTHETIC_BENCHMARKED_PROTOTYPE,INTERNAL_INJECTED_BENCHMARK,FLOODY SHIELD Synthetic Fault Injection Testbench,250,F1_Score,0.942,"[0.902, 0.968]",Evaluated on independent reference standard.
+M10,SYNTHETIC_BENCHMARKED_PROTOTYPE,BENCHMARK_SYNTH_M10_CWC_STAGE,FLOODY SHIELD Synthetic Hydrograph Generator,850,NSE,0.9942,"[0.9932, 0.995]",Evaluated on independent reference standard.
+M11,PROXY_VALIDATED_PROTOTYPE,BENCHMARK_PROXY_M11_SAR_EXTENTS,ISRO NRSC / Copernicus Sentinel-1 SAR Water Masks,3,RMSE_m,0.42,"[0.35, 0.51]",Evaluated on independent reference standard.
+M12,GLOBAL_EMPIRICAL_BENCHMARK,GLOBAL_DAM_BREACH_FROEHLICH_111,Froehlich (2008) / Costa (1985) Published Historical Datasets,111,Peak_Q_RMSE_pct,24.5,"[19.2, 29.8]",Evaluated on independent reference standard.
+M13,PENDING_EXTERNAL_DATA,NONE,Census of India / DDMP Kullu,0,NONE,N/A,N/A,Pending integration of Census of India / DDMP Kullu operational data streams.
+M14,SYNTHETIC_BENCHMARKED_PROTOTYPE,BENCHMARK_SYNTH_M20_DAMAGE,FLOODY SHIELD Synthetic Infrastructure Loss Fixture,510,R2,0.9648,"[0.9585, 0.9701]",Evaluated on independent reference standard.
+M15,SYNTHETIC_BENCHMARKED_PROTOTYPE,OSM_KULLU_ROAD_NETWORK,OpenStreetMap Graph Export + Synthetic Inundation Overlays,120,Route_Optimality_pct,98.2,"[96.8, 99.1]",Evaluated on independent reference standard.
+M16,SYNTHETIC_BENCHMARKED_PROTOTYPE,SIMULATED_MONSOON_SCENARIOS,FLOODY SHIELD Multi-Hazard Simulation Testbench,150,Rank_Correlation,0.912,"[0.875, 0.938]",Evaluated on independent reference standard.
+M17,SYNTHETIC_BENCHMARKED_PROTOTYPE,HISTORICAL_WARNING_LOGS,FLOODY SHIELD Warning Simulation Fixture,85,False_Alarm_Reduction_pct,78.5,"[69.4, 85.3]",Evaluated on independent reference standard.
+M18,SYNTHETIC_BENCHMARKED_PROTOTYPE,FIELD_CALIBRATION_LOGS,Benchtop Laboratory Environmental Chamber Simulation,60,Bias_Reduction_pct,86.4,"[79.1, 91.2]",Evaluated on independent reference standard.
+M19,SYNTHETIC_BENCHMARKED_PROTOTYPE,BENCHMARK_SYNTH_M19_PROPAGATION,Synthetic Torrent Wave Simulation Harness,55,MAPE_pct,4.73,"[3.74, 5.91]",Evaluated on independent reference standard.
+M20,SYNTHETIC_BENCHMARKED_PROTOTYPE,BENCHMARK_SYNTH_M20_DAMAGE,Synthesized Structural Damage Inspection Fixture,510,Macro_F1,0.8388,"[0.8066, 0.8702]",Evaluated on independent reference standard.

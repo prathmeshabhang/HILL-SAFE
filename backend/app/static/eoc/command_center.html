@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOODY SHIELD — Emergency Operations Center (EOC)</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        :root {
+            --bg-primary: #0b0f19;
+            --bg-secondary: #111827;
+            --bg-card: #1f2937;
+            --border: #374151;
+            --accent-cyan: #06b6d4;
+            --accent-blue: #3b82f6;
+            --accent-red: #ef4444;
+            --accent-amber: #f59e0b;
+            --accent-green: #10b981;
+            --text-main: #f9fafb;
+            --text-muted: #9ca3af;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* TOP NAVIGATION */
+        header {
+            background: linear-gradient(180deg, #111827, #0b0f19);
+            border-bottom: 1px solid var(--border);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        .brand-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .shield-icon {
+            font-size: 1.8rem;
+            color: var(--accent-cyan);
+            filter: drop-shadow(0 0 8px rgba(6, 182, 212, 0.6));
+        }
+
+        .brand-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            color: var(--text-main);
+        }
+
+        .brand-subtitle {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            background: rgba(239, 68, 68, 0.15);
+            color: #fca5a5;
+            border: 1px solid rgba(239, 68, 68, 0.4);
+            animation: pulse-red 2s infinite;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--accent-red);
+        }
+
+        @keyframes pulse-red {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5); }
+            50% { box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
+        }
+
+        /* STATS BANNER */
+        .stats-bar {
+            background: #111827;
+            border-bottom: 1px solid var(--border);
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            padding: 8px 20px;
+            gap: 15px;
+            font-size: 0.8rem;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            padding: 8px 14px;
+            border-radius: 6px;
+            border-left: 3px solid var(--accent-cyan);
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .stat-val {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-top: 2px;
+        }
+
+        /* MAIN WORKSPACE */
+        .main-container {
+            display: flex;
+            flex: 1;
+            height: calc(100vh - 125px);
+            position: relative;
+        }
+
+        #map {
+            flex: 7;
+            height: 100%;
+            background: #090d16;
+        }
+
+        .side-panel {
+            flex: 3;
+            min-width: 440px;
+            max-width: 500px;
+            background: var(--bg-secondary);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* TABS */
+        .tab-bar {
+            display: flex;
+            background: #0d1320;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 12px 8px;
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: var(--text-muted);
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn.active {
+            color: var(--accent-cyan);
+            border-bottom-color: var(--accent-cyan);
+            background: rgba(6, 182, 212, 0.08);
+        }
+
+        .tab-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* CARDS & UI ELEMENTS */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 14px;
+            margin-bottom: 14px;
+        }
+
+        .card-header {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .badge {
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+
+        .badge-red { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid #ef4444; }
+        .badge-amber { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid #f59e0b; }
+        .badge-green { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #10b981; }
+
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            font-size: 0.8rem;
+        }
+
+        .metric-box {
+            background: rgba(17, 24, 39, 0.6);
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #374151;
+        }
+
+        .metric-title { font-size: 0.7rem; color: var(--text-muted); }
+        .metric-data { font-size: 0.95rem; font-weight: 700; margin-top: 2px; }
+
+        .timeline-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px dashed #374151;
+            font-size: 0.78rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            width: 100%;
+            padding: 10px;
+            background: var(--accent-cyan);
+            color: #0b0f19;
+            font-weight: 700;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.82rem;
+            transition: opacity 0.2s;
+            margin-top: 10px;
+        }
+
+        .btn:hover { opacity: 0.9; }
+
+        .btn-red { background: var(--accent-red); color: #ffffff; }
+        .btn-amber { background: var(--accent-amber); color: #0b0f19; }
+
+        /* FORM CONTROLS */
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        select, input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px 10px;
+            background: #111827;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-main);
+            font-size: 0.82rem;
+        }
+
+        .statutory-notice {
+            background: rgba(245, 158, 11, 0.08);
+            border-left: 3px solid var(--accent-amber);
+            padding: 8px 12px;
+            font-size: 0.7rem;
+            line-height: 1.4;
+            color: #fbbf24;
+            margin-top: 14px;
+            border-radius: 0 4px 4px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP HEADER -->
+    <header>
+        <div class="brand-group">
+            <div class="shield-icon">🛡️</div>
+            <div>
+                <div class="brand-title">FLOODY SHIELD — EMERGENCY OPERATIONS CENTER</div>
+                <div class="brand-subtitle">Himachal Pradesh Disaster Management Authority &bull; Upper Beas Hydro-Meteorological Sector</div>
+            </div>
+        </div>
+        <div style="display: flex; gap: 15px; align-items: center;">
+            <div id="liveClock" style="font-size: 0.8rem; font-family: monospace; color: #94a3b8;">UTC: 2026-09-20 10:14:00</div>
+            <div class="status-pill">
+                <span class="status-dot"></span>
+                <span>CRITICAL INCIDENT ACTIVE &bull; DEFCON 2</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- REAL-TIME METRIC BANNER -->
+    <div class="stats-bar">
+        <div class="stat-card">
+            <div class="stat-label">Active Natural Dam</div>
+            <div class="stat-val" style="color: #f87171;">Larji-Sainj (88.5%)</div>
+        </div>
+        <div class="stat-card" style="border-left-color: #f59e0b;">
+            <div class="stat-label">Downstream Population Exposed</div>
+            <div class="stat-val">18,450 residents</div>
+        </div>
+        <div class="stat-card" style="border-left-color: #ef4444;">
+            <div class="stat-label">Lifeline Highway (NH-3)</div>
+            <div class="stat-val" style="color: #f87171;">SEVERED (Aut-Pandoh)</div>
+        </div>
+        <div class="stat-card" style="border-left-color: #10b981;">
+            <div class="stat-label">Active IoT Stations</div>
+            <div class="stat-val">4 / 4 ONLINE (M9 Calibrated)</div>
+        </div>
+        <div class="stat-card" style="border-left-color: #38bdf8;">
+            <div class="stat-label">Nowcast Rain Intensity</div>
+            <div class="stat-val">78.5 mm/hr (Cloudburst)</div>
+        </div>
+    </div>
+
+    <!-- MAIN INTERACTIVE WORKSPACE -->
+    <div class="main-container">
+        <!-- LEAFLET MAP -->
+        <div id="map"></div>
+
+        <!-- TACTICAL SIDE PANEL -->
+        <div class="side-panel">
+            <div class="tab-bar">
+                <button class="tab-btn active" onclick="switchTab('tab-incident')">Incident Brief</button>
+                <button class="tab-btn" onclick="switchTab('tab-evac')">Evacuation Route</button>
+                <button class="tab-btn" onclick="switchTab('tab-telemetry')">IoT & M9 Feed</button>
+                <button class="tab-btn" onclick="switchTab('tab-cap')">CAP v1.2 Alert</button>
+            </div>
+
+            <!-- TAB 1: INCIDENT BRIEF & CASCADE -->
+            <div id="tab-incident" class="tab-content active">
+                <div class="card">
+                    <div class="card-header">
+                        <span>Incident Profile &bull; INC-BEAS-LARJI-01</span>
+                        <span class="badge badge-red">CRITICAL</span>
+                    </div>
+                    <div class="metric-grid">
+                        <div class="metric-box">
+                            <div class="metric-title">Trigger Sector</div>
+                            <div class="metric-data">Larji-Sainj Gorge</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-title">Dam Height / Res. Vol</div>
+                            <div class="metric-data">35m / 8.5M m³</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-title">M12 Peak Outflow (Qp)</div>
+                            <div class="metric-data" style="color: #f87171;">14,260 m³/s</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-title">Breach Formation Time</div>
+                            <div class="metric-data">1.85 Hours</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span>Downstream Flood Wave Arrival Schedule</span>
+                        <span class="badge badge-amber">HYDRAULIC ATTENUATION</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span>Aut Hydro Station (Reach 1)</span>
+                        <span style="font-weight: 700; color: #f87171;">+12 Minutes</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span>Thalout Settlement (Reach 2)</span>
+                        <span style="font-weight: 700; color: #f87171;">+28 Minutes</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span>Pandoh Dam Spillway (Reach 3)</span>
+                        <span style="font-weight: 700; color: #fbbf24;">+55 Minutes</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span>Mandi Outer Town (Reach 4)</span>
+                        <span style="font-weight: 700; color: #34d399;">+110 Minutes</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span>Cascade Scenario Simulator</span>
+                        <span class="badge badge-cyan">MODEL M12</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Simulated Dam Height: <span id="lblDamHeight">35</span>m</label>
+                        <input type="range" min="10" max="80" value="35" step="5" oninput="document.getElementById('lblDamHeight').innerText = this.value">
+                    </div>
+                    <div class="form-group">
+                        <label>Impounded Volume: <span id="lblVol">8.5</span> Million m³</label>
+                        <input type="range" min="1" max="25" value="8.5" step="0.5" oninput="document.getElementById('lblVol').innerText = this.value">
+                    </div>
+                    <button class="btn btn-red" onclick="runSimulatedBreach()">Rerun Cascade Simulation & Dispatch</button>
+                </div>
+
+                <div class="statutory-notice">
+                    <strong>STATUTORY NOTICE (Section 36):</strong> Automated hydraulic breach simulations are advisory support tools for NDRF/SDRF commanders. Ground truth field reconnaissance must validate before sirens trigger.
+                </div>
+            </div>
+
+            <!-- TAB 2: EVACUATION & SAFE ROUTING -->
+            <div id="tab-evac" class="tab-content">
+                <div class="card">
+                    <div class="card-header">
+                        <span>Dynamic Evacuation Planner &bull; M15 & M16</span>
+                        <span class="badge badge-green">HAZARD-AWARE</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Origin Threat Zone (Village)</label>
+                        <select id="selOrigin">
+                            <option value="V_BHUNTAR">Bhuntar Airport Basin (Pop: 4,800)</option>
+                            <option value="V_AUT">Aut Riverbed Hamlet (Pop: 1,200)</option>
+                            <option value="V_THALOUT">Thalout Riverside Reach (Pop: 1,650)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Designated Safe Zone / Shelter</label>
+                        <select id="selDest">
+                            <option value="S_KULLU_COLLEGE">S3: Kullu College Safe Ridge (Elev: 1,280m, Cap: 800)</option>
+                            <option value="S_PANDOH_RIDGE">S1: Pandoh High Ridge Complex (Elev: 1,150m, Cap: 500)</option>
+                            <option value="S_AUT_TUNNEL_TOP">S2: Aut Tunnel High Platform (Elev: 980m, Cap: 300)</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                        <input type="checkbox" id="chkNH3Blocked" checked style="width: auto;">
+                        <label for="chkNH3Blocked" style="margin: 0; cursor: pointer; color: #f87171;">Mark NH-3 Gorge Highway Severed/Flooded</label>
+                    </div>
+                    <button class="btn" onclick="calculateEvacuationRoute()">Solve Safest Bypass Corridor</button>
+                </div>
+
+                <div id="routeResultsCard" class="card" style="display: none;">
+                    <div class="card-header">
+                        <span>Optimal Bypass Corridor Computed</span>
+                        <span class="badge badge-green">OPTIMAL</span>
+                    </div>
+                    <div class="metric-grid">
+                        <div class="metric-box">
+                            <div class="metric-title">Safe Route Distance</div>
+                            <div id="resDist" class="metric-data">14.2 km</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-title">Estimated Transit Time</div>
+                            <div id="resTime" class="metric-data">32 min</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-title">Residual Hazard Risk</div>
+                            <div id="resRisk" class="metric-data" style="color: #34d399;">0.04 (SAFE)</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-title">Corridor Status</div>
+                            <div class="metric-data" style="color: #38bdf8;">BYPASS ACTIVE</div>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.74rem; color: #9ca3af; margin-top: 10px;">
+                        Route safely bypasses compromised NH-3 valley floor via Eastern Mountain Ridge bypass links. Waypoints loaded directly onto map layer.
+                    </p>
+                </div>
+            </div>
+
+            <!-- TAB 3: IOT TELEMETRY & M9 ANOMALY -->
+            <div id="tab-telemetry" class="tab-content">
+                <div class="card">
+                    <div class="card-header">
+                        <span>Ground Telemetry Nodes &bull; Model M9</span>
+                        <span class="badge badge-cyan">DUAL-STAGE GATEKEEPER</span>
+                    </div>
+                    <div id="stationList">
+                        <!-- Stations injected dynamically -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span>Simulate Sensor Injection (M9 Gatekeeper Test)</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Select Station</label>
+                        <select id="injStation">
+                            <option value="ST_AUT_01">Aut Gorge Hydro Node (ST_AUT_01)</option>
+                            <option value="ST_LARJI_01">Larji Dam Inflow (ST_LARJI_01)</option>
+                            <option value="ST_BHUNTAR_01">Bhuntar Met Station (ST_BHUNTAR_01)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Simulated Reading Value</label>
+                        <input type="number" id="injValue" value="-2.5" step="0.5">
+                    </div>
+                    <button class="btn btn-amber" onclick="injectTestReading()">Send to Gateway & Test M9 Filter</button>
+                    <div id="injResult" style="font-size: 0.75rem; margin-top: 8px;"></div>
+                </div>
+            </div>
+
+            <!-- TAB 4: CAP ALERTS -->
+            <div id="tab-cap" class="tab-content">
+                <div class="card">
+                    <div class="card-header">
+                        <span>ITU-T X.1303 / NDMA Sachet CAP v1.2</span>
+                        <span class="badge badge-red">DISPATCH READY</span>
+                    </div>
+                    <div style="font-size: 0.78rem; margin-bottom: 8px;">
+                        <strong>English Headline:</strong>
+                        <div style="color: #fca5a5; margin-top: 2px;">FLASH FLOOD & LANDSLIDE DAM BREACH WARNING: Aut and Sainj Gorge sectors under extreme hazard. Immediate evacuation advised.</div>
+                    </div>
+                    <div style="font-size: 0.78rem; margin-bottom: 12px;">
+                        <strong>Hindi Translation (सचेत):</strong>
+                        <div style="color: #fca5a5; margin-top: 2px;">फ्लैश फ्लड और भूस्खलन बांध टूटने की चेतावनी: औट और सैंज घाटी क्षेत्र में भारी खतरा। सुरक्षित ऊंचे स्थानों पर तुरंत शरण लें।</div>
+                    </div>
+                    <button class="btn btn-cyan" onclick="downloadCAPXML()">Download Statutory CAP v1.2 XML</button>
+                    <button class="btn btn-amber" onclick="testSirenAudio()">🔊 Trigger Audible Siren Preview</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Clock updater
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('liveClock').innerText = 'UTC: ' + now.toISOString().replace('T', ' ').slice(0, 19);
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // TAB SWITCHER
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            event.target.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+
+        // INITIALIZE MAP
+        const map = L.map('map', {
+            center: [31.7350, 77.2150],
+            zoom: 12,
+            zoomControl: true,
+        });
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=cb1_4081_1_8a65c191ca6fd891376fa755', {
+            attribution: '&copy; OpenStreetMap &copy; CARTO',
+            maxZoom: 18,
+            subdomains: 'abcd',
+        }).addTo(map);
+
+        // 1. Natural Dam Marker (Diamond)
+        const damIcon = L.divIcon({
+            html: '<div style="font-size: 26px; color: #ef4444; filter: drop-shadow(0 0 10px #ef4444); text-align: center; line-height: 26px;">◆</div>',
+            className: 'custom-dam-marker',
+            iconSize: [28, 28],
+            iconAnchor: [14, 14],
+        });
+
+        const damMarker = L.marker([31.7225, 77.2185], { icon: damIcon }).addTo(map);
+        damMarker.bindPopup(`
+            <div style="font-size: 12px; line-height: 1.5; color: #1e293b;">
+                <h4 style="margin: 0 0 6px 0; color: #b91c1c;">◆ Natural Dam Candidate: ND-BEAS-LARJI-01</h4>
+                <b>Probability:</b> 88.5% (HIGH CONFIDENCE)<br>
+                <b>River Width Change:</b> -71.4% (Severely Obstructed)<br>
+                <b>Upstream Water Change:</b> +206.5% (Expanding Lake)<br>
+                <b>Debris Source:</b> Active Landslide Scar (Slope: 38°)<br>
+                <b>Downstream Exposure:</b> 5,550 residents in reach corridor<br>
+                <div style="margin-top: 8px; border-top: 1px solid #ccc; padding-top: 4px; font-size: 10px; color: #666;">
+                    Copernicus Sentinel-1 SAR + Sentinel-2 Multi-spectral Fusion
+                </div>
+            </div>
+        `).openPopup();
+
+        // 2. Impounded Reservoir Polygon (Cyan hatched)
+        const impoundedLake = L.polygon([
+            [31.7225, 77.2185],
+            [31.7260, 77.2220],
+            [31.7290, 77.2280],
+            [31.7280, 77.2330],
+            [31.7240, 77.2290],
+            [31.7210, 77.2220],
+        ], {
+            color: '#06b6d4',
+            fillColor: '#06b6d4',
+            fillOpacity: 0.35,
+            dashArray: '5, 8',
+            weight: 2,
+        }).addTo(map);
+        impoundedLake.bindPopup("<b>Upstream Impounded Reservoir Lake</b><br>Estimated Volume: 8,500,000 m³<br>Growth Rate: +0.45 km²/day");
+
+        // 3. Ground Stations
+        const stations = [
+            { name: "Aut Gorge Hydro Node", lat: 31.7483, lon: 77.2081, level: "6.4m", status: "HEALTHY" },
+            { name: "Larji Dam Inflow Node", lat: 31.7167, lon: 77.2167, level: "7.8m", status: "HEALTHY" },
+            { name: "Sainj Valley Hillside Node", lat: 31.7300, lon: 77.2400, level: "1.2m", status: "HEALTHY" },
+            { name: "Bhuntar Airport Station", lat: 31.8789, lon: 77.1554, level: "3.5m", status: "HEALTHY" },
+        ];
+
+        const stationLayerGroup = L.layerGroup().addTo(map);
+        const stListEl = document.getElementById('stationList');
+
+        stations.forEach(s => {
+            const circle = L.circleMarker([s.lat, s.lon], {
+                radius: 7,
+                color: '#38bdf8',
+                fillColor: '#0284c7',
+                fillOpacity: 0.9,
+                weight: 2,
+            }).addTo(stationLayerGroup);
+            circle.bindPopup(`<b>Station: ${s.name}</b><br>River Level: ${s.level}<br>M9 Quality: 100% OK`);
+
+            stListEl.innerHTML += `
+                <div class="timeline-item">
+                    <span>${s.name}</span>
+                    <span style="color: #34d399; font-weight: bold;">${s.level} (ONLINE)</span>
+                </div>
+            `;
+        });
+
+        // 4. Safe Evacuation Route Layer
+        let routePolyline = null;
+
+        function calculateEvacuationRoute() {
+            const isNH3Blocked = document.getElementById('chkNH3Blocked').checked;
+            document.getElementById('routeResultsCard').style.display = 'block';
+
+            if (routePolyline) {
+                map.removeLayer(routePolyline);
+            }
+
+            // Safe mountain ridge bypass coordinates (Bhuntar -> Kullu College via high ridge)
+            const safeCoords = [
+                [31.8789, 77.1554], // Bhuntar
+                [31.8950, 77.1700], // Ridge waypoint 1
+                [31.9200, 77.1650], // Ridge waypoint 2
+                [31.9578, 77.1095], // Kullu College Safe Shelter
+            ];
+
+            routePolyline = L.polyline(safeCoords, {
+                color: '#10b981',
+                weight: 5,
+                opacity: 0.9,
+                dashArray: isNH3Blocked ? '8, 8' : null,
+            }).addTo(map);
+
+            map.fitBounds(routePolyline.getBounds(), { padding: [50, 50] });
+            routePolyline.bindPopup("<b>Model M16 Safe Evacuation Corridor</b><br>Bypassing Submerged NH-3 valley floor<br>Status: CLEAR & TRAVERSABLE").openPopup();
+        }
+
+        // 5. Simulate Breach
+        function runSimulatedBreach() {
+            alert("Model M12 Cascade Breach Simulation Executed!\n\nPeak Discharge: 15,800 m³/s\nWave Arrival at Aut: 11.5 minutes\nBilingual CAP Alert Dispatched to Civil Defense Network.");
+        }
+
+        // 6. Inject Reading
+        function injectTestReading() {
+            const st = document.getElementById('injStation').value;
+            const val = parseFloat(document.getElementById('injValue').value);
+            const resEl = document.getElementById('injResult');
+
+            if (val < 0) {
+                resEl.innerHTML = `<span style="color: #f87171; font-weight: bold;">[M9 REJECTED]: Negative value (${val}m) dropped by Deterministic Range Gatekeeper. Quality Score: 0.0</span>`;
+            } else if (val > 40) {
+                resEl.innerHTML = `<span style="color: #fbbf24; font-weight: bold;">[M9 REJECTED]: Extreme Spike (${val}m) dropped. Exceeds physical Himalayan channel ceiling.</span>`;
+            } else {
+                resEl.innerHTML = `<span style="color: #34d399; font-weight: bold;">[M9 ACCEPTED]: Valid nominal reading (${val}m). Ingested into hydrological buffer.</span>`;
+            }
+        }
+
+        // 7. Download CAP XML
+        function downloadCAPXML() {
+            window.open('/api/v1/orchestrator/incidents/INC-BEAS-LARJI-01/cap-xml', '_blank');
+        }
+
+        // 8. Siren Audio
+        function testSirenAudio() {
+            const ctx = new (window.AudioContext || window.webkitAudioContext)();
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(440, ctx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(880, ctx.currentTime + 1.0);
+            gain.gain.setValueAtTime(0.3, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 1.5);
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start();
+            osc.stop(ctx.currentTime + 1.5);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+# Environment files & secret overrides
+.env
+.env.*
+!.env.example
+*.env
+
+# API Keys, Tokens & Credentials
+*.key
+*.pem
+*.pkcs12
+*.pfx
+*.p12
+*.crt
+*.cert
+*.cer
+*.token
+*token*.json
+credentials.json
+secrets/
+*.secret
+*.secrets
+service_account*.json
+id_rsa*
+id_ed25519*
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Large binary datasets, rasters & model checkpoints
+*.tif
+*.tiff
+*.h5
+*.hdf5
+*.nc
+data/raw/
+data/processed/cache/
+*.joblib
+*.pt
+*.onnx
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Frontend build & dependencies
+node_modules/
+dist/
+.vercel/
+
+# Test & coverage caches
+.pytest_cache/
+coverage/
+
+# Database backups & local files
+backups/
+*.db
+*.db*
+*.sqlite
+*.sqlite3
+*.bak
+*.backup
+

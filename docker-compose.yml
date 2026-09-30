@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  floody-shield-postgis:
+    image: postgis/postgis:15-3.3-alpine
+    container_name: floody-shield-postgis
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: floody_shield
+      POSTGRES_USER: floody_user
+      POSTGRES_PASSWORD: floody_secret_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgis_data:/var/lib/postgresql/data
+      - ./gis/natural_dam/export/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U floody_user -d floody_shield"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  floody-shield-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: floody-shield-api
+    restart: unless-stopped
+    depends_on:
+      floody-shield-postgis:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://floody_user:floody_secret_password@floody-shield-postgis:5432/floody_shield
+      APP_ENV: production
+      LOG_LEVEL: INFO
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+
+volumes:
+  postgis_data:

@@ -1,0 +1,20 @@
+{
+  "issue_time_utc": "2026-09-19T19:54:02Z",
+  "last_observation_time_utc": "2026-09-19T14:30:00",
+  "forecast_horizon_minutes": 180,
+  "lead_steps": [
+    30,
+    60,
+    90,
+    120,
+    150,
+    180
+  ],
+  "ensemble_members": 10,
+  "motion_method": "vet",
+  "max_det_forecast_rate": 0.0,
+  "max_ens_mean_rate": 0.0,
+  "max_ens_p90_rate": 0.0,
+  "max_prob_exceed_5mm": 0.0,
+  "scientific_disclaimer": "Experimental prototype based on satellite observations."
+}

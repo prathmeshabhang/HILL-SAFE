@@ -1,0 +1,3312 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "layer_name": "Candidate Lower-Hazard Development Zones",
+    "study_area": "Upper Beas Basin (Kullu\u2013Manali)",
+    "timestamp": "2026-07-15T10:30:00Z",
+    "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+    "feature_count": 66
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8,
+              32.36
+            ],
+            [
+              76.8325,
+              32.36
+            ],
+            [
+              76.8325,
+              32.4
+            ],
+            [
+              76.8,
+              32.4
+            ],
+            [
+              76.8,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_001",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.145,
+        "landslide_risk": 0.109,
+        "development_pressure": 0.131,
+        "development_hazard_risk": 0.025,
+        "multi_hazard_risk": 0.212,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8325,
+              32.36
+            ],
+            [
+              76.865,
+              32.36
+            ],
+            [
+              76.865,
+              32.4
+            ],
+            [
+              76.8325,
+              32.4
+            ],
+            [
+              76.8325,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_002",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.141,
+        "landslide_risk": 0.115,
+        "development_pressure": 0.131,
+        "development_hazard_risk": 0.025,
+        "multi_hazard_risk": 0.218,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.865,
+              32.36
+            ],
+            [
+              76.8975,
+              32.36
+            ],
+            [
+              76.8975,
+              32.4
+            ],
+            [
+              76.865,
+              32.4
+            ],
+            [
+              76.865,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_003",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.158,
+        "landslide_risk": 0.077,
+        "development_pressure": 0.151,
+        "development_hazard_risk": 0.029,
+        "multi_hazard_risk": 0.197,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8975,
+              32.36
+            ],
+            [
+              76.92999999999999,
+              32.36
+            ],
+            [
+              76.92999999999999,
+              32.4
+            ],
+            [
+              76.8975,
+              32.4
+            ],
+            [
+              76.8975,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_004",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.159,
+        "landslide_risk": 0.08,
+        "development_pressure": 0.151,
+        "development_hazard_risk": 0.029,
+        "multi_hazard_risk": 0.199,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92999999999999,
+              32.36
+            ],
+            [
+              76.9625,
+              32.36
+            ],
+            [
+              76.9625,
+              32.4
+            ],
+            [
+              76.92999999999999,
+              32.4
+            ],
+            [
+              76.92999999999999,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_005",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.167,
+        "landslide_risk": 0.074,
+        "development_pressure": 0.159,
+        "development_hazard_risk": 0.032,
+        "multi_hazard_risk": 0.205,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9625,
+              32.36
+            ],
+            [
+              76.995,
+              32.36
+            ],
+            [
+              76.995,
+              32.4
+            ],
+            [
+              76.9625,
+              32.4
+            ],
+            [
+              76.9625,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_006",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.159,
+        "landslide_risk": 0.082,
+        "development_pressure": 0.148,
+        "development_hazard_risk": 0.029,
+        "multi_hazard_risk": 0.202,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.995,
+              32.36
+            ],
+            [
+              77.0275,
+              32.36
+            ],
+            [
+              77.0275,
+              32.4
+            ],
+            [
+              76.995,
+              32.4
+            ],
+            [
+              76.995,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_007",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.155,
+        "landslide_risk": 0.096,
+        "development_pressure": 0.14,
+        "development_hazard_risk": 0.028,
+        "multi_hazard_risk": 0.209,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0275,
+              32.36
+            ],
+            [
+              77.06,
+              32.36
+            ],
+            [
+              77.06,
+              32.4
+            ],
+            [
+              77.0275,
+              32.4
+            ],
+            [
+              77.0275,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_008",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.149,
+        "landslide_risk": 0.118,
+        "development_pressure": 0.126,
+        "development_hazard_risk": 0.025,
+        "multi_hazard_risk": 0.222,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.06,
+              32.36
+            ],
+            [
+              77.0925,
+              32.36
+            ],
+            [
+              77.0925,
+              32.4
+            ],
+            [
+              77.06,
+              32.4
+            ],
+            [
+              77.06,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_009",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.152,
+        "landslide_risk": 0.174,
+        "development_pressure": 0.101,
+        "development_hazard_risk": 0.022,
+        "multi_hazard_risk": 0.269,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19,
+              32.36
+            ],
+            [
+              77.2225,
+              32.36
+            ],
+            [
+              77.2225,
+              32.4
+            ],
+            [
+              77.19,
+              32.4
+            ],
+            [
+              77.19,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_010",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.352,
+        "landslide_risk": 0.081,
+        "development_pressure": 0.151,
+        "development_hazard_risk": 0.059,
+        "multi_hazard_risk": 0.373,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2225,
+              32.36
+            ],
+            [
+              77.255,
+              32.36
+            ],
+            [
+              77.255,
+              32.4
+            ],
+            [
+              77.2225,
+              32.4
+            ],
+            [
+              77.2225,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_011",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.263,
+        "landslide_risk": 0.089,
+        "development_pressure": 0.148,
+        "development_hazard_risk": 0.044,
+        "multi_hazard_risk": 0.294,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.255,
+              32.36
+            ],
+            [
+              77.2875,
+              32.36
+            ],
+            [
+              77.2875,
+              32.4
+            ],
+            [
+              77.255,
+              32.4
+            ],
+            [
+              77.255,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_012",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.187,
+        "landslide_risk": 0.095,
+        "development_pressure": 0.139,
+        "development_hazard_risk": 0.032,
+        "multi_hazard_risk": 0.235,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2875,
+              32.36
+            ],
+            [
+              77.32000000000001,
+              32.36
+            ],
+            [
+              77.32000000000001,
+              32.4
+            ],
+            [
+              77.2875,
+              32.4
+            ],
+            [
+              77.2875,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_013",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.152,
+        "landslide_risk": 0.109,
+        "development_pressure": 0.128,
+        "development_hazard_risk": 0.025,
+        "multi_hazard_risk": 0.218,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.32000000000001,
+              32.36
+            ],
+            [
+              77.3525,
+              32.36
+            ],
+            [
+              77.3525,
+              32.4
+            ],
+            [
+              77.32000000000001,
+              32.4
+            ],
+            [
+              77.32000000000001,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_014",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.142,
+        "landslide_risk": 0.117,
+        "development_pressure": 0.13,
+        "development_hazard_risk": 0.025,
+        "multi_hazard_risk": 0.219,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.3525,
+              32.36
+            ],
+            [
+              77.385,
+              32.36
+            ],
+            [
+              77.385,
+              32.4
+            ],
+            [
+              77.3525,
+              32.4
+            ],
+            [
+              77.3525,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_015",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.151,
+        "landslide_risk": 0.082,
+        "development_pressure": 0.145,
+        "development_hazard_risk": 0.027,
+        "multi_hazard_risk": 0.196,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.385,
+              32.36
+            ],
+            [
+              77.4175,
+              32.36
+            ],
+            [
+              77.4175,
+              32.4
+            ],
+            [
+              77.385,
+              32.4
+            ],
+            [
+              77.385,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_016",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.163,
+        "landslide_risk": 0.074,
+        "development_pressure": 0.157,
+        "development_hazard_risk": 0.031,
+        "multi_hazard_risk": 0.2,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.4175,
+              32.36
+            ],
+            [
+              77.45,
+              32.36
+            ],
+            [
+              77.45,
+              32.4
+            ],
+            [
+              77.4175,
+              32.4
+            ],
+            [
+              77.4175,
+              32.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_017",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.166,
+        "landslide_risk": 0.063,
+        "development_pressure": 0.159,
+        "development_hazard_risk": 0.031,
+        "multi_hazard_risk": 0.192,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8,
+              32.32
+            ],
+            [
+              76.8325,
+              32.32
+            ],
+            [
+              76.8325,
+              32.36
+            ],
+            [
+              76.8,
+              32.36
+            ],
+            [
+              76.8,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_018",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.152,
+        "landslide_risk": 0.112,
+        "development_pressure": 0.127,
+        "development_hazard_risk": 0.026,
+        "multi_hazard_risk": 0.218,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8325,
+              32.32
+            ],
+            [
+              76.865,
+              32.32
+            ],
+            [
+              76.865,
+              32.36
+            ],
+            [
+              76.8325,
+              32.36
+            ],
+            [
+              76.8325,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_019",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.153,
+        "landslide_risk": 0.092,
+        "development_pressure": 0.139,
+        "development_hazard_risk": 0.027,
+        "multi_hazard_risk": 0.208,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.865,
+              32.32
+            ],
+            [
+              76.8975,
+              32.32
+            ],
+            [
+              76.8975,
+              32.36
+            ],
+            [
+              76.865,
+              32.36
+            ],
+            [
+              76.865,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_020",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.154,
+        "landslide_risk": 0.082,
+        "development_pressure": 0.145,
+        "development_hazard_risk": 0.028,
+        "multi_hazard_risk": 0.198,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8975,
+              32.32
+            ],
+            [
+              76.92999999999999,
+              32.32
+            ],
+            [
+              76.92999999999999,
+              32.36
+            ],
+            [
+              76.8975,
+              32.36
+            ],
+            [
+              76.8975,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_021",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.155,
+        "landslide_risk": 0.081,
+        "development_pressure": 0.147,
+        "development_hazard_risk": 0.028,
+        "multi_hazard_risk": 0.199,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92999999999999,
+              32.32
+            ],
+            [
+              76.9625,
+              32.32
+            ],
+            [
+              76.9625,
+              32.36
+            ],
+            [
+              76.92999999999999,
+              32.36
+            ],
+            [
+              76.92999999999999,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_022",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.159,
+        "landslide_risk": 0.08,
+        "development_pressure": 0.149,
+        "development_hazard_risk": 0.029,
+        "multi_hazard_risk": 0.199,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9625,
+              32.32
+            ],
+            [
+              76.995,
+              32.32
+            ],
+            [
+              76.995,
+              32.36
+            ],
+            [
+              76.9625,
+              32.36
+            ],
+            [
+              76.9625,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_023",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.155,
+        "landslide_risk": 0.091,
+        "development_pressure": 0.142,
+        "development_hazard_risk": 0.028,
+        "multi_hazard_risk": 0.207,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.995,
+              32.32
+            ],
+            [
+              77.0275,
+              32.32
+            ],
+            [
+              77.0275,
+              32.36
+            ],
+            [
+              76.995,
+              32.36
+            ],
+            [
+              76.995,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_024",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.147,
+        "landslide_risk": 0.13,
+        "development_pressure": 0.126,
+        "development_hazard_risk": 0.025,
+        "multi_hazard_risk": 0.233,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0275,
+              32.32
+            ],
+            [
+              77.06,
+              32.32
+            ],
+            [
+              77.06,
+              32.36
+            ],
+            [
+              77.0275,
+              32.36
+            ],
+            [
+              77.0275,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_025",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.161,
+        "landslide_risk": 0.12,
+        "development_pressure": 0.127,
+        "development_hazard_risk": 0.027,
+        "multi_hazard_risk": 0.233,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.06,
+              32.32
+            ],
+            [
+              77.0925,
+              32.32
+            ],
+            [
+              77.0925,
+              32.36
+            ],
+            [
+              77.06,
+              32.36
+            ],
+            [
+              77.06,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_026",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.208,
+        "landslide_risk": 0.122,
+        "development_pressure": 0.127,
+        "development_hazard_risk": 0.034,
+        "multi_hazard_risk": 0.273,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.255,
+              32.32
+            ],
+            [
+              77.2875,
+              32.32
+            ],
+            [
+              77.2875,
+              32.36
+            ],
+            [
+              77.255,
+              32.36
+            ],
+            [
+              77.255,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_027",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.257,
+        "landslide_risk": 0.116,
+        "development_pressure": 0.128,
+        "development_hazard_risk": 0.039,
+        "multi_hazard_risk": 0.307,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2875,
+              32.32
+            ],
+            [
+              77.32000000000001,
+              32.32
+            ],
+            [
+              77.32000000000001,
+              32.36
+            ],
+            [
+              77.2875,
+              32.36
+            ],
+            [
+              77.2875,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_028",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.17,
+        "landslide_risk": 0.118,
+        "development_pressure": 0.127,
+        "development_hazard_risk": 0.028,
+        "multi_hazard_risk": 0.24,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.32000000000001,
+              32.32
+            ],
+            [
+              77.3525,
+              32.32
+            ],
+            [
+              77.3525,
+              32.36
+            ],
+            [
+              77.32000000000001,
+              32.36
+            ],
+            [
+              77.32000000000001,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_029",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.146,
+        "landslide_risk": 0.116,
+        "development_pressure": 0.124,
+        "development_hazard_risk": 0.024,
+        "multi_hazard_risk": 0.219,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.3525,
+              32.32
+            ],
+            [
+              77.385,
+              32.32
+            ],
+            [
+              77.385,
+              32.36
+            ],
+            [
+              77.3525,
+              32.36
+            ],
+            [
+              77.3525,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_030",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.147,
+        "landslide_risk": 0.099,
+        "development_pressure": 0.135,
+        "development_hazard_risk": 0.026,
+        "multi_hazard_risk": 0.207,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.385,
+              32.32
+            ],
+            [
+              77.4175,
+              32.32
+            ],
+            [
+              77.4175,
+              32.36
+            ],
+            [
+              77.385,
+              32.36
+            ],
+            [
+              77.385,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_031",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.155,
+        "landslide_risk": 0.08,
+        "development_pressure": 0.146,
+        "development_hazard_risk": 0.028,
+        "multi_hazard_risk": 0.196,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.4175,
+              32.32
+            ],
+            [
+              77.45,
+              32.32
+            ],
+            [
+              77.45,
+              32.36
+            ],
+            [
+              77.4175,
+              32.36
+            ],
+            [
+              77.4175,
+              32.32
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_032",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.161,
+        "landslide_risk": 0.082,
+        "development_pressure": 0.148,
+        "development_hazard_risk": 0.029,
+        "multi_hazard_risk": 0.206,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8,
+              32.28
+            ],
+            [
+              76.8325,
+              32.28
+            ],
+            [
+              76.8325,
+              32.32
+            ],
+            [
+              76.8,
+              32.32
+            ],
+            [
+              76.8,
+              32.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_033",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.196,
+        "landslide_risk": 0.126,
+        "development_pressure": 0.124,
+        "development_hazard_risk": 0.031,
+        "multi_hazard_risk": 0.268,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8325,
+              32.28
+            ],
+            [
+              76.865,
+              32.28
+            ],
+            [
+              76.865,
+              32.32
+            ],
+            [
+              76.8325,
+              32.32
+            ],
+            [
+              76.8325,
+              32.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_034",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.159,
+        "landslide_risk": 0.109,
+        "development_pressure": 0.13,
+        "development_hazard_risk": 0.027,
+        "multi_hazard_risk": 0.223,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.865,
+              32.28
+            ],
+            [
+              76.8975,
+              32.28
+            ],
+            [
+              76.8975,
+              32.32
+            ],
+            [
+              76.865,
+              32.32
+            ],
+            [
+              76.865,
+              32.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_035",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.156,
+        "landslide_risk": 0.106,
+        "development_pressure": 0.136,
+        "development_hazard_risk": 0.028,
+        "multi_hazard_risk": 0.221,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8975,
+              32.28
+            ],
+            [
+              76.92999999999999,
+              32.28
+            ],
+            [
+              76.92999999999999,
+              32.32
+            ],
+            [
+              76.8975,
+              32.32
+            ],
+            [
+              76.8975,
+              32.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_036",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.165,
+        "landslide_risk": 0.077,
+        "development_pressure": 0.15,
+        "development_hazard_risk": 0.03,
+        "multi_hazard_risk": 0.204,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92999999999999,
+              32.28
+            ],
+            [
+              76.9625,
+              32.28
+            ],
+            [
+              76.9625,
+              32.32
+            ],
+            [
+              76.92999999999999,
+              32.32
+            ],
+            [
+              76.92999999999999,
+              32.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_037",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.16,
+        "landslide_risk": 0.093,
+        "development_pressure": 0.143,
+        "development_hazard_risk": 0.029,
+        "multi_hazard_risk": 0.215,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9625,
+              32.28
+            ],
+            [
+              76.995,
+              32.28
+            ],
+            [
+              76.995,
+              32.32
+            ],
+            [
+              76.9625,
+              32.32
+            ],
+            [
+              76.9625,
+              32.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_038",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.156,
+        "landslide_risk": 0.112,
+        "development_pressure": 0.132,
+        "development_hazard_risk": 0.027,
+        "multi_hazard_risk": 0.225,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.995,
+              32.28
+            ],
+            [
+              77.0275,
+              32.28
+            ],
+            [
+              77.0275,
+              32.32
+            ],
+            [
+              76.995,
+              32.32
+            ],
+            [
+              76.995,
+              32.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_039",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.158,
+        "landslide_risk": 0.129,
+        "development_pressure": 0.121,
+        "development_hazard_risk": 0.026,
+        "multi_hazard_risk": 0.238,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0275,
+              32.28
+            ],
+            [
+              77.06,
+              32.28
+            ],
+            [
+              77.06,
+              32.32
+            ],
+            [
+              77.0275,
+              32.32
+            ],
+            [
+              77.0275,
+              32.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_040",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.21,
+        "landslide_risk": 0.134,
+        "development_pressure": 0.121,
+        "development_hazard_risk": 0.033,
+        "multi_hazard_risk": 0.284,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2875,
+              32.28
+            ],
+            [
+              77.32000000000001,
+              32.28
+            ],
+            [
+              77.32000000000001,
+              32.32
+            ],
+            [
+              77.2875,
+              32.32
+            ],
+            [
+              77.2875,
+              32.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_041",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.285,
+        "landslide_risk": 0.132,
+        "development_pressure": 0.122,
+        "development_hazard_risk": 0.041,
+        "multi_hazard_risk": 0.336,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.32000000000001,
+              32.28
+            ],
+            [
+              77.3525,
+              32.28
+            ],
+            [
+              77.3525,
+              32.32
+            ],
+            [
+              77.32000000000001,
+              32.32
+            ],
+            [
+              77.32000000000001,
+              32.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_042",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.177,
+        "landslide_risk": 0.12,
+        "development_pressure": 0.126,
+        "development_hazard_risk": 0.029,
+        "multi_hazard_risk": 0.245,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.3525,
+              32.28
+            ],
+            [
+              77.385,
+              32.28
+            ],
+            [
+              77.385,
+              32.32
+            ],
+            [
+              77.3525,
+              32.32
+            ],
+            [
+              77.3525,
+              32.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_043",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.155,
+        "landslide_risk": 0.119,
+        "development_pressure": 0.128,
+        "development_hazard_risk": 0.026,
+        "multi_hazard_risk": 0.231,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.385,
+              32.28
+            ],
+            [
+              77.4175,
+              32.28
+            ],
+            [
+              77.4175,
+              32.32
+            ],
+            [
+              77.385,
+              32.32
+            ],
+            [
+              77.385,
+              32.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_044",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.151,
+        "landslide_risk": 0.106,
+        "development_pressure": 0.133,
+        "development_hazard_risk": 0.026,
+        "multi_hazard_risk": 0.217,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.4175,
+              32.28
+            ],
+            [
+              77.45,
+              32.28
+            ],
+            [
+              77.45,
+              32.32
+            ],
+            [
+              77.4175,
+              32.32
+            ],
+            [
+              77.4175,
+              32.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_045",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.178,
+        "landslide_risk": 0.087,
+        "development_pressure": 0.149,
+        "development_hazard_risk": 0.033,
+        "multi_hazard_risk": 0.224,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8,
+              32.24
+            ],
+            [
+              76.8325,
+              32.24
+            ],
+            [
+              76.8325,
+              32.28
+            ],
+            [
+              76.8,
+              32.28
+            ],
+            [
+              76.8,
+              32.24
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_046",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.379,
+        "landslide_risk": 0.15,
+        "development_pressure": 0.122,
+        "development_hazard_risk": 0.051,
+        "multi_hazard_risk": 0.425,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8325,
+              32.24
+            ],
+            [
+              76.865,
+              32.24
+            ],
+            [
+              76.865,
+              32.28
+            ],
+            [
+              76.8325,
+              32.28
+            ],
+            [
+              76.8325,
+              32.24
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_047",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.216,
+        "landslide_risk": 0.123,
+        "development_pressure": 0.121,
+        "development_hazard_risk": 0.032,
+        "multi_hazard_risk": 0.277,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.865,
+              32.24
+            ],
+            [
+              76.8975,
+              32.24
+            ],
+            [
+              76.8975,
+              32.28
+            ],
+            [
+              76.865,
+              32.28
+            ],
+            [
+              76.865,
+              32.24
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_048",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.183,
+        "landslide_risk": 0.109,
+        "development_pressure": 0.135,
+        "development_hazard_risk": 0.031,
+        "multi_hazard_risk": 0.243,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8975,
+              32.24
+            ],
+            [
+              76.92999999999999,
+              32.24
+            ],
+            [
+              76.92999999999999,
+              32.28
+            ],
+            [
+              76.8975,
+              32.28
+            ],
+            [
+              76.8975,
+              32.24
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_049",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.176,
+        "landslide_risk": 0.088,
+        "development_pressure": 0.142,
+        "development_hazard_risk": 0.03,
+        "multi_hazard_risk": 0.221,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92999999999999,
+              32.24
+            ],
+            [
+              76.9625,
+              32.24
+            ],
+            [
+              76.9625,
+              32.28
+            ],
+            [
+              76.92999999999999,
+              32.28
+            ],
+            [
+              76.92999999999999,
+              32.24
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_050",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.177,
+        "landslide_risk": 0.103,
+        "development_pressure": 0.138,
+        "development_hazard_risk": 0.031,
+        "multi_hazard_risk": 0.236,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9625,
+              32.24
+            ],
+            [
+              76.995,
+              32.24
+            ],
+            [
+              76.995,
+              32.28
+            ],
+            [
+              76.9625,
+              32.28
+            ],
+            [
+              76.9625,
+              32.24
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_051",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.187,
+        "landslide_risk": 0.111,
+        "development_pressure": 0.132,
+        "development_hazard_risk": 0.031,
+        "multi_hazard_risk": 0.247,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.995,
+              32.24
+            ],
+            [
+              77.0275,
+              32.24
+            ],
+            [
+              77.0275,
+              32.28
+            ],
+            [
+              76.995,
+              32.28
+            ],
+            [
+              76.995,
+              32.24
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_052",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.248,
+        "landslide_risk": 0.118,
+        "development_pressure": 0.127,
+        "development_hazard_risk": 0.039,
+        "multi_hazard_risk": 0.302,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.32000000000001,
+              32.24
+            ],
+            [
+              77.3525,
+              32.24
+            ],
+            [
+              77.3525,
+              32.28
+            ],
+            [
+              77.32000000000001,
+              32.28
+            ],
+            [
+              77.32000000000001,
+              32.24
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_053",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.272,
+        "landslide_risk": 0.152,
+        "development_pressure": 0.148,
+        "development_hazard_risk": 0.045,
+        "multi_hazard_risk": 0.335,
+        "confidence": 0.507,
+        "uncertainty": 0.493,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.3525,
+              32.24
+            ],
+            [
+              77.385,
+              32.24
+            ],
+            [
+              77.385,
+              32.28
+            ],
+            [
+              77.3525,
+              32.28
+            ],
+            [
+              77.3525,
+              32.24
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_054",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.166,
+        "landslide_risk": 0.134,
+        "development_pressure": 0.256,
+        "development_hazard_risk": 0.059,
+        "multi_hazard_risk": 0.245,
+        "confidence": 0.195,
+        "uncertainty": 0.805,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.385,
+              32.24
+            ],
+            [
+              77.4175,
+              32.24
+            ],
+            [
+              77.4175,
+              32.28
+            ],
+            [
+              77.385,
+              32.28
+            ],
+            [
+              77.385,
+              32.24
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_055",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.178,
+        "landslide_risk": 0.115,
+        "development_pressure": 0.196,
+        "development_hazard_risk": 0.046,
+        "multi_hazard_risk": 0.244,
+        "confidence": 0.67,
+        "uncertainty": 0.33,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.4175,
+              32.24
+            ],
+            [
+              77.45,
+              32.24
+            ],
+            [
+              77.45,
+              32.28
+            ],
+            [
+              77.4175,
+              32.28
+            ],
+            [
+              77.4175,
+              32.24
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_056",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.221,
+        "landslide_risk": 0.083,
+        "development_pressure": 0.147,
+        "development_hazard_risk": 0.039,
+        "multi_hazard_risk": 0.258,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.865,
+              32.2
+            ],
+            [
+              76.8975,
+              32.2
+            ],
+            [
+              76.8975,
+              32.24
+            ],
+            [
+              76.865,
+              32.24
+            ],
+            [
+              76.865,
+              32.2
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_057",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.336,
+        "landslide_risk": 0.111,
+        "development_pressure": 0.133,
+        "development_hazard_risk": 0.051,
+        "multi_hazard_risk": 0.372,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.8975,
+              32.2
+            ],
+            [
+              76.92999999999999,
+              32.2
+            ],
+            [
+              76.92999999999999,
+              32.24
+            ],
+            [
+              76.8975,
+              32.24
+            ],
+            [
+              76.8975,
+              32.2
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_058",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.272,
+        "landslide_risk": 0.103,
+        "development_pressure": 0.136,
+        "development_hazard_risk": 0.043,
+        "multi_hazard_risk": 0.314,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92999999999999,
+              32.2
+            ],
+            [
+              76.9625,
+              32.2
+            ],
+            [
+              76.9625,
+              32.24
+            ],
+            [
+              76.92999999999999,
+              32.24
+            ],
+            [
+              76.92999999999999,
+              32.2
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_059",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.276,
+        "landslide_risk": 0.097,
+        "development_pressure": 0.14,
+        "development_hazard_risk": 0.045,
+        "multi_hazard_risk": 0.316,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9625,
+              32.2
+            ],
+            [
+              76.995,
+              32.2
+            ],
+            [
+              76.995,
+              32.24
+            ],
+            [
+              76.9625,
+              32.24
+            ],
+            [
+              76.9625,
+              32.2
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_060",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.353,
+        "landslide_risk": 0.12,
+        "development_pressure": 0.13,
+        "development_hazard_risk": 0.054,
+        "multi_hazard_risk": 0.399,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.32000000000001,
+              32.2
+            ],
+            [
+              77.3525,
+              32.2
+            ],
+            [
+              77.3525,
+              32.24
+            ],
+            [
+              77.32000000000001,
+              32.24
+            ],
+            [
+              77.32000000000001,
+              32.2
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_061",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.34,
+        "landslide_risk": 0.251,
+        "development_pressure": 0.216,
+        "development_hazard_risk": 0.082,
+        "multi_hazard_risk": 0.464,
+        "confidence": 0.426,
+        "uncertainty": 0.574,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.3525,
+              32.2
+            ],
+            [
+              77.385,
+              32.2
+            ],
+            [
+              77.385,
+              32.24
+            ],
+            [
+              77.3525,
+              32.24
+            ],
+            [
+              77.3525,
+              32.2
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_062",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.169,
+        "landslide_risk": 0.162,
+        "development_pressure": 0.31,
+        "development_hazard_risk": 0.078,
+        "multi_hazard_risk": 0.268,
+        "confidence": 0.1,
+        "uncertainty": 0.9,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.385,
+              32.2
+            ],
+            [
+              77.4175,
+              32.2
+            ],
+            [
+              77.4175,
+              32.24
+            ],
+            [
+              77.385,
+              32.24
+            ],
+            [
+              77.385,
+              32.2
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_063",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.221,
+        "landslide_risk": 0.115,
+        "development_pressure": 0.274,
+        "development_hazard_risk": 0.069,
+        "multi_hazard_risk": 0.277,
+        "confidence": 0.294,
+        "uncertainty": 0.706,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.4175,
+              32.2
+            ],
+            [
+              77.45,
+              32.2
+            ],
+            [
+              77.45,
+              32.24
+            ],
+            [
+              77.4175,
+              32.24
+            ],
+            [
+              77.4175,
+              32.2
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_064",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.332,
+        "landslide_risk": 0.088,
+        "development_pressure": 0.14,
+        "development_hazard_risk": 0.052,
+        "multi_hazard_risk": 0.359,
+        "confidence": 0.98,
+        "uncertainty": 0.02,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.3525,
+              32.16
+            ],
+            [
+              77.385,
+              32.16
+            ],
+            [
+              77.385,
+              32.2
+            ],
+            [
+              77.3525,
+              32.2
+            ],
+            [
+              77.3525,
+              32.16
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_065",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.36,
+        "landslide_risk": 0.251,
+        "development_pressure": 0.226,
+        "development_hazard_risk": 0.084,
+        "multi_hazard_risk": 0.474,
+        "confidence": 0.477,
+        "uncertainty": 0.523,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.385,
+              32.16
+            ],
+            [
+              77.4175,
+              32.16
+            ],
+            [
+              77.4175,
+              32.2
+            ],
+            [
+              77.385,
+              32.2
+            ],
+            [
+              77.385,
+              32.16
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "CLH_066",
+        "zone_type": "CANDIDATE_LOWER_HAZARD_ZONE",
+        "risk_category": "LOW",
+        "flood_risk": 0.534,
+        "landslide_risk": 0.207,
+        "development_pressure": 0.177,
+        "development_hazard_risk": 0.096,
+        "multi_hazard_risk": 0.604,
+        "confidence": 0.771,
+        "uncertainty": 0.229,
+        "constraints": [
+          "slope_below_18_deg",
+          "hand_above_20m_from_riverbed",
+          "low_twi_drainage_shedding"
+        ],
+        "statutory_disclaimer": "Candidate zone identified from available geospatial evidence. This is not a substitute for field investigation, engineering assessment, environmental clearance, or statutory planning approval.",
+        "last_observation": "2026-07-15T10:30:00Z",
+        "model_version": "FLOODY_SHIELD_SATELLITE_V1.0"
+      }
+    }
+  ]
+}

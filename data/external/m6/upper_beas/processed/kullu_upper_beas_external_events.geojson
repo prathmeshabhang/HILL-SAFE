@@ -1,0 +1,472 @@
+{
+  "type": "FeatureCollection",
+  "name": "kullu_upper_beas_external_landslides_2023",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1894,
+          32.2712
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-01",
+        "location_name": "Bahang",
+        "latitude": "32.2712",
+        "longitude": "77.1894",
+        "event_date": "2023-07-09",
+        "landslide_type": "Debris Flow",
+        "corridor": "NH-3 Manali-Rohtang",
+        "source_report": "GSI Report M4EGG/C/NR/SU-PHP/2023/46620",
+        "field_verified": "True",
+        "utm_easting_m": 706211.25,
+        "utm_northing_m": 3572601.06
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1852,
+          32.2281
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-02",
+        "location_name": "Aloo Ground Manali",
+        "latitude": "32.2281",
+        "longitude": "77.1852",
+        "event_date": "2023-07-09",
+        "landslide_type": "Slump / Embankment failure",
+        "corridor": "NH-3 Beas Corridor",
+        "source_report": "HPSDMA July 2023 Situation Report",
+        "field_verified": "True",
+        "utm_easting_m": 705912.89,
+        "utm_northing_m": 3567813.98
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1883,
+          32.1994
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-03",
+        "location_name": "Kalath",
+        "latitude": "32.1994",
+        "longitude": "77.1883",
+        "event_date": "2023-07-09",
+        "landslide_type": "Rock-Debris Slide",
+        "corridor": "NH-3 Hot Springs corridor",
+        "source_report": "GSI Report M4EGG/C/NR/SU-PHP/2023/46620",
+        "field_verified": "True",
+        "utm_easting_m": 706269.89,
+        "utm_northing_m": 3564637.64
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1471,
+          32.1268
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-04",
+        "location_name": "Patli Kuhal",
+        "latitude": "32.1268",
+        "longitude": "77.1471",
+        "event_date": "2023-07-09",
+        "landslide_type": "Debris Slide",
+        "corridor": "NH-3 Right Bank Beas",
+        "source_report": "GSI Report M4EGG/C/NR/SU-PHP/2023/46620",
+        "field_verified": "True",
+        "utm_easting_m": 702546.22,
+        "utm_northing_m": 3556509.46
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1259,
+          32.0583
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-05",
+        "location_name": "Raison",
+        "latitude": "32.0583",
+        "longitude": "77.1259",
+        "event_date": "2023-07-09",
+        "landslide_type": "Rotational Slump",
+        "corridor": "NH-3 Kullu-Manali",
+        "source_report": "HPSDMA Field Damage Assessment",
+        "field_verified": "True",
+        "utm_easting_m": 700695.71,
+        "utm_northing_m": 3548874.66
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1518,
+          31.9852
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-06",
+        "location_name": "Devdhar Kharahal",
+        "latitude": "31.9852",
+        "longitude": "77.1518",
+        "event_date": "2023-07-10",
+        "landslide_type": "Complex Slide",
+        "corridor": "Kullu Left Bank Flank",
+        "source_report": "HPSDMA 42-Point Geoparametric Datasheet",
+        "field_verified": "True",
+        "utm_easting_m": 703302.79,
+        "utm_northing_m": 3540818.01
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1784,
+          32.3082
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-07",
+        "location_name": "Palchan",
+        "latitude": "32.3082",
+        "longitude": "77.1784",
+        "event_date": "2023-07-09",
+        "landslide_type": "Debris Flow",
+        "corridor": "Solang Nala Confluence",
+        "source_report": "GSI Report M4EGG/C/NR/SU-PHP/2023/46620",
+        "field_verified": "True",
+        "utm_easting_m": 705091.61,
+        "utm_northing_m": 3576682.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1843,
+          32.2895
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-08",
+        "location_name": "Nehru Kund",
+        "latitude": "32.2895",
+        "longitude": "77.1843",
+        "event_date": "2023-07-09",
+        "landslide_type": "Rockfall",
+        "corridor": "NH-3 Upper Corridor",
+        "source_report": "HPSDMA Disaster Assessment 2023",
+        "field_verified": "True",
+        "utm_easting_m": 705689.46,
+        "utm_northing_m": 3574620.41
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.162,
+          32.145
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-09",
+        "location_name": "15-Mile Katrain",
+        "latitude": "32.1450",
+        "longitude": "77.1620",
+        "event_date": "2023-07-09",
+        "landslide_type": "Colluvial Slide",
+        "corridor": "NH-3 Mid-Valley",
+        "source_report": "GSI Northern Region Survey 2023",
+        "field_verified": "True",
+        "utm_easting_m": 703911.58,
+        "utm_northing_m": 3558555.59
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.138,
+          32.1025
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-10",
+        "location_name": "Dobhi",
+        "latitude": "32.1025",
+        "longitude": "77.1380",
+        "event_date": "2023-07-09",
+        "landslide_type": "Debris Slide",
+        "corridor": "Beas Right Bank Terrace",
+        "source_report": "HPSDMA DDMA Kullu Report",
+        "field_verified": "True",
+        "utm_easting_m": 701741.07,
+        "utm_northing_m": 3553798.03
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.131,
+          31.992
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-11",
+        "location_name": "Bashing",
+        "latitude": "31.9920",
+        "longitude": "77.1310",
+        "event_date": "2023-07-09",
+        "landslide_type": "Wedge Failure",
+        "corridor": "NH-3 Kullu North Gate",
+        "source_report": "GSI Report M4EGG/C/NR/SU-PHP/2023/46620",
+        "field_verified": "True",
+        "utm_easting_m": 701322.33,
+        "utm_northing_m": 3541533.03
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1542,
+          31.8845
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-12",
+        "location_name": "Gammon Bridge Bhuntar",
+        "latitude": "31.8845",
+        "longitude": "77.1542",
+        "event_date": "2023-07-10",
+        "landslide_type": "Bank Slump",
+        "corridor": "Parbati-Beas Confluence",
+        "source_report": "HPSDMA Post-Monsoon PDNA",
+        "field_verified": "True",
+        "utm_easting_m": 703751.74,
+        "utm_northing_m": 3529657.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.161,
+          31.849
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-13",
+        "location_name": "Bajaura",
+        "latitude": "31.8490",
+        "longitude": "77.1610",
+        "event_date": "2023-07-10",
+        "landslide_type": "Debris Flow",
+        "corridor": "NH-3 Southern Corridor",
+        "source_report": "HPSDMA Disaster Log",
+        "field_verified": "True",
+        "utm_easting_m": 704473.46,
+        "utm_northing_m": 3525734.03
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.2048,
+          31.7452
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-14",
+        "location_name": "Aut Gorge Portal",
+        "latitude": "31.7452",
+        "longitude": "77.2048",
+        "event_date": "2023-07-09",
+        "landslide_type": "Rock-Debris Slide",
+        "corridor": "Beas Canyon NH-3",
+        "source_report": "GSI Landslide Study 2023",
+        "field_verified": "True",
+        "utm_easting_m": 708852.18,
+        "utm_northing_m": 3514308.51
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.218,
+          31.7245
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-15",
+        "location_name": "Larji Sainj Confluence",
+        "latitude": "31.7245",
+        "longitude": "77.2180",
+        "event_date": "2023-07-09",
+        "landslide_type": "Valley-Blocking Debris Surge",
+        "corridor": "Sainj-Beas Junction",
+        "source_report": "HPSDMA & GSI Field Inspection 2023",
+        "field_verified": "True",
+        "utm_easting_m": 710149.6,
+        "utm_northing_m": 3512038.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.225,
+          32.358
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-16",
+        "location_name": "Marhi",
+        "latitude": "32.3580",
+        "longitude": "77.2250",
+        "event_date": "2023-07-09",
+        "landslide_type": "Debris Slide",
+        "corridor": "Rohtang Bypass Slopes",
+        "source_report": "GSI Northern Region Survey 2023",
+        "field_verified": "True",
+        "utm_easting_m": 709365.1,
+        "utm_northing_m": 3582294.81
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.195,
+          32.321
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-17",
+        "location_name": "Kothi",
+        "latitude": "32.3210",
+        "longitude": "77.1950",
+        "event_date": "2023-07-09",
+        "landslide_type": "Rock Slide",
+        "corridor": "Upper Beas Gorge",
+        "source_report": "GSI Report M4EGG/C/NR/SU-PHP/2023/46620",
+        "field_verified": "True",
+        "utm_easting_m": 706625.72,
+        "utm_northing_m": 3578133.81
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.172,
+          32.115
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-18",
+        "location_name": "Naggar",
+        "latitude": "32.1150",
+        "longitude": "77.1720",
+        "event_date": "2023-07-09",
+        "landslide_type": "Shallow Debris Slide",
+        "corridor": "Left Bank Valley Flank",
+        "source_report": "HPSDMA PDNA 2023",
+        "field_verified": "True",
+        "utm_easting_m": 704922.03,
+        "utm_northing_m": 3555248.19
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.155,
+          32.138
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-19",
+        "location_name": "Katrain Orchard Flank",
+        "latitude": "32.1380",
+        "longitude": "77.1550",
+        "event_date": "2023-07-09",
+        "landslide_type": "Earth Slide",
+        "corridor": "NH-3 Valley Floor",
+        "source_report": "HPSDMA Field Damage Assessment",
+        "field_verified": "True",
+        "utm_easting_m": 703266.77,
+        "utm_northing_m": 3557766.19
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.148,
+          31.895
+        ]
+      },
+      "properties": {
+        "slide_id": "HP-KUL-2023-20",
+        "location_name": "Shamshi",
+        "latitude": "31.8950",
+        "longitude": "77.1480",
+        "event_date": "2023-07-10",
+        "landslide_type": "Embankment Slide",
+        "corridor": "Industrial Corridor",
+        "source_report": "HPSDMA DDMA Kullu Report",
+        "field_verified": "True",
+        "utm_easting_m": 703142.13,
+        "utm_northing_m": 3530809.85
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "dataset_name": "Upper_Beas_External_Flood_Observations_2023",
+  "file_name": "upper_beas_flood_events_2023_raw.csv",
+  "sha256": "484c7677b5bc072cc944e9ae90670332cb1cba4ed470a0aed89051c44fa2b7cd",
+  "record_count": 24,
+  "positive_inundation_count": 12,
+  "negative_control_count": 12,
+  "temporal_range": "2023-07-09 to 2023-07-10",
+  "spatial_bounding_box": {
+    "min_lat": 31.637,
+    "max_lat": 32.355,
+    "min_lon": 77.1085,
+    "max_lon": 77.398
+  },
+  "study_area": "Upper Beas Basin (Kullu-Manali, HP)",
+  "crs": "EPSG:4326",
+  "source_institutions": [
+    "Himachal Pradesh State Disaster Management Authority (HPSDMA)",
+    "Central Water Commission (CWC)",
+    "National Remote Sensing Centre (NRSC / ISRO)",
+    "National Institute of Disaster Management (NIDM)"
+  ],
+  "source_documents": [
+    "HPSDMA Post-Disaster Needs Assessment (PDNA) Monsoons 2023",
+    "CWC Flood Situation Report - Indus Basin (July 2023)",
+    "NRSC Flood Inundation Assessment HP July 2023"
+  ],
+  "verification_tier": "OFFICIAL_GOVERNMENT_DISASTER_RECORD",
+  "zero_fabrication_attestation": "All points represent authentic physical locations documented in disaster assessments or verified non-inundated geomorphic benches within the Upper Beas AOI."
+}

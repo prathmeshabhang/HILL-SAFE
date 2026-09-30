@@ -1,0 +1,122 @@
+{
+  "M2": {
+    "metric": "F1_Score",
+    "value": 0.6667,
+    "ci_lower_95": 0.4516,
+    "ci_upper_95": 0.8293,
+    "sample_size": 24,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M4": {
+    "metric": "IoU",
+    "value": 0.832,
+    "ci_lower_95": 0.785,
+    "ci_upper_95": 0.871,
+    "sample_size": 3,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M6": {
+    "metric": "AUROC",
+    "value": 0.1653,
+    "ci_lower_95": -0.05,
+    "ci_upper_95": 0.3932,
+    "sample_size": 22,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M7": {
+    "metric": "F1_Score",
+    "value": 0.6667,
+    "ci_lower_95": 0.4286,
+    "ci_upper_95": 0.8108,
+    "sample_size": 22,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M9": {
+    "metric": "F1_Score",
+    "value": 0.942,
+    "ci_lower_95": 0.902,
+    "ci_upper_95": 0.968,
+    "sample_size": 250,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M10": {
+    "metric": "NSE",
+    "value": 0.9942,
+    "ci_lower_95": 0.9932,
+    "ci_upper_95": 0.995,
+    "sample_size": 850,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M11": {
+    "metric": "RMSE_m",
+    "value": 0.42,
+    "ci_lower_95": 0.35,
+    "ci_upper_95": 0.51,
+    "sample_size": 3,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M12": {
+    "metric": "Peak_Q_RMSE_pct",
+    "value": 24.5,
+    "ci_lower_95": 19.2,
+    "ci_upper_95": 29.8,
+    "sample_size": 111,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M14": {
+    "metric": "R2",
+    "value": 0.9648,
+    "ci_lower_95": 0.9585,
+    "ci_upper_95": 0.9701,
+    "sample_size": 510,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M15": {
+    "metric": "Route_Optimality_pct",
+    "value": 98.2,
+    "ci_lower_95": 96.8,
+    "ci_upper_95": 99.1,
+    "sample_size": 120,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M16": {
+    "metric": "Rank_Correlation",
+    "value": 0.912,
+    "ci_lower_95": 0.875,
+    "ci_upper_95": 0.938,
+    "sample_size": 150,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M17": {
+    "metric": "False_Alarm_Reduction_pct",
+    "value": 78.5,
+    "ci_lower_95": 69.4,
+    "ci_upper_95": 85.3,
+    "sample_size": 85,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M18": {
+    "metric": "Bias_Reduction_pct",
+    "value": 86.4,
+    "ci_lower_95": 79.1,
+    "ci_upper_95": 91.2,
+    "sample_size": 60,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M19": {
+    "metric": "MAPE_pct",
+    "value": 4.73,
+    "ci_lower_95": 3.74,
+    "ci_upper_95": 5.91,
+    "sample_size": 55,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  },
+  "M20": {
+    "metric": "Macro_F1",
+    "value": 0.8388,
+    "ci_lower_95": 0.8066,
+    "ci_upper_95": 0.8702,
+    "sample_size": 510,
+    "method": "Non-parametric Percentile Bootstrap (1,000 resamples)"
+  }
+}

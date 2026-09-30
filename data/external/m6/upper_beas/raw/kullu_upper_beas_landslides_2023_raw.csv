@@ -1,0 +1,21 @@
+slide_id,location_name,latitude,longitude,event_date,landslide_type,corridor,source_report,field_verified
+HP-KUL-2023-01,Bahang,32.2712,77.1894,2023-07-09,Debris Flow,NH-3 Manali-Rohtang,GSI Report M4EGG/C/NR/SU-PHP/2023/46620,True
+HP-KUL-2023-02,Aloo Ground Manali,32.2281,77.1852,2023-07-09,Slump / Embankment failure,NH-3 Beas Corridor,HPSDMA July 2023 Situation Report,True
+HP-KUL-2023-03,Kalath,32.1994,77.1883,2023-07-09,Rock-Debris Slide,NH-3 Hot Springs corridor,GSI Report M4EGG/C/NR/SU-PHP/2023/46620,True
+HP-KUL-2023-04,Patli Kuhal,32.1268,77.1471,2023-07-09,Debris Slide,NH-3 Right Bank Beas,GSI Report M4EGG/C/NR/SU-PHP/2023/46620,True
+HP-KUL-2023-05,Raison,32.0583,77.1259,2023-07-09,Rotational Slump,NH-3 Kullu-Manali,HPSDMA Field Damage Assessment,True
+HP-KUL-2023-06,Devdhar Kharahal,31.9852,77.1518,2023-07-10,Complex Slide,Kullu Left Bank Flank,HPSDMA 42-Point Geoparametric Datasheet,True
+HP-KUL-2023-07,Palchan,32.3082,77.1784,2023-07-09,Debris Flow,Solang Nala Confluence,GSI Report M4EGG/C/NR/SU-PHP/2023/46620,True
+HP-KUL-2023-08,Nehru Kund,32.2895,77.1843,2023-07-09,Rockfall,NH-3 Upper Corridor,HPSDMA Disaster Assessment 2023,True
+HP-KUL-2023-09,15-Mile Katrain,32.1450,77.1620,2023-07-09,Colluvial Slide,NH-3 Mid-Valley,GSI Northern Region Survey 2023,True
+HP-KUL-2023-10,Dobhi,32.1025,77.1380,2023-07-09,Debris Slide,Beas Right Bank Terrace,HPSDMA DDMA Kullu Report,True
+HP-KUL-2023-11,Bashing,31.9920,77.1310,2023-07-09,Wedge Failure,NH-3 Kullu North Gate,GSI Report M4EGG/C/NR/SU-PHP/2023/46620,True
+HP-KUL-2023-12,Gammon Bridge Bhuntar,31.8845,77.1542,2023-07-10,Bank Slump,Parbati-Beas Confluence,HPSDMA Post-Monsoon PDNA,True
+HP-KUL-2023-13,Bajaura,31.8490,77.1610,2023-07-10,Debris Flow,NH-3 Southern Corridor,HPSDMA Disaster Log,True
+HP-KUL-2023-14,Aut Gorge Portal,31.7452,77.2048,2023-07-09,Rock-Debris Slide,Beas Canyon NH-3,GSI Landslide Study 2023,True
+HP-KUL-2023-15,Larji Sainj Confluence,31.7245,77.2180,2023-07-09,Valley-Blocking Debris Surge,Sainj-Beas Junction,HPSDMA & GSI Field Inspection 2023,True
+HP-KUL-2023-16,Marhi,32.3580,77.2250,2023-07-09,Debris Slide,Rohtang Bypass Slopes,GSI Northern Region Survey 2023,True
+HP-KUL-2023-17,Kothi,32.3210,77.1950,2023-07-09,Rock Slide,Upper Beas Gorge,GSI Report M4EGG/C/NR/SU-PHP/2023/46620,True
+HP-KUL-2023-18,Naggar,32.1150,77.1720,2023-07-09,Shallow Debris Slide,Left Bank Valley Flank,HPSDMA PDNA 2023,True
+HP-KUL-2023-19,Katrain Orchard Flank,32.1380,77.1550,2023-07-09,Earth Slide,NH-3 Valley Floor,HPSDMA Field Damage Assessment,True
+HP-KUL-2023-20,Shamshi,31.8950,77.1480,2023-07-10,Embankment Slide,Industrial Corridor,HPSDMA DDMA Kullu Report,True

@@ -1,0 +1,40 @@
+{
+  "model_name": "M2_Flood_Occurrence_XGBoost_Calibrated",
+  "roc_auc": 0.8525,
+  "brier_score": 0.1227,
+  "precision": 0.6737,
+  "recall": 0.4638,
+  "f1_score": 0.5494,
+  "train_samples": 4800,
+  "test_samples": 1200,
+  "feature_list": [
+    "elevation",
+    "slope",
+    "flow_accumulation",
+    "dist_to_stream",
+    "land_cover",
+    "rainfall_1h",
+    "rainfall_3h",
+    "rainfall_6h",
+    "rainfall_24h",
+    "antecedent_rain_3d",
+    "soil_moisture",
+    "river_level",
+    "river_level_change_1h"
+  ],
+  "feature_importances": {
+    "slope": 0.149,
+    "soil_moisture": 0.1051,
+    "rainfall_6h": 0.102,
+    "rainfall_3h": 0.0959,
+    "antecedent_rain_3d": 0.0939,
+    "river_level": 0.0856,
+    "rainfall_24h": 0.0774,
+    "dist_to_stream": 0.0645,
+    "rainfall_1h": 0.0605,
+    "elevation": 0.0513,
+    "flow_accumulation": 0.0501,
+    "river_level_change_1h": 0.0413,
+    "land_cover": 0.0233
+  }
+}

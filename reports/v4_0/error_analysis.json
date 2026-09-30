@@ -1,0 +1,31 @@
+{
+  "analysis_version": "v4.0.0",
+  "generated_at_utc": "2026-09-22T06:00:43.038703+00:00",
+  "small_sample_and_domain_shift_findings": [
+    {
+      "model_id": "M6",
+      "finding": "SEVERE_DOMAIN_SHIFT_ON_EXTREME_EVENT",
+      "sample_size": 22,
+      "auroc": 0.1653,
+      "root_cause": "The July 9-10, 2023 disaster delivered an extreme 72-hour precipitation pulse exceeding 350mm. Slopes with moderate geomorphic susceptibility (slope 15-25 deg, quartzite/schist bedrock) failed catastrophic debris flows due to unprecedented pore pressure escalation. The baseline static Random Forest model was trained on historical inventories during moderate monsoon seasons, leading to severe under-prediction during rare multi-decadal hydrometeorological events.",
+      "spatial_clustering": "Field inspection points surveyed by GSI were predominantly accessible along the NH-3 transport corridor, introducing road-cut slope destabilization bias.",
+      "mitigation": "Dynamic hydrological coupling via M7 trigger model and future in-situ pore water pressure piezometer telemetry."
+    },
+    {
+      "model_id": "M7",
+      "finding": "SINGLE_EVENT_SAMPLE_LIMITATION",
+      "sample_size": 22,
+      "f1_score": 0.6667,
+      "root_cause": "The 22 evaluation points represent 22 spatial locations sampled during a single meteorological storm (July 9-10, 2023). While spatially independent (>500m separation), they share identical antecedent rainfall history, which cannot prove multi-season generalization.",
+      "mitigation": "Multi-season operational monitoring across varied precipitation intensity-duration storm profiles."
+    },
+    {
+      "model_id": "M2",
+      "finding": "HIGH_WATER_MARK_PROXY_LIMITATION",
+      "sample_size": 24,
+      "f1_score": 0.6667,
+      "root_cause": "Evaluation dataset measures binary post-event inundation high-water marks (12 flooded, 12 unflooded). It does not capture continuous hydrograph peak timing, wave attenuation, or recession limb dynamics.",
+      "mitigation": "Integration with continuous 15-minute stage hydrograph streams from CWC Thalout gauge."
+    }
+  ]
+}

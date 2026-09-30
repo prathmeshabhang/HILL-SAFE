@@ -1,0 +1,128 @@
+{
+  "model_id": "M7",
+  "model_name": "LightGBM Dynamic Landslide Trigger (350 rounds)",
+  "model_sha256": "f3b8e88d37013747d72a5ddb80bf230cf0e41d5f028944f1f127c981256c1b8a",
+  "validation_tier": "PARTIALLY_EXTERNAL_VALIDATED",
+  "validation_tier_reason": "Partially validated across multi-event storm catalogue (7 events). Full validation requires multi-year telemetry.",
+  "operating_threshold": 0.5,
+  "operating_threshold_rationale": "Locked operational emergency warning trigger threshold.",
+  "event_level_evaluation": {
+    "n_total_events": 7,
+    "n_trigger_events": 5,
+    "n_control_events": 2,
+    "event_roc_auc": 1.0,
+    "event_brier_score": 0.2418,
+    "event_detection_recall": 1.0,
+    "event_detection_recall_95_ci": "[0.478, 1.000]",
+    "event_control_specificity": 0.0,
+    "event_control_specificity_95_ci": "[0.000, 0.842]",
+    "event_accuracy": 0.7143,
+    "event_accuracy_95_ci": "[0.290, 0.963]",
+    "event_confusion_matrix": {
+      "tp": 5,
+      "fp": 2,
+      "tn": 0,
+      "fn": 0
+    },
+    "events_catalog": [
+      {
+        "event_id": "EV_2023_07",
+        "event_name": "July 2023 Extreme Monsoonal Cloudburst",
+        "event_date_start": "2023-07-08",
+        "event_date_end": "2023-07-11",
+        "observed_triggered": 1,
+        "predicted_probability": 0.9999,
+        "predicted_triggered": 1,
+        "is_control_storm": false,
+        "rainfall_1h_mm": 56.2,
+        "antecedent_3d_mm": 278.4
+      },
+      {
+        "event_id": "EV_2023_08",
+        "event_name": "August 2023 Lesser Himalayas Surge",
+        "event_date_start": "2023-08-12",
+        "event_date_end": "2023-08-15",
+        "observed_triggered": 1,
+        "predicted_probability": 0.9999,
+        "predicted_triggered": 1,
+        "is_control_storm": false,
+        "rainfall_1h_mm": 42.8,
+        "antecedent_3d_mm": 241.0
+      },
+      {
+        "event_id": "EV_2018_09",
+        "event_name": "September 2018 Unprecedented Snow-Rain Storm",
+        "event_date_start": "2018-09-22",
+        "event_date_end": "2018-09-24",
+        "observed_triggered": 1,
+        "predicted_probability": 0.9999,
+        "predicted_triggered": 1,
+        "is_control_storm": false,
+        "rainfall_1h_mm": 38.5,
+        "antecedent_3d_mm": 210.5
+      },
+      {
+        "event_id": "EV_2021_07",
+        "event_name": "July 2021 Convective Cloudburst",
+        "event_date_start": "2021-07-12",
+        "event_date_end": "2021-07-13",
+        "observed_triggered": 1,
+        "predicted_probability": 0.9999,
+        "predicted_triggered": 1,
+        "is_control_storm": false,
+        "rainfall_1h_mm": 48.0,
+        "antecedent_3d_mm": 182.0
+      },
+      {
+        "event_id": "EV_2019_08",
+        "event_name": "August 2019 Monsoonal Cloud Surge",
+        "event_date_start": "2019-08-17",
+        "event_date_end": "2019-08-19",
+        "observed_triggered": 1,
+        "predicted_probability": 0.9998,
+        "predicted_triggered": 1,
+        "is_control_storm": false,
+        "rainfall_1h_mm": 34.0,
+        "antecedent_3d_mm": 195.0
+      },
+      {
+        "event_id": "EV_CTRL_2022_07",
+        "event_name": "July 2022 Moderate Monsoon Pulse",
+        "event_date_start": "2022-07-18",
+        "event_date_end": "2022-07-20",
+        "observed_triggered": 0,
+        "predicted_probability": 0.9292,
+        "predicted_triggered": 1,
+        "is_control_storm": true,
+        "rainfall_1h_mm": 12.5,
+        "antecedent_3d_mm": 62.0
+      },
+      {
+        "event_id": "EV_CTRL_2020_08",
+        "event_name": "August 2020 Moderate Monsoon Event",
+        "event_date_start": "2020-08-25",
+        "event_date_end": "2020-08-27",
+        "observed_triggered": 0,
+        "predicted_probability": 0.9105,
+        "predicted_triggered": 1,
+        "is_control_storm": true,
+        "rainfall_1h_mm": 10.0,
+        "antecedent_3d_mm": 51.0
+      }
+    ]
+  },
+  "within_storm_spatial_evaluation": {
+    "storm_name": "July 9-10, 2023 Cloudburst (Single Event)",
+    "n_spatial_samples": 22,
+    "n_positives": 11,
+    "n_controls": 11,
+    "spatial_recall": 1.0,
+    "spatial_recall_95_ci": "[0.715, 1.000]",
+    "spatial_specificity": 0.0,
+    "spatial_specificity_95_ci": "[0.000, 0.285]",
+    "spatial_roc_auc": 0.1983,
+    "spatial_pr_auc": 0.343,
+    "spatial_brier_score": 0.4991,
+    "scientific_note": "Evaluates spatial variation under single uniform cloudburst forcing. Extreme rainfall causes threshold saturation on valley floor points."
+  }
+}

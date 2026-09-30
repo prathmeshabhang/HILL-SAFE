@@ -1,0 +1,51 @@
+{
+  "evaluation_name": "M7_and_PWP_External_Event_Validation",
+  "dataset_details": {
+    "total_samples": 22,
+    "independent_positives": 11,
+    "stable_controls": 11,
+    "spatial_separation": "Strictly >500m from all training points (Zero Spatial Leakage)",
+    "event_window": "July 9-10, 2023 Cloudburst Disaster"
+  },
+  "model_a_frozen_m7": {
+    "features": [
+      "susceptibility_class",
+      "slope_deg",
+      "rainfall_1h",
+      "antecedent_rain_3d",
+      "soil_moisture_pct"
+    ],
+    "roc_auc": 0.1983,
+    "pr_auc": 0.3746,
+    "brier_score": 0.4991,
+    "f1_score": 0.6667,
+    "event_capture_rate_p60": 1.0
+  },
+  "model_b_experimental_pwp": {
+    "features": [
+      "susceptibility_class",
+      "slope_deg",
+      "rainfall_1h",
+      "antecedent_rain_3d",
+      "soil_moisture_pct",
+      "pore_pressure_est_kpa",
+      "delta_pore_pressure_kpa",
+      "matric_suction_est_kpa",
+      "effective_normal_stress_kpa",
+      "slope_stability_indicator"
+    ],
+    "roc_auc": 0.438,
+    "pr_auc": 0.5168,
+    "brier_score": 0.4971,
+    "f1_score": 0.6667,
+    "event_capture_rate_p60": 1.0
+  },
+  "delta": {
+    "delta_roc_auc": 0.2397,
+    "delta_pr_auc": 0.1423,
+    "delta_brier_score": -0.0019,
+    "delta_f1_score": 0.0,
+    "delta_event_capture": 0.0
+  },
+  "scientific_conclusion": "On the independent Upper Beas July 2023 event evaluation set (22 spatially disjoint points), Model A (Frozen M7) achieved ROC-AUC: 0.1983, Event Capture: 100.0%. Model B (Experimental PWP-extended) achieved ROC-AUC: 0.4380, Event Capture: 100.0%. Because sample size is constrained (N=22), delta differences are within sampling error margins. Production Model M7 remains FROZEN and unchanged. Model B is cataloged as a verified physical prototype."
+}

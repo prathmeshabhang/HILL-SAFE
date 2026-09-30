@@ -1,0 +1,25 @@
+event_id,latitude,longitude,location_name,hazard_type,inundation_observed,event_date,peak_depth_m,damage_description,source_agency,source_document,crs,verification_status
+FL_01,32.2536,77.1855,Old Manali Club House Beas,flash_flood_overtopping,1,2023-07-09,3.2,Beas river overtopped banks washed parking structures,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+FL_02,32.2858,77.1782,Nehru Kund Bahang Corridor,flash_flood_debris,1,2023-07-09,2.8,Beas flash flood and lateral nallah submerged hotels and road,HPSDMA,HPSDMA Kullu Disaster Assessment 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+FL_03,32.2312,77.1895,Aloo Ground Siyal Manali,floodplain_inundation,1,2023-07-09,4.5,Complete floodplain submergence multi-storey collapse into river,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+FL_04,32.1985,77.1950,Kalath Green Tax Barrier,flash_flood_inundation,1,2023-07-09,2.5,River overtopped NH-3 silted hot springs and toll barrier,CWC,CWC Flood Situation Report July 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+FL_05,32.1290,77.1720,15 Mile Patli Kuhal Terrace,floodplain_widening,1,2023-07-10,3.0,Beas widened 200m inundated apple orchards and bypass,CWC,CWC Flood Situation Report July 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+FL_06,32.0585,77.1510,Raison Adventure Camps Terrace,floodplain_inundation,1,2023-07-10,2.6,Lower river terrace submerged adventure camps washed away,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+FL_07,31.9615,77.1085,Akhara Bazar Kullu Confluence,urban_flash_flood,1,2023-07-09,2.2,Sarvari nallah flash flood + Beas backwater inundated commercial heart,HPSDMA,HPSDMA Kullu Disaster Assessment 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+FL_08,31.8790,77.1540,Bhuntar Airport Parbati Confluence,confluence_floodplain,1,2023-07-10,3.8,Beas-Parbati confluence backwater runway apron breached HFL,CWC,CWC Indus Basin Flood Report 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+FL_09,31.7450,77.2080,Aut Tunnel Highway Approach,valley_flood_submergence,1,2023-07-10,3.1,Beas overtopped NH approach to Aut tunnel debris submergence,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+FL_10,31.7160,77.2250,Thalout Bazaar Reservoir Margins,reservoir_backwater_flood,1,2023-07-10,2.4,Pandoh reservoir backwater flooded commercial shops on NH,CWC,CWC Flood Situation Report July 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+FL_11,31.7820,77.3050,Sainj Valley Market Larji Margin,flash_flood_debris,1,2023-07-10,3.5,Sainj river flash flood inundated 40 shops powerhouse approach,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+FL_12,32.3160,77.1580,Palchan Solang Confluence,flash_flood_overtopping,1,2023-07-09,3.0,High-velocity debris flood overtopped bridge abutment,NRSC,NRSC Flood Inundation Assessment HP 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+NFL_01,32.2680,77.1920,Vashisht Upper Village Ridge,stable_upland_bench,0,2023-07-09,0.0,Elevated bedrock spur 250m above river unflooded,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+NFL_02,32.1180,77.1750,Naggar Castle Heritage Ridge,stable_upper_terrace,0,2023-07-09,0.0,Elevated terrace 400m above river unflooded,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+NFL_03,32.1950,77.2100,Jagatsukh Upper Village,stable_upper_terrace,0,2023-07-09,0.0,Upper left bank terrace well above HFL unflooded,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+NFL_04,31.9560,77.1120,Kullu Dhalpur Upper Ground,elevated_civic_ridge,0,2023-07-09,0.0,Elevated civic ground unflooded,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+NFL_05,32.3210,77.1490,Solang Village Upper Moraine,steep_upper_moraine,0,2023-07-09,0.0,High alpine moraine ridge unflooded,NRSC,NRSC Flood Inundation Assessment HP 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+NFL_06,31.8510,77.1590,Bajaura Upper Temple Ridge,stable_upper_terrace,0,2023-07-09,0.0,High terrace bench 50m above HFL unflooded,CWC,CWC Indus Basin Flood Report 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+NFL_07,32.0270,77.3480,Manikaran Upper Slope,valley_wall_bench,0,2023-07-09,0.0,Upper valley wall slope unflooded,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+NFL_08,31.6370,77.3420,Banjar Upper Town Ridge,stable_upland_ridge,0,2023-07-09,0.0,Elevated ridge in Tirthan basin unflooded,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+NFL_09,31.6500,77.3980,Gushaini Upper Terrace,elevated_ecozone_terrace,0,2023-07-09,0.0,Elevated ecozone terrace unflooded,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+NFL_10,32.1480,77.1850,Haripur Upper Ridge,left_bank_spur,0,2023-07-09,0.0,Left bank upper ridge unflooded,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+NFL_11,32.3550,77.2280,Marhi Alpine Meadow,high_alpine_watershed,0,2023-07-09,0.0,High alpine watershed 3300m ASL unflooded,NRSC,NRSC Flood Inundation Assessment HP 2023,EPSG:4326,OFFICIAL_GOV_RECORD
+NFL_12,32.0100,77.3150,Kasol Upper Forest Bench,parbati_upper_slope,0,2023-07-09,0.0,Parbati upper valley forest bench unflooded,HPSDMA,HPSDMA PDNA Monsoons 2023,EPSG:4326,OFFICIAL_GOV_RECORD

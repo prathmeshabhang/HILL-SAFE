@@ -1,0 +1,51 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.218,
+          31.725
+        ]
+      },
+      "properties": {
+        "id": "ND_BEAS_001",
+        "river_name": "Beas_Sainj_Confluence",
+        "detection_probability": 0.862,
+        "model_confidence": 0.88,
+        "candidate_tier": "HIGH_CONFIDENCE_CANDIDATE",
+        "status": "AUTHORITY_VALIDATION_REQUIRED",
+        "elevation_m": 885.0,
+        "outburst_risk_level": "VERY_HIGH",
+        "peak_discharge_m3s": 3729.5,
+        "false_positive": false,
+        "false_positive_reason": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0583,
+          31.6708
+        ]
+      },
+      "properties": {
+        "id": "ND_CONTROL_PANDOH",
+        "river_name": "Beas_Pandoh_Reservoir",
+        "detection_probability": 0.0,
+        "model_confidence": 0.95,
+        "candidate_tier": "NO_EVIDENCE",
+        "status": "FALSE_POSITIVE",
+        "elevation_m": 850.0,
+        "outburst_risk_level": "INSUFFICIENT_DATA",
+        "peak_discharge_m3s": 0.0,
+        "false_positive": true,
+        "false_positive_reason": "Known artificial structure: Pandoh_Dam_Spillway within 0m"
+      }
+    }
+  ]
+}

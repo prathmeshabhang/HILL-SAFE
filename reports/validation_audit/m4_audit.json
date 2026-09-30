@@ -1,0 +1,214 @@
+{
+  "model": "M4_Multimodal_9Channel_Flood_UNet",
+  "dataset_name": "upper_beas_july2023_point_concordance_evaluation",
+  "validation_tier": "PARTIALLY_VALIDATED",
+  "primary_validation_unit": "point",
+  "spatial_independence": {
+    "total_samples": 24,
+    "independent_count": 6,
+    "non_independent_count": 18,
+    "unknown_count": 0,
+    "distance_threshold_m": 500.0,
+    "primary_evaluation_subset": "POINT_CONCORDANCE (N=24)"
+  },
+  "class_balance": {
+    "total_count": 24,
+    "positive_count": 12,
+    "negative_count": 12,
+    "class_prevalence": 0.5,
+    "is_single_class": false,
+    "single_class_label": null
+  },
+  "event_audit": null,
+  "control_quality": null,
+  "metrics": {
+    "roc_auc": {
+      "metric": "roc_auc",
+      "value": 0.4583,
+      "status": "VALID",
+      "reason": null,
+      "n": 24,
+      "unit": "point",
+      "is_threshold_dependent": false,
+      "confidence_interval": {
+        "lower": 0.21,
+        "upper": 0.7408,
+        "confidence_level": 0.95,
+        "method": "bootstrap_point",
+        "sample_size": 24,
+        "unit": "point",
+        "is_reliable": true,
+        "reason": null
+      }
+    },
+    "pr_auc": {
+      "metric": "pr_auc",
+      "value": 0.6221,
+      "status": "VALID",
+      "reason": null,
+      "n": 24,
+      "unit": "point",
+      "is_threshold_dependent": false,
+      "confidence_interval": {
+        "lower": 0.3285,
+        "upper": 0.8475,
+        "confidence_level": 0.95,
+        "method": "bootstrap_point",
+        "sample_size": 24,
+        "unit": "point",
+        "is_reliable": true,
+        "reason": null
+      }
+    },
+    "brier_score": {
+      "metric": "brier_score",
+      "value": 0.376,
+      "status": "VALID",
+      "reason": null,
+      "n": 24,
+      "unit": "point",
+      "is_threshold_dependent": false,
+      "confidence_interval": {
+        "lower": 0.1719,
+        "upper": 0.5445,
+        "confidence_level": 0.95,
+        "method": "bootstrap_point",
+        "sample_size": 24,
+        "unit": "point",
+        "is_reliable": true,
+        "reason": null
+      }
+    },
+    "recall": {
+      "metric": "recall",
+      "value": 0.5,
+      "status": "VALID",
+      "reason": null,
+      "n": 12,
+      "unit": "point",
+      "is_threshold_dependent": true,
+      "threshold": 0.5,
+      "threshold_source": "Standard binary segmentation threshold (locked before external evaluation)",
+      "confidence_interval": {
+        "lower": 0.2109,
+        "upper": 0.7891,
+        "confidence_level": 0.95,
+        "method": "exact_clopper_pearson",
+        "sample_size": 12,
+        "unit": "point",
+        "is_reliable": true,
+        "reason": null
+      }
+    },
+    "specificity": {
+      "metric": "specificity",
+      "value": 0.75,
+      "status": "VALID",
+      "reason": null,
+      "n": 12,
+      "unit": "point",
+      "is_threshold_dependent": true,
+      "threshold": 0.5,
+      "threshold_source": "Standard binary segmentation threshold (locked before external evaluation)",
+      "confidence_interval": {
+        "lower": 0.4281,
+        "upper": 0.9451,
+        "confidence_level": 0.95,
+        "method": "exact_clopper_pearson",
+        "sample_size": 12,
+        "unit": "point",
+        "is_reliable": true,
+        "reason": null
+      }
+    },
+    "precision": {
+      "metric": "precision",
+      "value": 0.6667,
+      "status": "VALID",
+      "reason": null,
+      "n": 9,
+      "unit": "point",
+      "is_threshold_dependent": true,
+      "threshold": 0.5,
+      "threshold_source": "Standard binary segmentation threshold (locked before external evaluation)",
+      "confidence_interval": {
+        "lower": 0.2993,
+        "upper": 0.9251,
+        "confidence_level": 0.95,
+        "method": "exact_clopper_pearson",
+        "sample_size": 9,
+        "unit": "point",
+        "is_reliable": true,
+        "reason": null
+      }
+    },
+    "f1_score": {
+      "metric": "f1_score",
+      "value": 0.5714,
+      "status": "VALID",
+      "reason": null,
+      "n": 24,
+      "unit": "point",
+      "is_threshold_dependent": true,
+      "threshold": 0.5,
+      "threshold_source": "Standard binary segmentation threshold (locked before external evaluation)"
+    },
+    "accuracy": {
+      "metric": "accuracy",
+      "value": 0.625,
+      "status": "VALID",
+      "reason": null,
+      "n": 24,
+      "unit": "point",
+      "is_threshold_dependent": true,
+      "threshold": 0.5,
+      "threshold_source": "Standard binary segmentation threshold (locked before external evaluation)",
+      "confidence_interval": {
+        "lower": 0.4059,
+        "upper": 0.812,
+        "confidence_level": 0.95,
+        "method": "exact_clopper_pearson",
+        "sample_size": 24,
+        "unit": "point",
+        "is_reliable": true,
+        "reason": null
+      }
+    },
+    "external_2d_dice": {
+      "metric": "external_2d_dice",
+      "value": null,
+      "status": "NOT_ESTIMABLE",
+      "reason": "not_available_authoritative_mask_missing: authoritative independent 10m digital flood delineation rasters or shapefiles (Copernicus EMS / NRSC) are not publicly released for this single scene. Internal benchmark achieves Dice=0.969-0.973 against SAR-HAND pseudo-reference, but this is an internal physical benchmark, not independent external validation.",
+      "n": 0,
+      "unit": "pixel",
+      "is_threshold_dependent": true,
+      "threshold": 0.5,
+      "threshold_source": null
+    },
+    "external_2d_iou": {
+      "metric": "external_2d_iou",
+      "value": null,
+      "status": "NOT_ESTIMABLE",
+      "reason": "not_available_authoritative_mask_missing: authoritative independent 10m digital flood delineation rasters or shapefiles (Copernicus EMS / NRSC) are not publicly released for this single scene. Internal benchmark achieves IoU=0.939-0.948 against SAR-HAND pseudo-reference.",
+      "n": 0,
+      "unit": "pixel",
+      "is_threshold_dependent": true,
+      "threshold": 0.5,
+      "threshold_source": null
+    }
+  },
+  "limitations": [
+    "Authoritative 10m independent flood extent rasters (Copernicus EMS / NRSC) are not openly distributed for this scene.",
+    "External evaluation is restricted to point-level concordance at 24 historical disaster and control coordinates.",
+    "Point concordance (ROC-AUC=0.6806, Recall=66.7%) CANNOT be equated with full-scene 2D segmentation validation.",
+    "SAR layover and shadow on steep mountain walls cause occasional low-backscatter false detections."
+  ],
+  "claims_supported": [
+    "Internal validation against physical radar-topographic (SAR-HAND) reference masks demonstrates high segmentation fidelity (Dice F1 = 96.9%\u201397.3%, IoU = 93.9%\u201394.8%).",
+    "External point-level concordance at 24 historical disaster and control locations exhibits ROC-AUC = 0.4583, with higher mean predicted probability at flooded disaster sites than unflooded control locations."
+  ],
+  "claims_unsupported": [
+    "External full-scene 2D segmentation validation (external Dice / IoU) CANNOT be claimed because authoritative independent 10m digital flood delineation rasters are currently unreleased for this scene.",
+    "Point concordance at selected coordinates CANNOT be presented as equivalent to complete 2D scene segmentation validation."
+  ]
+}

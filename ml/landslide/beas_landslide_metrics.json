@@ -1,0 +1,24 @@
+{
+  "catchment": "Upper_Beas_Kullu_Manali_Himachal_Pradesh",
+  "m6_susceptibility": {
+    "model_type": "RandomForest_350_Estimators",
+    "accuracy_pct": 88.85,
+    "f1_macro": 0.8349,
+    "feature_importances": {
+      "slope_deg": 0.6591,
+      "lithology_code": 0.1626,
+      "profile_curvature": 0.0838,
+      "dist_to_road_m": 0.0269,
+      "dist_to_river_m": 0.0265,
+      "aspect_deg": 0.0264,
+      "elevation_m": 0.0086,
+      "lulc_code": 0.0061
+    }
+  },
+  "m7_dynamic_trigger": {
+    "model_type": "LGBM_300_Rounds",
+    "accuracy_pct": 80.0,
+    "roc_auc": 0.8684,
+    "f1_score": 0.8573
+  }
+}

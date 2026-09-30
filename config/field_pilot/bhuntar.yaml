@@ -1,0 +1,57 @@
+# FLOODY SHIELD Station Profile: ST_BHUNTAR_01
+station:
+  station_id: "ST_BHUNTAR_01"
+  name: "Bhuntar Airport & Parbati Confluence Station"
+  station_type: "HYDROLOGICAL_CONFLUENCE"
+  deployment_status: "PLANNED"
+  provenance: "PLANNED_CONFIGURATION"
+  coordinates:
+    latitude: 31.885
+    longitude: 77.160
+    elevation_m: 1090.0
+  river_basin: "Upper Beas Basin"
+  corridor: "Bhuntar Airport Floodplain Reach"
+  risk_profile: "CONFLUENCE_BACKWATER_AND_AIRPORT_INUNDATION"
+
+device:
+  device_id: "DEV_BHUNTAR_01"
+  serial_number: "FS-HW-BHU-2026-003"
+  device_type: "CELLULAR_4G_GATEWAY"
+  protocol: "CELLULAR_4G_MQTT"
+  manufacturer: "FloodyShield-Hardware"
+  firmware_version: "v3.5.0-pilot"
+  battery_type: "SOLAR_HYBRID_LIFEPO4"
+  heartbeat_interval_sec: 30
+
+sensors:
+  - sensor_id: "SNS_BHUNTAR_STAGE_01"
+    sensor_type: "WATER_LEVEL"
+    hardware_model: "Non-Contact Radar Water Level Sensor OTT RLS"
+    unit: "m"
+    sampling_interval_sec: 30
+    range_min: 0.0
+    range_max: 18.0
+    datum_elevation_m: 1085.0
+    alert_thresholds:
+      warning_level_m: 4.5
+      danger_level_m: 6.8
+      airport_inundation_threshold_m: 7.5
+
+  - sensor_id: "SNS_BHUNTAR_DISCHARGE_01"
+    sensor_type: "WATER_FLOW"
+    hardware_model: "Calibrated Rating Curve Discharge Processor"
+    unit: "m3/s"
+    sampling_interval_sec: 60
+    range_min: 10.0
+    range_max: 6500.0
+    alert_thresholds:
+      danger_flow_m3s: 1500.0
+      extreme_flow_m3s: 2500.0
+
+  - sensor_id: "SNS_BHUNTAR_RAIN_01"
+    sensor_type: "RAIN_GAUGE"
+    hardware_model: "Tipping Bucket 0.2mm"
+    unit: "mm/h"
+    sampling_interval_sec: 60
+    range_min: 0.0
+    range_max: 250.0

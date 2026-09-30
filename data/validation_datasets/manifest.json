@@ -1,0 +1,231 @@
+{
+  "version": "3.8.1",
+  "last_updated": 1790012959.4207692,
+  "total_datasets": 11,
+  "datasets": [
+    {
+      "dataset_id": "BENCHMARK_SYNTH_M6_SLOPES",
+      "name": "Upper Beas Simulated Geomorphic Slope Stability Benchmark",
+      "target_models": [
+        "M6"
+      ],
+      "source_agency": "FLOODY SHIELD Test Harness (Synthesized)",
+      "geographic_scope": "Upper Beas Basin (Solang, Kothi, Manali, Naggar, Aut)",
+      "temporal_coverage": "2018-2023 (Simulated)",
+      "sample_size": 520,
+      "provenance": "SYNTHETIC",
+      "lifecycle_state": "SYNTHETIC_BENCHMARK",
+      "sha256_hash": "080c7f9246757e1f70eee9479c2b7cd81ea3ef1ddf0d18a990fb7c47b05fa6e0",
+      "file_path": "data/validation_datasets/M6_stable_slope_controls.csv",
+      "description": "Statistically generated pseudo-controls for pipeline testing and software verification.",
+      "created_at": 1790004286.1222758,
+      "quality_notes": "SYNTHETIC BENCHMARK ONLY. Not empirical field ground truth.",
+      "spatial_bounds": {
+        "min_lat": 31.7,
+        "max_lat": 32.35,
+        "min_lon": 77.1,
+        "max_lon": 77.25
+      }
+    },
+    {
+      "dataset_id": "BENCHMARK_SYNTH_M7_STORMS",
+      "name": "Himachal Pradesh Simulated Storm-Landslide Trigger Benchmark",
+      "target_models": [
+        "M7"
+      ],
+      "source_agency": "FLOODY SHIELD Test Harness (Synthesized)",
+      "geographic_scope": "Himachal Pradesh Lesser & Greater Himalayas (Simulated)",
+      "temporal_coverage": "June 2023 - August 2023 (Simulated)",
+      "sample_size": 115,
+      "provenance": "SYNTHETIC",
+      "lifecycle_state": "SYNTHETIC_BENCHMARK",
+      "sha256_hash": "9746a23412d274d3ba1a4c8bbc48f3ba7abfc0450cfd91ec6251d4f6ab645d68",
+      "file_path": "data/validation_datasets/M7_storm_landslide_episodes.csv",
+      "description": "Synthesized hydro-meteorological storm episodes with rainfall intensity and simulated trigger outcomes.",
+      "created_at": 1790004286.1263025,
+      "quality_notes": "SYNTHETIC BENCHMARK ONLY. Software verification fixture.",
+      "spatial_bounds": null
+    },
+    {
+      "dataset_id": "BENCHMARK_SYNTH_M10_CWC_STAGE",
+      "name": "CWC Thalout Synthetic River Stage Simulation Benchmark",
+      "target_models": [
+        "M2",
+        "M10"
+      ],
+      "source_agency": "FLOODY SHIELD Test Harness (Synthesized)",
+      "geographic_scope": "Beas River at Thalout Gorge (Simulated Reach)",
+      "temporal_coverage": "July 2023 - August 2023 (Simulated)",
+      "sample_size": 850,
+      "provenance": "SYNTHETIC",
+      "lifecycle_state": "SYNTHETIC_BENCHMARK",
+      "sha256_hash": "3ba4fccdf9c1d3e2878cb09adeb1ab172045a34981ea4d90ff32748e1ba764d5",
+      "file_path": "data/validation_datasets/M10_cwc_thalout_water_level.csv",
+      "description": "Autoregressive synthetic river stage simulation capturing peak flood hydrograph dynamics.",
+      "created_at": 1790004286.1308293,
+      "quality_notes": "SYNTHETIC BENCHMARK ONLY. Model testing fixture.",
+      "spatial_bounds": null
+    },
+    {
+      "dataset_id": "BENCHMARK_PROXY_M11_SAR_EXTENTS",
+      "name": "Sentinel-1 / RISAT-1 Derived SAR Flood Extents Proxy",
+      "target_models": [
+        "M4",
+        "M11"
+      ],
+      "source_agency": "ISRO NRSC / Copernicus ESA (Derived Interpretation)",
+      "geographic_scope": "Beas River Flood Corridor (Manali to Aut Gorge)",
+      "temporal_coverage": "July 10-12, 2023",
+      "sample_size": 3,
+      "provenance": "PROXY",
+      "lifecycle_state": "PROVISIONAL",
+      "sha256_hash": "99a14f7f733ad83f98e1f713dc13e73c0b173cf6eb3ab22c7f9ad47a8f04fc4e",
+      "file_path": "data/validation_datasets/M11_satellite_flood_extents.json",
+      "description": "Satellite microwave backscatter water masks and derived inundation boundary polygons.",
+      "created_at": 1790004286.133823,
+      "quality_notes": "PROXY REFERENCE. Derived remote sensing polygon interpretation.",
+      "spatial_bounds": null
+    },
+    {
+      "dataset_id": "BENCHMARK_SYNTH_M19_PROPAGATION",
+      "name": "Himalayan Mountain Channel Flash Flood Wave Celerity Simulation",
+      "target_models": [
+        "M19"
+      ],
+      "source_agency": "FLOODY SHIELD Test Harness (Synthesized)",
+      "geographic_scope": "Beas, Parbati, Sainj, and Tirthan Mountain Torrents (Simulated)",
+      "temporal_coverage": "2021-2023 (Simulated)",
+      "sample_size": 55,
+      "provenance": "SYNTHETIC",
+      "lifecycle_state": "SYNTHETIC_BENCHMARK",
+      "sha256_hash": "1114536587c0a1a1db7abc543daf9b4c499becf79e833ba03126bd9a147c4adb",
+      "file_path": "data/validation_datasets/M19_time_to_impact_events.csv",
+      "description": "Synthesized hydrograph peak arrivals for wave celerity engine verification.",
+      "created_at": 1790004286.134826,
+      "quality_notes": "SYNTHETIC BENCHMARK ONLY. Algorithmic verification fixture.",
+      "spatial_bounds": null
+    },
+    {
+      "dataset_id": "BENCHMARK_SYNTH_M20_DAMAGE",
+      "name": "Kullu-Manali Structural Damage Assessment Synthetic Fixture",
+      "target_models": [
+        "M13",
+        "M14",
+        "M20"
+      ],
+      "source_agency": "FLOODY SHIELD Test Harness (Synthesized)",
+      "geographic_scope": "Kullu District (Simulated Building Points)",
+      "temporal_coverage": "August - September 2023 (Simulated)",
+      "sample_size": 510,
+      "provenance": "SYNTHETIC",
+      "lifecycle_state": "SYNTHETIC_BENCHMARK",
+      "sha256_hash": "78d41650f53c2228ac5e466025ecd20ea448742adea36e479bf8d66f78882665",
+      "file_path": "data/validation_datasets/M20_damage_assessment_ground_truth.csv",
+      "description": "Synthesized structural inspection fixtures for damage classifier stress testing.",
+      "created_at": 1790004286.137856,
+      "quality_notes": "SYNTHETIC BENCHMARK ONLY. Pipeline regression fixture.",
+      "spatial_bounds": null
+    },
+    {
+      "dataset_id": "EXT_REAL_M6_KULLU_LANDSLIDES_2023",
+      "name": "Official GSI & HPSDMA Field Landslide Inventory (July 2023 Disaster)",
+      "target_models": [
+        "M6"
+      ],
+      "source_agency": "Geological Survey of India (Report M4EGG/C/NR/SU-PHP/2023/46620) / HPSDMA",
+      "geographic_scope": "Upper Beas Basin & NH-3 Corridor (Kullu-Manali)",
+      "temporal_coverage": "2023-07-09 to 2023-07-10",
+      "sample_size": 20,
+      "provenance": "REAL",
+      "lifecycle_state": "VALIDATION_READY",
+      "sha256_hash": "e56c5ecd043eb796dd1a034bf038939b47d1af0ad09b7e61ede3768a294123df",
+      "file_path": "data/external/m6/upper_beas/raw/kullu_upper_beas_landslides_2023_raw.csv",
+      "description": "20 GPS-verified historical landslide field survey points with failure mechanics and coordinates.",
+      "created_at": 1789906066.1549277,
+      "quality_notes": "AUTHENTIC EXTERNAL DATA. Government published field inspection record.",
+      "spatial_bounds": {
+        "min_lat": 31.7245,
+        "max_lat": 32.358,
+        "min_lon": 77.1259,
+        "max_lon": 77.225
+      }
+    },
+    {
+      "dataset_id": "EXT_REAL_M6_KULLU_CONTROLS_2023",
+      "name": "Authoritative Geologically Stable Absence Controls (Upper Beas)",
+      "target_models": [
+        "M6"
+      ],
+      "source_agency": "Archaeological Survey of India / GSI / HPSDMA",
+      "geographic_scope": "Upper Beas Basin Bedrock Formations",
+      "temporal_coverage": "Historical to July 2023",
+      "sample_size": 12,
+      "provenance": "REAL",
+      "lifecycle_state": "VALIDATION_READY",
+      "sha256_hash": "066c6bcf8aad621f72d5f196455998efc468d9202f9038ef11dcb90e2e5783c2",
+      "file_path": "data/external/m6/upper_beas/raw/kullu_upper_beas_stable_controls_raw.csv",
+      "description": "12 monitored, geologically confirmed unfailed bedrock structures (e.g. Naggar Castle, Bajaura Temple).",
+      "created_at": 1789913694.440011,
+      "quality_notes": "AUTHENTIC EXTERNAL DATA. Authoritative negative controls.",
+      "spatial_bounds": null
+    },
+    {
+      "dataset_id": "EXT_REAL_M7_HIMALAYAN_STORM_CATALOG",
+      "name": "Himachal Pradesh Historical Storm-Landslide Event Catalog",
+      "target_models": [
+        "M7"
+      ],
+      "source_agency": "GSI / HPSDMA / IMD / Catena (Himanshu et al. 2025)",
+      "geographic_scope": "Upper Beas & Himachal Pradesh River Valleys",
+      "temporal_coverage": "2018-2023",
+      "sample_size": 7,
+      "provenance": "REAL",
+      "lifecycle_state": "VALIDATION_READY",
+      "sha256_hash": "a82acb45b41b3ba5859e11b96e3a81d5dfb7d8db3d6f5434ee65010e876b57cd",
+      "file_path": "data/external/events/himalayan_storm_landslide_catalog.csv",
+      "description": "7 documented multi-day storm episodes with peak 1h/24h rainfall, antecedent totals, and triggered landslides.",
+      "created_at": 1789913703.396271,
+      "quality_notes": "AUTHENTIC EXTERNAL DATA. Event-level catalog (5 trigger storms, 2 control non-trigger storms).",
+      "spatial_bounds": null
+    },
+    {
+      "dataset_id": "EXT_REAL_M7_PROCESSED_EVENTS",
+      "name": "Upper Beas Field-Verified Landslide Trigger vs Stable Control Dataset",
+      "target_models": [
+        "M7"
+      ],
+      "source_agency": "GSI Report M4EGG/C/NR/SU-PHP/2023/46620 / HPSDMA",
+      "geographic_scope": "Upper Beas Basin (July 2023 Monsoon Surge)",
+      "temporal_coverage": "2023-07-09 to 2023-07-10",
+      "sample_size": 22,
+      "provenance": "REAL",
+      "lifecycle_state": "VALIDATION_READY",
+      "sha256_hash": "61b8af53d9140f08a4649b51201c2525ab531ed3493bf908d9421c02a7b58717",
+      "file_path": "data/external/m6/upper_beas/processed/m7_external_event_dataset.csv",
+      "description": "22 spatially independent field points (11 failure triggers, 11 stable controls) with rainfall and pore pressure.",
+      "created_at": 1789906314.2517161,
+      "quality_notes": "AUTHENTIC EXTERNAL DATA. Field-verified points filtered for spatial independence (>500m buffer).",
+      "spatial_bounds": null
+    },
+    {
+      "dataset_id": "EXT_REAL_M2_FLOOD_EVENTS_2023",
+      "name": "HPSDMA & CWC Upper Beas July 2023 Flood Inundation Ground Points",
+      "target_models": [
+        "M2",
+        "M4"
+      ],
+      "source_agency": "HPSDMA (PDNA 2023) / CWC / NRSC",
+      "geographic_scope": "Upper Beas River Corridor (Manali to Aut)",
+      "temporal_coverage": "2023-07-09 to 2023-07-10",
+      "sample_size": 24,
+      "provenance": "REAL",
+      "lifecycle_state": "VALIDATION_READY",
+      "sha256_hash": "484c7677b5bc072cc944e9ae90670332cb1cba4ed470a0aed89051c44fa2b7cd",
+      "file_path": "data/external/flood/raw/upper_beas_flood_events_2023_raw.csv",
+      "description": "24 GPS-documented river flood sites (12 inundated floodplain locations, 12 unflooded terrace controls).",
+      "created_at": 1789907011.2156565,
+      "quality_notes": "AUTHENTIC EXTERNAL DATA. Official post-disaster government records.",
+      "spatial_bounds": null
+    }
+  ]
+}

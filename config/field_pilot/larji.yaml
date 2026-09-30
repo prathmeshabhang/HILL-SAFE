@@ -1,0 +1,56 @@
+# FLOODY SHIELD Station Profile: ST_LARJI_01
+station:
+  station_id: "ST_LARJI_01"
+  name: "Larji Dam Hydropower Reservoir Inflow Station"
+  station_type: "HYDROPOWER_DAM_INFLOW"
+  deployment_status: "PLANNED"
+  provenance: "PLANNED_CONFIGURATION"
+  coordinates:
+    latitude: 31.715
+    longitude: 77.220
+    elevation_m: 950.0
+  river_basin: "Upper Beas Basin"
+  corridor: "Larji Reservoir & Sainj Confluence"
+  risk_profile: "CASCADE_BREACH_SURGE_AND_RESERVOIR_SILTATION"
+
+device:
+  device_id: "DEV_LARJI_01"
+  serial_number: "FS-HW-LRJ-2026-005"
+  device_type: "FIBER_OPTIC_CELLULAR_GATEWAY"
+  protocol: "MODBUS_TCP_WITH_CELLULAR_FALLBACK"
+  manufacturer: "FloodyShield-Hardware"
+  firmware_version: "v3.5.0-pilot"
+  battery_type: "DAM_CONTROL_ROOM_DUAL_UPS"
+  heartbeat_interval_sec: 15
+
+sensors:
+  - sensor_id: "SNS_LARJI_RESERVOIR_STAGE_01"
+    sensor_type: "WATER_LEVEL"
+    hardware_model: "Reservoir Stilling Well Encoder + Pressure Transducer"
+    unit: "m"
+    sampling_interval_sec: 15
+    range_min: 940.0
+    range_max: 980.0
+    datum_elevation_m: 0.0  # Absolute MSL
+    alert_thresholds:
+      full_reservoir_level_msl: 969.5
+      maximum_flood_level_msl: 973.0
+
+  - sensor_id: "SNS_LARJI_INFLOW_01"
+    sensor_type: "WATER_FLOW"
+    hardware_model: "Upstream Hydro Inflow Computer (Beas + Sainj)"
+    unit: "m3/s"
+    sampling_interval_sec: 30
+    range_min: 20.0
+    range_max: 8000.0
+    alert_thresholds:
+      spillway_gate_opening_m3s: 1000.0
+      emergency_spillway_surge_m3s: 2500.0
+
+  - sensor_id: "SNS_LARJI_RAIN_01"
+    sensor_type: "RAIN_GAUGE"
+    hardware_model: "Precision Weighing Gauge Pluvio2"
+    unit: "mm/h"
+    sampling_interval_sec: 60
+    range_min: 0.0
+    range_max: 250.0

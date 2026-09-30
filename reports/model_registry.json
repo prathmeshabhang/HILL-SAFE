@@ -1,0 +1,435 @@
+{
+  "M2": {
+    "model_id": "M2",
+    "model_name": "Calibrated XGBoost Flood Occurrence / Risk",
+    "version": "1.0.0",
+    "artifact_path": "ml/flood/m2_upper_beas_flood_model.joblib",
+    "sha256": "a3f349f6d10547ed1f378bf44f8240e840029f011c6afa0855f91fc7d7d9100b",
+    "training_dataset_id": "upper_beas_flood_dataset.csv",
+    "feature_schema_version": "m2_v1",
+    "training_period": "Simulated 2018-2023 Monsoon",
+    "validation_period": "July 2023 Flood Event",
+    "hyperparameters": {},
+    "metrics": {
+      "recall": 1.0,
+      "roc_auc_valid_absences": 0.875
+    },
+    "limitations": [
+      "Valley floor saturation under extreme discharge"
+    ],
+    "status": "FROZEN",
+    "registered_at": "2026-09-20T16:49:48.342196+00:00"
+  },
+  "M4": {
+    "model_id": "M4",
+    "model_name": "Multimodal 9-Channel Flood Inundation U-Net",
+    "version": "1.0.0",
+    "artifact_path": "data/satellite_output/flood_multimodal_unet.pt",
+    "sha256": "45aa1823c395e14ff99612019c728732f776c9c0a5f6f4f92e0ec25076ee7e07",
+    "training_dataset_id": "upper_beas_july2023_scene",
+    "feature_schema_version": "m4_9ch_v1",
+    "training_period": "July 2023 Disaster Pass",
+    "validation_period": "July 8-11, 2023 Ground Survey",
+    "hyperparameters": {},
+    "metrics": {
+      "point_specificity": 0.75,
+      "point_recall": 0.75,
+      "internal_proxy_dice": 0.988
+    },
+    "limitations": [
+      "2D full-scene external raster ground truth unavailable"
+    ],
+    "status": "FROZEN",
+    "registered_at": "2026-09-20T16:49:48.342196+00:00"
+  },
+  "M6": {
+    "model_id": "M6",
+    "model_name": "Random Forest Landslide Susceptibility (350 trees)",
+    "version": "1.0.0",
+    "artifact_path": "ml/landslide/m6_beas_susceptibility_rf.joblib",
+    "sha256": "e4f5f933668373cbedaa4968faeddc89822af123bc574fbca42817c02a4e627c",
+    "training_dataset_id": "upper_beas_landslide_dataset.csv",
+    "feature_schema_version": "m6_10feats_v1",
+    "training_period": "Historical Terrain Baseline",
+    "validation_period": "2023 Landslide Scarp Inventory",
+    "hyperparameters": {},
+    "metrics": {
+      "independent_specificity": 1.0,
+      "independent_recall": 0.1667
+    },
+    "limitations": [
+      "30m DEM slope smoothing; static model lacks dynamic rainfall forcing"
+    ],
+    "status": "FROZEN",
+    "registered_at": "2026-09-20T16:49:48.342196+00:00"
+  },
+  "M7": {
+    "model_id": "M7",
+    "model_name": "LightGBM Dynamic Landslide Trigger (350 rounds)",
+    "version": "1.0.0",
+    "artifact_path": "ml/landslide/m7_beas_trigger_lgbm.joblib",
+    "sha256": "f3b8e88d37013747d72a5ddb80bf230cf0e41d5f028944f1f127c981256c1b8a",
+    "training_dataset_id": "upper_beas_landslide_dataset.csv",
+    "feature_schema_version": "m7_dynamic_v1",
+    "training_period": "Multi-Event Monsoon Simulation",
+    "validation_period": "7 Multi-Year Storm Episodes (2018-2023)",
+    "hyperparameters": {},
+    "metrics": {
+      "event_detection_recall": 1.0,
+      "event_roc_auc": 1.0
+    },
+    "limitations": [
+      "Threshold saturation at tau=0.50 on moderate rain without PWP safety factor"
+    ],
+    "status": "FROZEN",
+    "registered_at": "2026-09-20T16:49:48.342196+00:00"
+  },
+  "M_TEST": {
+    "model_id": "M_TEST",
+    "model_name": "Test Model",
+    "version": "0.1.0",
+    "artifact_path": "none",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "training_dataset_id": "dummy_data",
+    "feature_schema_version": "v1",
+    "training_period": null,
+    "validation_period": null,
+    "hyperparameters": {},
+    "metrics": {},
+    "limitations": [],
+    "status": "DEVELOPMENT",
+    "registered_at": "2026-09-30T12:11:59.111523+00:00"
+  },
+  "M9": {
+    "model_id": "M9",
+    "model_name": "Dual-Stage Hybrid IoT Sensor Anomaly Detector",
+    "version": "1.0.0",
+    "artifact_path": "ml/anomaly/m9_sensor/m9_isolation_forest.joblib",
+    "sha256": "3eafd43d5c5f5d347758ccfcd37c899a4ccb9d479e19aecd1d1f2606c99bdff4",
+    "training_dataset_id": "upper_beas_nominal_telemetry_5k",
+    "feature_schema_version": "m9_5feats_v1",
+    "training_period": "Simulated Nominal Upper Beas Telemetry Baseline",
+    "validation_period": "6-Scenario Injected Hardware Fault Benchmark",
+    "hyperparameters": {
+      "contamination": 0.05,
+      "n_estimators": 100,
+      "stuck_threshold": 4
+    },
+    "metrics": {
+      "validation_f1": 1.0,
+      "nominal_inlier_ratio": 0.95
+    },
+    "limitations": [
+      "Requires at least 3-4 historical readings to evaluate stuck sensors and rate-of-change spikes",
+      "Cross-sensor consistency requires multi-variable station telemetry"
+    ],
+    "status": "INTERNAL_VALIDATED",
+    "registered_at": "2026-09-20T16:52:14.765941+00:00"
+  },
+  "M1": {
+    "model_id": "M1",
+    "model_name": "Multi-Horizon Extreme Rainfall Nowcasting Engine",
+    "version": "1.0.0",
+    "artifact_path": "ml/rainfall/m1_nowcast/m1_nowcast_lgbm.joblib",
+    "sha256": "4065c7c7ef4dc9147d452dd3cedc6ddf454a3c11218091e6d3bcf72d10d7467d",
+    "training_dataset_id": "upper_beas_monsoon_aws_timeseries",
+    "feature_schema_version": "m1_14feats_v1",
+    "training_period": "Simulated 2018-2023 Convective Cloudburst Telemetry",
+    "validation_period": "Chronological Storm Holdout",
+    "hyperparameters": {
+      "horizons": [
+        "15m",
+        "30m",
+        "1h",
+        "3h",
+        "6h",
+        "24h"
+      ],
+      "n_estimators": 120,
+      "learning_rate": 0.04
+    },
+    "metrics": {
+      "15m": {
+        "mae_mm": 0.438,
+        "rmse_mm": 0.882
+      },
+      "30m": {
+        "mae_mm": 0.892,
+        "rmse_mm": 1.726
+      },
+      "1h": {
+        "mae_mm": 2.062,
+        "rmse_mm": 3.522
+      },
+      "3h": {
+        "mae_mm": 6.785,
+        "rmse_mm": 9.119
+      },
+      "6h": {
+        "mae_mm": 10.462,
+        "rmse_mm": 13.323
+      },
+      "24h": {
+        "mae_mm": 14.559,
+        "rmse_mm": 18.388
+      }
+    },
+    "limitations": [
+      "Pure statistical extrapolation decays significantly beyond +3h without Doppler radar assimilation",
+      "Orographic enhancement relies on DEM slope proxy without dynamic wind shear vectors"
+    ],
+    "status": "INTERNAL_VALIDATED",
+    "registered_at": "2026-09-20T16:56:06.994852+00:00"
+  },
+  "M8": {
+    "model_id": "M8",
+    "model_name": "Ground Movement & Slope Deformation Forecast Engine",
+    "version": "1.0.0",
+    "artifact_path": "ml/landslide/m8_deformation/m8_deformation_gbdt.joblib",
+    "sha256": "f82b0c8cc2c30e743e9dceeb0238de92020161ae2192db0e28ebb26bf966ddf6",
+    "training_dataset_id": "upper_beas_insar_gnss_creeping_slopes",
+    "feature_schema_version": "m8_deformation_10feats_v1",
+    "training_period": "Simulated Multi-Year Creep Series (Sentinel-1 InSAR & In-Situ Tilts)",
+    "validation_period": "Holdout Creep & Tertiary Acceleration Benchmark",
+    "hyperparameters": {
+      "horizons": [
+        "24h",
+        "72h",
+        "7d"
+      ],
+      "n_estimators": 100,
+      "learning_rate": 0.05,
+      "max_depth": 5
+    },
+    "metrics": {
+      "24h": {
+        "val_mae_mm": 1.05,
+        "val_r2": 0.9592
+      },
+      "72h": {
+        "val_mae_mm": 1.283,
+        "val_r2": 0.9927
+      },
+      "7d": {
+        "val_mae_mm": 1.641,
+        "val_r2": 0.9971
+      }
+    },
+    "limitations": [
+      "InSAR C-band signal decorrelation in dense vegetative canopy or steep shadow slopes reduces precision",
+      "Saito asymptotic failure prediction valid predominantly in progressive brittle and rotational shear failures"
+    ],
+    "status": "INTERNAL_VALIDATED",
+    "registered_at": "2026-09-20T17:04:41.404065+00:00"
+  },
+  "M10": {
+    "model_id": "M10",
+    "model_name": "River Water-Level & Stage Forecast Engine",
+    "version": "1.0.0",
+    "artifact_path": "ml/flood/m10_water_level/m10_water_level_gbdt.joblib",
+    "sha256": "ed8f6091301f61335767a37997fe91ae7bddb3c44b295227e43a69c953213000",
+    "training_dataset_id": "upper_beas_cwc_hydrographic_telemetry",
+    "feature_schema_version": "m10_water_level_7feats_v1",
+    "training_period": "Simulated Multi-Year CWC Hydrograph Series (Beas River Basin)",
+    "validation_period": "Holdout Monsoon Storms & High Flood Level Crests",
+    "hyperparameters": {
+      "horizons": [
+        "30m",
+        "1h",
+        "3h",
+        "6h"
+      ],
+      "n_estimators": 100,
+      "learning_rate": 0.04,
+      "max_depth": 5
+    },
+    "metrics": {
+      "30m": {
+        "val_mae_m": 0.051,
+        "val_r2": 0.9798
+      },
+      "1h": {
+        "val_mae_m": 0.078,
+        "val_r2": 0.9763
+      },
+      "3h": {
+        "val_mae_m": 0.131,
+        "val_r2": 0.9779
+      },
+      "6h": {
+        "val_mae_m": 0.172,
+        "val_r2": 0.9778
+      }
+    },
+    "limitations": [
+      "Extrapolation accuracy degrades beyond +3h if localized cloudburst centers shift outside upstream sub-catchments",
+      "Assumes natural riverbed geometry without sudden bridge pier debris dams or artificial barrage gate maneuvers"
+    ],
+    "status": "INTERNAL_VALIDATED",
+    "registered_at": "2026-09-20T17:15:47.321227+00:00"
+  },
+  "M11": {
+    "model_id": "M11",
+    "model_name": "Flood Propagation & Inundation Depth Forecast Engine",
+    "version": "1.0.0",
+    "artifact_path": "ml/flood/m11_flood_depth/m11_depth_gbdt.joblib",
+    "sha256": "b93259c1fa7a9fbf450b9e4a129a62f1c78df68ff251f5c2b19ae7e1e3d138df",
+    "training_dataset_id": "upper_beas_hecras_hand_floodplain_profiles",
+    "feature_schema_version": "m11_depth_5feats_v1",
+    "training_period": "Simulated Multi-Reach Hydrodynamic Calibrations (Palchan to Pandoh)",
+    "validation_period": "Holdout High-Discharge Flood Scenarios",
+    "hyperparameters": {
+      "n_estimators": 100,
+      "learning_rate": 0.05,
+      "max_depth": 5
+    },
+    "metrics": {
+      "val_mae_m": 0.109,
+      "val_r2": 0.9969
+    },
+    "limitations": [
+      "1D-HAND assumes hydrostatic lateral water surface elevation; dynamic momentum backwaters in narrow confluences are approximated",
+      "Manning roughness n assumed uniform per reach without seasonal riparian brush variations"
+    ],
+    "status": "INTERNAL_VALIDATED",
+    "registered_at": "2026-09-20T17:17:34.279851+00:00"
+  },
+  "M12": {
+    "model_id": "M12",
+    "model_name": "Hazard Cascade & Landslide Dam Breach Engine",
+    "version": "1.0.0",
+    "artifact_path": "ml/flood/m12_cascade/m12_cascade_calibration.joblib",
+    "sha256": "719d8451ec2d6aad07485986e9ad7c92e0d8f6e9268b84d2c80eb94a580f0f93",
+    "training_dataset_id": "froehlich_costa_111_dam_breach_case_studies",
+    "feature_schema_version": "m12_cascade_breach_v1",
+    "training_period": "Global & Himalayan Historical Landslide Dam Failure Database",
+    "validation_period": "Himalayan Outburst Benchmarks (Pareechu, Sun Kosi, Chamoli)",
+    "hyperparameters": {
+      "wave_speed_kmh": 21.0,
+      "attenuation_decay": 0.024
+    },
+    "metrics": {
+      "empirical_case_studies_benchmarked": 111,
+      "peak_q_rmse_pct": 24.5,
+      "formation_time_rmse_pct": 28.2
+    },
+    "limitations": [
+      "Empirical dam breach equations assume progressive overtopping erosion; instantaneous total block collapse produces steeper peak hydrographs",
+      "Downstream wave translation assumes unobstructed channel without secondary tributary dams"
+    ],
+    "status": "INTERNAL_VALIDATED",
+    "registered_at": "2026-09-20T17:20:32.835496+00:00"
+  },
+  "M13": {
+    "model_id": "M13",
+    "model_name": "Vulnerability & Population Exposure Assessment Engine",
+    "version": "1.0.0",
+    "artifact_path": "ml/decision/m13_vulnerability/m13_vulnerability_gbdt.joblib",
+    "sha256": "d7982c62d332994a3b47cfb08f8442c7e1fcdd310ce6aa43615b09cfd29122a6",
+    "training_dataset_id": "beas_census2011_tourist_scenarios",
+    "feature_schema_version": "m13_14feats_v1",
+    "training_period": "Census 2011 Kullu District + HP Tourism Seasonal Registry",
+    "validation_period": "Multi-Hazard Compound Scenario Grid (12 Settlements)",
+    "hyperparameters": {
+      "n_estimators": 100,
+      "learning_rate": 0.08,
+      "max_depth": 4
+    },
+    "metrics": {
+      "val_r2": 0.9956,
+      "val_mae": 0.0086,
+      "demographic_coverage": "12 settlements"
+    },
+    "limitations": [
+      "Seasonal tourist estimates rely on historical monthly occupancy distributions",
+      "Micro-scale hamlet building materials approximated via ward-level Census kutcha ratios"
+    ],
+    "status": "INTERNAL_VALIDATED",
+    "registered_at": "2026-09-20T17:42:52.305550+00:00"
+  },
+  "M14": {
+    "model_id": "M14",
+    "model_name": "Infrastructure Damage & Loss Estimation Engine",
+    "version": "1.0.0",
+    "artifact_path": "ml/decision/m14_infrastructure_loss/m14_infrastructure_gbdt.joblib",
+    "sha256": "b9f14e5c3b18d19eca5a2c8dfac80c0cd640395b5c53c86b4e29dadeaddb4452",
+    "training_dataset_id": "ndma_usace_beas_infrastructure_damage_matrix",
+    "feature_schema_version": "m14_12feats_v1",
+    "training_period": "Calibrated NDMA Flash Flood & USACE Mountain Damage Curves",
+    "validation_period": "Multi-Asset Corridor Inundation Scenarios (14 Assets)",
+    "hyperparameters": {
+      "n_estimators": 120,
+      "learning_rate": 0.07,
+      "max_depth": 4
+    },
+    "metrics": {
+      "val_r2": 0.9886,
+      "val_mae": 0.0223,
+      "loss_bound_compliance": 1.0
+    },
+    "limitations": [
+      "Monetary replacement values based on 2023-2024 PWD schedule of rates",
+      "Sub-surface bridge pier scouring dynamics approximated via flow velocity"
+    ],
+    "status": "INTERNAL_VALIDATED",
+    "registered_at": "2026-09-20T17:42:52.305550+00:00"
+  },
+  "M17": {
+    "model_id": "M17",
+    "model_name": "Early Warning Gating & Evacuation Urgency Recommendation Engine",
+    "version": "1.0.0",
+    "artifact_path": "ml/decision/m17_warning_gating/m17_warning_classifier.joblib",
+    "sha256": "dca6ef81a6d485c9206cb31ab93ad18f65c2d7fe0af56a2ee4885b6f87773140",
+    "training_dataset_id": "multi_hazard_warning_gating_scenarios",
+    "feature_schema_version": "m17_13feats_v1",
+    "training_period": "NDMA SOP / CWC Flood Criteria Calibration Matrix",
+    "validation_period": "1600 Multi-Hazard Warning Scenarios across 4 Alert Levels",
+    "hyperparameters": {
+      "n_estimators": 100,
+      "learning_rate": 0.08,
+      "max_depth": 4
+    },
+    "metrics": {
+      "val_accuracy": 1.0,
+      "val_macro_f1": 1.0,
+      "danger_level_override_fn_rate": 0.0
+    },
+    "limitations": [
+      "Evacuation clearance time estimates assume standard hill footpath and single-lane transit rates",
+      "CAP broadcast feeds require active telecommunication network coverage"
+    ],
+    "status": "INTERNAL_VALIDATED",
+    "registered_at": "2026-09-20T17:42:52.305550+00:00"
+  },
+  "M18": {
+    "model_id": "M18",
+    "model_name": "Risk Calibration Engine (Platt + Isotonic)",
+    "version": "1.0.0",
+    "artifact_path": "ml/calibration/m18_calibration/m18_calibration.pkl",
+    "sha256": "abd57eebf06c4b36b512d8516b24bf328b07a9ced530a6e2b0ace79003d1d726",
+    "training_dataset_id": "synthetic_beta_calibration_PIPELINE_TEST_ONLY",
+    "feature_schema_version": "m18_calibration_v1",
+    "training_period": "SYNTHETIC \u2014 PIPELINE TEST ONLY",
+    "validation_period": "INSUFFICIENT_EVIDENCE \u2014 No real labelled calibration dataset for Upper Beas",
+    "hyperparameters": {
+      "platt_C": 1000000.0,
+      "val_fraction": 0.3,
+      "min_samples": 50,
+      "min_positive_samples": 5
+    },
+    "metrics": {
+      "brier_uncalibrated_synthetic": 0.1144,
+      "brier_platt_synthetic": 0.0748,
+      "brier_isotonic_synthetic": 0.0765,
+      "best_method": "platt_scaling",
+      "data_type": "SYNTHETIC"
+    },
+    "limitations": [
+      "Calibrators fitted on SYNTHETIC data \u2014 must be re-fitted on real event outcomes before operational use",
+      "Calibration is only meaningful if source model scores have monotone discrimination power",
+      "External validation: INSUFFICIENT_EVIDENCE"
+    ],
+    "status": "INTERNAL_VALIDATED",
+    "registered_at": "2026-09-20T18:07:50.000000+00:00"
+  }
+}

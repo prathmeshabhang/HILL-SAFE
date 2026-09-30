@@ -1,0 +1,68 @@
+{
+  "model_id": "M4",
+  "model_name": "Multimodal 9-Channel Flood U-Net (ResNet-34 + Attention)",
+  "model_sha256": "45aa1823c395e14ff99612019c728732f776c9c0a5f6f4f92e0ec25076ee7e07",
+  "validation_tier": "PARTIALLY_EXTERNAL_VALIDATED",
+  "validation_tier_reason": "Partially validated: External point concordance verified (ROC-AUC ~0.68). Full-scene 2D segmentation ground truth unavailable.",
+  "authoritative_2d_raster_status": "FULL_SCENE_EXTERNAL_GROUND_TRUTH_UNAVAILABLE",
+  "authoritative_2d_raster_rationale": "Authoritative independent 10-meter digital flood extent rasters (Copernicus EMS Rapid Mapping / NRSC Disaster Watch) remain unreleased in open GIS raster format for this scene. Evaluating external 2D Dice/IoU against an unauthoritative proxy is scientifically prohibited.",
+  "statistical_sanity_audit": {
+    "mean_group1": 0.7529,
+    "mean_group2": 0.4984,
+    "delta_mean": 0.2545,
+    "naive_welch_p": 0.163,
+    "naive_mannwhitney_p": 0.3708,
+    "cluster_adjusted_p": 0.6857,
+    "is_valid_iid": false,
+    "scientific_verdict": "QUALIFIED: Observations are spatially clustered along the river corridor. Naive Mann-Whitney p = 0.3708 assumes i.i.d. samples. Because adjacent river points share reach-level hydrometeorological forcing, unqualified 'p < 0.05' claims must be qualified as descriptive rather than independent proof of significance."
+  },
+  "operating_threshold": 0.5,
+  "operating_threshold_rationale": "Standard binary classification cutoff locked prior to evaluation.",
+  "point_concordance_evaluation_all_points": {
+    "n_total": 24,
+    "n_flooded": 12,
+    "n_controls": 12,
+    "mean_prob_flooded": 0.7529,
+    "mean_prob_unflooded": 0.4984,
+    "delta_probability": 0.2545,
+    "p_value_qualification": "Descriptive directional separation. Naive p < 0.05 is qualified due to reach-level spatial autocorrelation along the river corridor.",
+    "point_roc_auc": 0.6111,
+    "point_pr_auc": 0.5819,
+    "brier_score": 0.3248,
+    "recall": 0.75,
+    "recall_95_ci": "[0.428, 0.945]",
+    "specificity": 0.5,
+    "specificity_95_ci": "[0.211, 0.789]",
+    "accuracy": 0.625,
+    "accuracy_95_ci": "[0.406, 0.812]",
+    "confusion_matrix": {
+      "tp": 9,
+      "fp": 6,
+      "tn": 6,
+      "fn": 3
+    }
+  },
+  "strictly_independent_subset_metrics": {
+    "n_total": 6,
+    "n_flooded": 4,
+    "n_controls": 2,
+    "recall": 0.5,
+    "recall_95_ci": "[0.068, 0.932]",
+    "specificity": 0.0,
+    "specificity_95_ci": "[0.000, 0.842]",
+    "confusion_matrix": {
+      "tp": 2,
+      "fp": 2,
+      "tn": 0,
+      "fn": 2
+    }
+  },
+  "internal_benchmark_reference": {
+    "evaluation_type": "INTERNAL_HOLDOUT_BENCHMARK (NOT EXTERNAL VALIDATION)",
+    "reference_mask": "SAR-HAND Hydro-Physical Proxy Inundation Mask",
+    "dice_f1": 0.973,
+    "iou_jaccard": 0.948,
+    "pixel_accuracy": 0.978,
+    "disclaimer": "Internal convergence metric only; must not be conflated with independent external real-world ground truth."
+  }
+}

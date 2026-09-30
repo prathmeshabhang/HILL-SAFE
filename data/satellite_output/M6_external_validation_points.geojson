@@ -1,0 +1,1012 @@
+{
+  "type": "FeatureCollection",
+  "name": "M6_External_Validation_Points",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1894,
+          32.2712
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_1",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.607,
+        "m6_class": 1,
+        "error_category": "TRUE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 2350.98,
+        "slope_deg": 27.3,
+        "dist_to_road_m": 692.62,
+        "dist_to_river_m": 785.43
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1852,
+          32.2281
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_2",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.1555,
+        "m6_class": 0,
+        "error_category": "FALSE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 2009.19,
+        "slope_deg": 8.99,
+        "dist_to_road_m": 178.76,
+        "dist_to_river_m": 180.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1883,
+          32.1994
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_3",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.6205,
+        "m6_class": 1,
+        "error_category": "TRUE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1849.2,
+        "slope_deg": 35.95,
+        "dist_to_road_m": 48.84,
+        "dist_to_river_m": 28.05
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1471,
+          32.1268
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_4",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.147,
+        "m6_class": 0,
+        "error_category": "FALSE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1890.3,
+        "slope_deg": 17.92,
+        "dist_to_road_m": 1438.12,
+        "dist_to_river_m": 1662.49
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1259,
+          32.0583
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_5",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.8857,
+        "m6_class": 2,
+        "error_category": "TRUE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1642.72,
+        "slope_deg": 36.54,
+        "dist_to_road_m": 1761.58,
+        "dist_to_river_m": 2043.03
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1518,
+          31.9852
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_6",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.3765,
+        "m6_class": 1,
+        "error_category": "FALSE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1049.26,
+        "slope_deg": 15.27,
+        "dist_to_road_m": 86.31,
+        "dist_to_river_m": 72.13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1784,
+          32.3082
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_7",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.7115,
+        "m6_class": 2,
+        "error_category": "TRUE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 2492.2,
+        "slope_deg": 42.78,
+        "dist_to_road_m": 773.94,
+        "dist_to_river_m": 881.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1843,
+          32.2895
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_8",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.5816,
+        "m6_class": 1,
+        "error_category": "TRUE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 2442.06,
+        "slope_deg": 25.93,
+        "dist_to_road_m": 739.33,
+        "dist_to_river_m": 840.39
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.162,
+          32.145
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_9",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.7164,
+        "m6_class": 2,
+        "error_category": "TRUE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1856.32,
+        "slope_deg": 37.01,
+        "dist_to_road_m": 980.78,
+        "dist_to_river_m": 1124.45
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.138,
+          32.1025
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_10",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.4454,
+        "m6_class": 1,
+        "error_category": "FALSE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1788.82,
+        "slope_deg": 20.62,
+        "dist_to_road_m": 1626.25,
+        "dist_to_river_m": 1883.83
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.131,
+          31.992
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_11",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.6819,
+        "m6_class": 2,
+        "error_category": "TRUE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1305.25,
+        "slope_deg": 29.84,
+        "dist_to_road_m": 883.81,
+        "dist_to_river_m": 1010.37
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1542,
+          31.8845
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_12",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.7453,
+        "m6_class": 2,
+        "error_category": "TRUE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1116.58,
+        "slope_deg": 29.12,
+        "dist_to_road_m": 1552.86,
+        "dist_to_river_m": 1797.48
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.161,
+          31.849
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_13",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.3378,
+        "m6_class": 1,
+        "error_category": "FALSE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1094.65,
+        "slope_deg": 15.55,
+        "dist_to_road_m": 2368.45,
+        "dist_to_river_m": 2756.99
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.2048,
+          31.7452
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_14",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.3393,
+        "m6_class": 1,
+        "error_category": "FALSE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 958.11,
+        "slope_deg": 15.24,
+        "dist_to_road_m": 3500.0,
+        "dist_to_river_m": 4500.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.218,
+          31.7245
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_15",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.8421,
+        "m6_class": 2,
+        "error_category": "TRUE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 977.49,
+        "slope_deg": 31.56,
+        "dist_to_road_m": 3500.0,
+        "dist_to_river_m": 4500.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.225,
+          32.358
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_16",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.1336,
+        "m6_class": 0,
+        "error_category": "FALSE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 2865.16,
+        "slope_deg": 18.68,
+        "dist_to_road_m": 3035.07,
+        "dist_to_river_m": 3541.26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.195,
+          32.321
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_17",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.8056,
+        "m6_class": 2,
+        "error_category": "TRUE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 2682.92,
+        "slope_deg": 42.42,
+        "dist_to_road_m": 1534.28,
+        "dist_to_river_m": 1775.62
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.172,
+          32.115
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_18",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.7968,
+        "m6_class": 2,
+        "error_category": "TRUE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1600.83,
+        "slope_deg": 44.79,
+        "dist_to_road_m": 606.9,
+        "dist_to_river_m": 684.59
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.155,
+          32.138
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_19",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.8012,
+        "m6_class": 2,
+        "error_category": "TRUE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1841.83,
+        "slope_deg": 44.32,
+        "dist_to_road_m": 1189.28,
+        "dist_to_river_m": 1369.74
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.148,
+          31.895
+        ]
+      },
+      "properties": {
+        "sample_id": "pos_ev_20",
+        "observed_label": 1,
+        "observed_status": "HISTORICAL_LANDSLIDE",
+        "m6_probability": 0.8873,
+        "m6_class": 2,
+        "error_category": "TRUE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1120.14,
+        "slope_deg": 39.92,
+        "dist_to_road_m": 1215.19,
+        "dist_to_river_m": 1400.22
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.41796429916644,
+          31.793267124789732
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_1",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.6767,
+        "m6_class": 1,
+        "error_category": "FALSE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1665.23,
+        "slope_deg": 24.79,
+        "dist_to_road_m": 3500.0,
+        "dist_to_river_m": 4500.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.18912801472807,
+          32.168593638901974
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_2",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.4457,
+        "m6_class": 1,
+        "error_category": "TRUE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1736.48,
+        "slope_deg": 21.79,
+        "dist_to_road_m": 56.34,
+        "dist_to_river_m": 36.88
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.90139643821853,
+          31.563819572464556
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_3",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.533,
+        "m6_class": 1,
+        "error_category": "FALSE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1850.0,
+        "slope_deg": 28.5,
+        "dist_to_road_m": 350.0,
+        "dist_to_river_m": 400.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.36301449475371,
+          31.46098779277661
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_4",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.533,
+        "m6_class": 1,
+        "error_category": "FALSE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1850.0,
+        "slope_deg": 28.5,
+        "dist_to_road_m": 350.0,
+        "dist_to_river_m": 400.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.26024717556743,
+          32.03117076233037
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_5",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.64,
+        "m6_class": 1,
+        "error_category": "FALSE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1609.58,
+        "slope_deg": 26.05,
+        "dist_to_road_m": 2957.83,
+        "dist_to_river_m": 3450.38
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4304414039053,
+          31.42161371901059
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_6",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.533,
+        "m6_class": 1,
+        "error_category": "FALSE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1850.0,
+        "slope_deg": 28.5,
+        "dist_to_road_m": 350.0,
+        "dist_to_river_m": 400.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.93802042194088,
+          32.27406477284045
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_7",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.1115,
+        "m6_class": 0,
+        "error_category": "TRUE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 3227.73,
+        "slope_deg": 20.74,
+        "dist_to_road_m": 3500.0,
+        "dist_to_river_m": 4500.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.91921293140473,
+          31.590916215567454
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_8",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.533,
+        "m6_class": 1,
+        "error_category": "FALSE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1850.0,
+        "slope_deg": 28.5,
+        "dist_to_road_m": 350.0,
+        "dist_to_river_m": 400.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.14109168056096,
+          31.719454355107516
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_9",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.8415,
+        "m6_class": 2,
+        "error_category": "FALSE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 995.33,
+        "slope_deg": 30.78,
+        "dist_to_road_m": 3210.35,
+        "dist_to_river_m": 3747.47
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.98929894112872,
+          31.853542269574223
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_10",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.2955,
+        "m6_class": 1,
+        "error_category": "TRUE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1673.4,
+        "slope_deg": 11.66,
+        "dist_to_road_m": 3386.25,
+        "dist_to_river_m": 3954.41
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.89067100942383,
+          32.0424455394585
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_11",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.0677,
+        "m6_class": 0,
+        "error_category": "TRUE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 2149.08,
+        "slope_deg": 13.3,
+        "dist_to_road_m": 3500.0,
+        "dist_to_river_m": 4500.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.03813519814089,
+          31.706751880961978
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_12",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.4064,
+        "m6_class": 1,
+        "error_category": "TRUE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1060.58,
+        "slope_deg": 20.65,
+        "dist_to_road_m": 102.92,
+        "dist_to_river_m": 91.67
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.31036437490546,
+          31.87887348342789
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_13",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.3585,
+        "m6_class": 1,
+        "error_category": "TRUE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1405.93,
+        "slope_deg": 9.71,
+        "dist_to_road_m": 3500.0,
+        "dist_to_river_m": 4500.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.13425238496885,
+          31.609657471266278
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_14",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.8014,
+        "m6_class": 2,
+        "error_category": "FALSE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 815.88,
+        "slope_deg": 37.98,
+        "dist_to_road_m": 3205.49,
+        "dist_to_river_m": 3741.75
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.83019276826799,
+          32.022035297305145
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_15",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.8113,
+        "m6_class": 2,
+        "error_category": "FALSE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1901.24,
+        "slope_deg": 39.08,
+        "dist_to_road_m": 3500.0,
+        "dist_to_river_m": 4500.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.91084068039673,
+          32.03792209449651
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_16",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.0748,
+        "m6_class": 0,
+        "error_category": "TRUE_NEGATIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 2167.11,
+        "slope_deg": 17.32,
+        "dist_to_road_m": 3500.0,
+        "dist_to_river_m": 4500.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.41677559921467,
+          31.468304172634543
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_17",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.533,
+        "m6_class": 1,
+        "error_category": "FALSE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1850.0,
+        "slope_deg": 28.5,
+        "dist_to_road_m": 350.0,
+        "dist_to_river_m": 400.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.3254582762757,
+          32.41391363472829
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_18",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.533,
+        "m6_class": 1,
+        "error_category": "FALSE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1850.0,
+        "slope_deg": 28.5,
+        "dist_to_road_m": 350.0,
+        "dist_to_river_m": 400.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.86348687410414,
+          31.71984445763204
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_19",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.8596,
+        "m6_class": 2,
+        "error_category": "FALSE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 1525.57,
+        "slope_deg": 32.98,
+        "dist_to_road_m": 3500.0,
+        "dist_to_river_m": 4500.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.08609912093074,
+          32.118444677837765
+        ]
+      },
+      "properties": {
+        "sample_id": "neg_20",
+        "observed_label": 0,
+        "observed_status": "STABLE_NON_LANDSLIDE",
+        "m6_probability": 0.713,
+        "m6_class": 2,
+        "error_category": "FALSE_POSITIVE",
+        "model_id": "M6",
+        "model_version": "v1.0-rf350",
+        "inference_timestamp": "2026-09-20T12:11:02.031514+00:00",
+        "elevation_m": 2037.35,
+        "slope_deg": 29.9,
+        "dist_to_road_m": 3384.16,
+        "dist_to_river_m": 3951.96
+      }
+    }
+  ]
+}

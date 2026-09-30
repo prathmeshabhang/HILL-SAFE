@@ -1,0 +1,14 @@
+{
+  "run_time_utc": "2026-09-19T19:53:48Z",
+  "steps_completed": [
+    "download_gpm",
+    "build_gpm_sequence",
+    "quality_engine",
+    "pysteps_nowcast",
+    "extreme_rainfall_m1"
+  ],
+  "pipeline_health": "HEALTHY",
+  "error": null,
+  "processing_latency_seconds": 15.36,
+  "finish_time_utc": "2026-09-19T19:54:04Z"
+}

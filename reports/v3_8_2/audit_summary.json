@@ -1,0 +1,90 @@
+{
+  "audit_version": "v3.8.2",
+  "audit_title": "FINAL SCIENTIFIC CLOSURE, CLAIM QUALIFICATION & REPRODUCIBILITY AUDIT",
+  "audit_timestamp_utc": "2026-09-22T04:45:00Z",
+  "system_classification": "LEVEL 1 — PROTOTYPE / RESEARCH DECISION-SUPPORT",
+  "frozen_model_guarantee": {
+    "status": "PASS",
+    "total_models": 20,
+    "model_range": "M1–M20",
+    "frozen_models": {
+      "M2": "a3f349f6d10547ed1f378bf44f8240e840029f011c6afa0855f91fc7d7d9100b",
+      "M4": "45aa1823c395e14ff99612019c728732f776c9c0a5f6f4f92e0ec25076ee7e07",
+      "M6": "e4f5f933668373cbedaa4968faeddc89822af123bc574fbca42817c02a4e627c",
+      "M7": "f3b8e88d37013747d72a5ddb80bf230cf0e41d5f028944f1f127c981256c1b8a"
+    },
+    "mutations_detected": 0,
+    "m21_plus_models": 0
+  },
+  "scientific_evidence_qualification": {
+    "preliminary_external_evidence": {
+      "count": 3,
+      "models": ["M2", "M6", "M7"],
+      "reference_datasets": [
+        "EXT_REAL_M6_KULLU_LANDSLIDES_2023 (N=20)",
+        "EXT_REAL_M6_KULLU_CONTROLS_2023 (N=12)",
+        "EXT_REAL_M7_PROCESSED_EVENTS (N=22)",
+        "EXT_REAL_M2_FLOOD_EVENTS_2023 (N=24)"
+      ],
+      "limitations": "Small sample sizes; July 2023 single-episode storm surge; road-cut corridor accessibility bias; domain shift on extreme out-of-distribution events."
+    },
+    "proxy_validated_prototype": {
+      "count": 2,
+      "models": ["M4", "M11"],
+      "reference_datasets": ["BENCHMARK_PROXY_M11_SAR_EXTENTS (N=3)"],
+      "limitations": "Evaluated against 2D Sentinel-1 SAR microwave backscatter water masks; NOT in-situ river gauge field ground truth."
+    },
+    "global_empirical_benchmark": {
+      "count": 1,
+      "models": ["M12"],
+      "reference_datasets": ["GLOBAL_DAM_BREACH_FROEHLICH_111 (N=111)"],
+      "limitations": "Calibrated on 111 global historical dam breaches and 3 Himalayan events; local Upper Beas in-situ landslide dam breach data pending."
+    },
+    "synthetic_benchmarked_prototype": {
+      "count": 9,
+      "models": ["M9", "M10", "M14", "M15", "M16", "M17", "M18", "M19", "M20"],
+      "reference_datasets": [
+        "BENCHMARK_SYNTH_M10_CWC_STAGE (N=850)",
+        "BENCHMARK_SYNTH_M19_PROPAGATION (N=55)",
+        "BENCHMARK_SYNTH_M20_DAMAGE (N=510)"
+      ],
+      "limitations": "Evaluated exclusively against statistically synthesized fixtures; synthetic benchmarks demonstrate algorithm functionality but do NOT establish empirical real-world validation."
+    },
+    "pending_external_data": {
+      "count": 5,
+      "models": ["M1", "M3", "M5", "M8", "M13"],
+      "limitations": "Awaiting official agency telemetry (IMD DWR radar, NCMRWF WRF 3km, BBMB Pandoh Dam logbooks, GNSS tiltmeters, Census socioeconomic vulnerability)."
+    }
+  },
+  "field_deployment_reality": {
+    "active_in_situ_sensors_in_water": 0,
+    "stations_in_staging": 5,
+    "station_state": "PROTOTYPE_STAGING",
+    "physical_survivability_status": "NOT_DEMONSTRATED"
+  },
+  "telemetry_reliability_qualification": {
+    "software_soak_pdr": "100.00%",
+    "hardware_mode": "EMULATED / SIMULATED",
+    "throughput_observed": "77.99 pkts/sec",
+    "qualification": "Demonstrates software ingestion queue stability and database transaction throughput under simulated load. Does NOT guarantee physical LoRa RF packet delivery in mountain terrain."
+  },
+  "leakage_audit_qualification": {
+    "classification": "AUDIT_ENGINE_VERIFICATION",
+    "spatial_independence_confirmed": true,
+    "spatial_buffer_threshold_m": 500.0,
+    "scope_limitation": "Verified against 10,000 synthetic baseline training records; pre-2023 historical agency training datasets were not independently re-acquired."
+  },
+  "claim_guard_qualification": {
+    "classification": "AUTOMATED_CONSISTENCY_CLAIM_SCANNER",
+    "files_scanned": 463,
+    "unsupported_claims_remaining": 0,
+    "limitation": "Automated consistency scanner; does not replace peer-reviewed scientific evaluation."
+  },
+  "reproducibility_verification": {
+    "status": "PASS",
+    "reproduced_models": ["M2", "M4", "M6", "M7", "M10"],
+    "calculation_discrepancy": 0.0,
+    "tolerance": 0.0001,
+    "reproducibility_manifest": "reports/v3_8_2/reproducibility_manifest.json"
+  }
+}

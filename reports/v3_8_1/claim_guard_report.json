@@ -1,0 +1,32 @@
+{
+  "audit_version": "v3.8.2",
+  "scanner_classification": "AUTOMATED_CONSISTENCY_CLAIM_SCANNER",
+  "scanner_notice": "Automated text consistency scanner. Does not replace peer review or independent empirical observation.",
+  "allowed_phrase_taxonomy": [
+    "software-tested",
+    "simulated benchmark",
+    "preliminary external evidence",
+    "proxy validated",
+    "synthetic benchmarked",
+    "global empirical benchmark"
+  ],
+  "restricted_phrase_taxonomy": [
+    "field validated",
+    "externally validated",
+    "ground truth",
+    "production ready",
+    "operationally proven"
+  ],
+  "timestamp_utc": "2026-09-22T04:38:00Z",
+  "files_scanned": 497,
+  "total_findings": 0,
+  "critical_count": 0,
+  "high_count": 0,
+  "findings_by_severity": {
+    "CRITICAL": [],
+    "HIGH": [],
+    "MEDIUM": []
+  },
+  "findings": [],
+  "verdict": "ALL_CLAIMS_HONEST_AND_QUALIFIED"
+}

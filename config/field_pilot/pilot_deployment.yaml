@@ -1,0 +1,64 @@
+# FLOODY SHIELD v3.6 — Field Pilot Deployment Configuration
+# Target Basin: Upper Beas River Basin (Kullu–Manali, Himachal Pradesh, India)
+# Phase: Controlled Field Pilot Demonstration
+# Deployment Stage: PLANNED / PROTOTYPE_PREPARATION
+
+basin_metadata:
+  basin_id: "UPPER_BEAS_HP"
+  name: "Upper Beas River Catchment"
+  state: "Himachal Pradesh"
+  district: "Kullu / Mandi"
+  country: "India"
+  spatial_extent:
+    min_lat: 31.40
+    max_lat: 32.45
+    min_lon: 76.80
+    max_lon: 77.45
+    min_elevation_m: 700.0
+    max_elevation_m: 6000.0
+  primary_river: "Beas River"
+  critical_tributaries:
+    - "Parbati River"
+    - "Sarvari Nullah"
+    - "Sainj Nullah"
+    - "Tirthan River"
+    - "Solang Nullah"
+
+pilot_stations:
+  - station_id: "ST_MANALI_01"
+    name: "Manali Catchment & Upper Precipitation Station"
+    config_file: "manali.yaml"
+    priority: "HIGH"
+  - station_id: "ST_KULLU_01"
+    name: "Kullu District HQ & River Gauge Station"
+    config_file: "kullu.yaml"
+    priority: "CRITICAL"
+  - station_id: "ST_BHUNTAR_01"
+    name: "Bhuntar Airport & Parbati Confluence Station"
+    config_file: "bhuntar.yaml"
+    priority: "CRITICAL"
+  - station_id: "ST_AUT_01"
+    name: "Aut Gorge Geotechnical & Highway Corridor Station"
+    config_file: "aut.yaml"
+    priority: "CRITICAL"
+  - station_id: "ST_LARJI_01"
+    name: "Larji Dam Hydropower Reservoir Inflow Station"
+    config_file: "larji.yaml"
+    priority: "HIGH"
+
+ingestion_policy:
+  gateway_url: "http://localhost:8000/api/v1/telemetry/batch"
+  retry_policy:
+    max_retries: 3
+    initial_backoff_sec: 2
+    max_backoff_sec: 30
+  batch_size_limit: 50
+  heartbeat_interval_sec: 60
+  provenance_default: "OBSERVED"
+  environment: "FIELD_PILOT"
+
+statutory_boundaries:
+  autonomous_dispatch_enabled: false  # NON-NEGOTIABLE SAFETY INVARIANT
+  human_authorization_required: true
+  authorizing_agency: "HPSDMA / District Disaster Management Authority (DDMA) Kullu"
+  authorizing_role: "SENIOR_INCIDENT_COMMANDER"

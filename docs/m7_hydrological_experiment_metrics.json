@@ -1,0 +1,111 @@
+{
+  "experiment_name": "M7_Hydrological_Pore_Pressure_Integration",
+  "mandatory_disclaimer": "Direct pore-water pressure validation data are currently unavailable. Modelled pore-water pressures and slope stability indicators represent theoretical limit-equilibrium approximations derived from physical principles (Terzaghi, Fredlund) and surface hydrometeorological observations, rather than direct in-situ piezometric measurements.",
+  "data_leakage_audit": {
+    "baseline": {
+      "passed": true,
+      "index_overlap_count": 0,
+      "target_in_features": false,
+      "shared_exact_feature_vectors": 0,
+      "train_samples": 8000,
+      "test_samples": 2000
+    },
+    "extended": {
+      "passed": true,
+      "index_overlap_count": 0,
+      "target_in_features": false,
+      "shared_exact_feature_vectors": 0,
+      "train_samples": 8000,
+      "test_samples": 2000
+    }
+  },
+  "sample_counts": {
+    "total_samples": 10000,
+    "train_samples": 8000,
+    "test_samples": 2000,
+    "test_positives": 1378,
+    "test_negatives": 622
+  },
+  "baseline_m7": {
+    "features": [
+      "susceptibility_class",
+      "slope_deg",
+      "rainfall_1h",
+      "antecedent_rain_3d",
+      "soil_moisture_pct"
+    ],
+    "roc_auc": 0.8697,
+    "pr_auc": 0.9411,
+    "brier_score": 0.1365,
+    "f1_score": 0.8548,
+    "log_loss": 0.4117,
+    "feature_importances": {
+      "susceptibility_class": 397,
+      "slope_deg": 2360,
+      "rainfall_1h": 2808,
+      "antecedent_rain_3d": 2277,
+      "soil_moisture_pct": 2658
+    }
+  },
+  "extended_m7_hydrological": {
+    "features": [
+      "susceptibility_class",
+      "slope_deg",
+      "rainfall_1h",
+      "antecedent_rain_3d",
+      "soil_moisture_pct",
+      "pore_pressure_est_kpa",
+      "delta_pore_pressure_kpa",
+      "matric_suction_est_kpa",
+      "effective_normal_stress_kpa",
+      "slope_stability_indicator"
+    ],
+    "roc_auc": 0.8699,
+    "pr_auc": 0.9408,
+    "brier_score": 0.1363,
+    "f1_score": 0.857,
+    "log_loss": 0.4125,
+    "feature_importances": {
+      "susceptibility_class": 363,
+      "slope_deg": 845,
+      "rainfall_1h": 2168,
+      "antecedent_rain_3d": 1496,
+      "soil_moisture_pct": 1314,
+      "pore_pressure_est_kpa": 652,
+      "delta_pore_pressure_kpa": 970,
+      "matric_suction_est_kpa": 888,
+      "effective_normal_stress_kpa": 891,
+      "slope_stability_indicator": 913
+    }
+  },
+  "delta": {
+    "delta_roc_auc": 0.0002,
+    "delta_pr_auc": -0.0003,
+    "delta_brier_score": -0.0003,
+    "delta_f1_score": 0.0022,
+    "delta_log_loss": 0.0008
+  },
+  "scientific_finding": "On the tested controlled split, adding the physical features produced a small change in the reported metrics (delta ROC-AUC: +0.0002, delta Brier: -0.0003). This experiment does not establish independent generalization or causal benefit. Independent event-based validation is required.",
+  "data_availability_audit": {
+    "elevation_m": "REAL (Copernicus DEM 30m / AW3D30)",
+    "slope_deg": "DERIVED (Sobel / Evans 3D gradient filter from DEM)",
+    "aspect_deg": "DERIVED (DEM gradient direction)",
+    "profile_curvature": "DERIVED (DEM second derivative along maximum gradient)",
+    "twi": "DERIVED (Topographic Wetness Index ln(a / tan beta))",
+    "rainfall_1h_mm": "REAL (IMD gridded rainfall & GPM IMERG 0.1 deg gauge-calibrated)",
+    "antecedent_rain_3d_mm": "REAL (Accumulated 72-hour GPM IMERG gauge-calibrated rainfall)",
+    "soil_moisture_pct": "PROXY (Sentinel-2 NDMI / Copernicus SWIR band moisture proxy)",
+    "lithology_code": "REAL (GSI Bhukosh 1:50,000 geological map)",
+    "dist_to_road_m": "REAL (OpenStreetMap National & State Highway vectors)",
+    "dist_to_river_m": "REAL (HydroSHEDS / Copernicus derived river network vectors)",
+    "pore_pressure_est_kpa": "MODELLED (1D limit equilibrium transient saturation mechanics)",
+    "delta_pore_pressure_kpa": "MODELLED (Dynamic storm pressure increase above baseline)",
+    "matric_suction_est_kpa": "MODELLED (Fredlund & Rahardjo unsaturated suction retention)",
+    "effective_normal_stress_kpa": "MODELLED (Terzaghi effective stress sigma' = sigma - u)",
+    "modelled_infinite_slope_fos": "MODELLED (Infinite slope limit equilibrium Factor of Safety)",
+    "slope_stability_indicator": "MODELLED (Normalized Relative Slope Stability Indicator FoS / (1 + FoS))",
+    "piezometer_ground_truth": "UNAVAILABLE (Direct continuous in-situ pore-water pressure instrumentation)",
+    "tensiometer_ground_truth": "UNAVAILABLE (Direct continuous in-situ soil suction instrumentation)",
+    "borehole_shear_params": "UNAVAILABLE (Per-pixel triaxial / direct shear laboratory test data)"
+  }
+}

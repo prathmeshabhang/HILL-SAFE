@@ -1,0 +1,45 @@
+{
+  "dataset_id": "ext_kullu_upper_beas_2023",
+  "dataset_title": "Historical Landslide Field Inventory of Upper Beas Basin & NH-3 Corridor (July 2023 Extreme Monsoon Cloudburst)",
+  "authoritative_providers": [
+    {
+      "name": "Geological Survey of India (GSI) Northern Region",
+      "report_title": "A Preliminary Report on Landslide Studies in Kullu, Banjar, Manali and Anni Sub-Division, Kullu District, Himachal Pradesh",
+      "report_id": "M4EGG/C/NR/SU-PHP/2023/46620",
+      "publication_year": 2023
+    },
+    {
+      "name": "Himachal Pradesh State Disaster Management Authority (HPSDMA)",
+      "framework": "42-Point Geoparametric Datasheet for Landslide of Kullu District & Post Disaster Needs Assessment (PDNA)",
+      "portal_url": "https://hpsdma.nic.in/",
+      "publication_year": 2023
+    }
+  ],
+  "license": "Government of India Open Access / Disaster Assessment Public Records",
+  "original_filename": "kullu_upper_beas_landslides_2023_raw.csv",
+  "sha256_hash": "e56c5ecd043eb796dd1a034bf038939b47d1af0ad09b7e61ede3768a294123df",
+  "record_count": 20,
+  "geometry_type": "Point",
+  "coordinate_reference_system": "EPSG:4326 (WGS84) & EPSG:32643 (UTM Zone 43N)",
+  "temporal_coverage": "2023-07-09 to 2023-07-10 (Monsoon Cloudburst / Flash Flood Peak)",
+  "geographic_extent": {
+    "min_latitude": 31.7245,
+    "max_latitude": 32.358,
+    "min_longitude": 77.1259,
+    "max_longitude": 77.225
+  },
+  "aoi_overlap_analysis": {
+    "target_aoi": "Upper Beas Catchment (Kullu - Manali)",
+    "aoi_bounds": {
+      "min_lon": 76.8,
+      "max_lon": 77.45,
+      "min_lat": 31.6,
+      "max_lat": 32.4
+    },
+    "records_inside_aoi": 20,
+    "percentage_inside_aoi": 100.0,
+    "status": "COMPATIBLE_IN_AOI_INDEPENDENT_EXTERNAL_OBSERVATION"
+  },
+  "field_validated": true,
+  "relationship_to_m6_training_data": "INDEPENDENT_EXTERNAL_REALITY — Compiled from official disaster survey reports and GPS field geoparametric datasheets following the July 2023 event. Not used during training of Model M6."
+}

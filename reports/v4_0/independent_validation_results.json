@@ -1,0 +1,352 @@
+{
+  "validation_version": "v4.0.0",
+  "evaluated_at_utc": "2026-09-22T06:00:43.038703+00:00",
+  "total_models_evaluated": 20,
+  "tier_breakdown": {
+    "PRELIMINARY_EXTERNAL_EVIDENCE": 3,
+    "PROXY_VALIDATED_PROTOTYPE": 2,
+    "GLOBAL_EMPIRICAL_BENCHMARK": 1,
+    "SYNTHETIC_BENCHMARKED_PROTOTYPE": 9,
+    "PENDING_EXTERNAL_DATA": 5
+  },
+  "results": {
+    "M1": {
+      "model_id": "M1",
+      "sample_size": 0,
+      "primary_metric": "NONE",
+      "primary_value": null,
+      "ci_95": null,
+      "metrics": {},
+      "evidence_tier": "PENDING_EXTERNAL_DATA",
+      "dataset_id": "NONE",
+      "dataset_source": "IMD Doppler Weather Radar",
+      "data_gap_status": "Real-time polar volume scan archives",
+      "limitations": "Pending integration of IMD Doppler Weather Radar operational data streams."
+    },
+    "M2": {
+      "model_id": "M2",
+      "sample_size": 24,
+      "primary_metric": "F1_Score",
+      "primary_value": 0.6667,
+      "ci_95": [
+        0.4516,
+        0.8293
+      ],
+      "metrics": {
+        "F1_Score": 0.6667,
+        "Accuracy": 0.5,
+        "Precision": 0.5,
+        "Recall": 1.0
+      },
+      "evidence_tier": "PRELIMINARY_EXTERNAL_EVIDENCE",
+      "dataset_id": "EXT_REAL_M2_FLOOD_EVENTS_2023",
+      "dataset_source": "HPSDMA PDNA 2023 / CWC Thalout High-Water Survey"
+    },
+    "M3": {
+      "model_id": "M3",
+      "sample_size": 0,
+      "primary_metric": "NONE",
+      "primary_value": null,
+      "ci_95": null,
+      "metrics": {},
+      "evidence_tier": "PENDING_EXTERNAL_DATA",
+      "dataset_id": "NONE",
+      "dataset_source": "NCMRWF / IMD WRF Grids",
+      "data_gap_status": "WRF 3km operational grids and mountain weather telemetry",
+      "limitations": "Pending integration of NCMRWF / IMD WRF Grids operational data streams."
+    },
+    "M4": {
+      "model_id": "M4",
+      "sample_size": 3,
+      "primary_metric": "IoU",
+      "primary_value": 0.832,
+      "ci_95": [
+        0.785,
+        0.871
+      ],
+      "metrics": {
+        "IoU": 0.832,
+        "Dice_F1": 0.908,
+        "Precision": 0.915,
+        "Recall": 0.901
+      },
+      "evidence_tier": "PROXY_VALIDATED_PROTOTYPE",
+      "dataset_id": "BENCHMARK_PROXY_M11_SAR_EXTENTS",
+      "dataset_source": "ISRO NRSC / Copernicus Sentinel-1 SAR Water Masks"
+    },
+    "M5": {
+      "model_id": "M5",
+      "sample_size": 0,
+      "primary_metric": "NONE",
+      "primary_value": null,
+      "ci_95": null,
+      "metrics": {},
+      "evidence_tier": "PENDING_EXTERNAL_DATA",
+      "dataset_id": "NONE",
+      "dataset_source": "BBMB Pandoh Dam Logbooks",
+      "data_gap_status": "Spillway gate operations logs and reservoir balance data",
+      "limitations": "Pending integration of BBMB Pandoh Dam Logbooks operational data streams."
+    },
+    "M6": {
+      "model_id": "M6",
+      "sample_size": 22,
+      "primary_metric": "AUROC",
+      "primary_value": 0.1653,
+      "ci_95": [
+        -0.05,
+        0.3932
+      ],
+      "metrics": {
+        "AUROC": 0.1653,
+        "Accuracy": 0.3636,
+        "Precision": 0.3333,
+        "Recall": 0.2727,
+        "F1_Score": 0.3,
+        "Brier_Score": 0.3998
+      },
+      "evidence_tier": "PRELIMINARY_EXTERNAL_EVIDENCE",
+      "dataset_id": "EXT_REAL_M7_PROCESSED_EVENTS",
+      "dataset_source": "Geological Survey of India (GSI Report 2023) & HPSDMA"
+    },
+    "M7": {
+      "model_id": "M7",
+      "sample_size": 22,
+      "primary_metric": "F1_Score",
+      "primary_value": 0.6667,
+      "ci_95": [
+        0.4286,
+        0.8108
+      ],
+      "metrics": {
+        "F1_Score": 0.6667,
+        "Accuracy": 0.5,
+        "Precision": 0.5,
+        "Recall": 1.0,
+        "Brier_Score": 0.4991
+      },
+      "evidence_tier": "PRELIMINARY_EXTERNAL_EVIDENCE",
+      "dataset_id": "EXT_REAL_M7_PROCESSED_EVENTS",
+      "dataset_source": "GSI Report M4EGG/C/NR/SU-PHP/2023/46620 / HPSDMA"
+    },
+    "M8": {
+      "model_id": "M8",
+      "sample_size": 0,
+      "primary_metric": "NONE",
+      "primary_value": null,
+      "ci_95": null,
+      "metrics": {},
+      "evidence_tier": "PENDING_EXTERNAL_DATA",
+      "dataset_id": "NONE",
+      "dataset_source": "GSI GNSS / Sentinel-1 InSAR",
+      "data_gap_status": "Continuous sub-cm GNSS and processed PS-InSAR velocity maps",
+      "limitations": "Pending integration of GSI GNSS / Sentinel-1 InSAR operational data streams."
+    },
+    "M9": {
+      "model_id": "M9",
+      "sample_size": 250,
+      "primary_metric": "F1_Score",
+      "primary_value": 0.942,
+      "ci_95": [
+        0.902,
+        0.968
+      ],
+      "metrics": {
+        "F1_Score": 0.942,
+        "Precision": 0.951,
+        "Recall": 0.933
+      },
+      "evidence_tier": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "INTERNAL_INJECTED_BENCHMARK",
+      "dataset_source": "FLOODY SHIELD Synthetic Fault Injection Testbench"
+    },
+    "M10": {
+      "model_id": "M10",
+      "sample_size": 850,
+      "primary_metric": "NSE",
+      "primary_value": 0.9942,
+      "ci_95": [
+        0.9932,
+        0.995
+      ],
+      "metrics": {
+        "NSE": 0.9942,
+        "KGE": 0.988,
+        "RMSE": 0.125,
+        "MAE": 0.089
+      },
+      "evidence_tier": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "BENCHMARK_SYNTH_M10_CWC_STAGE",
+      "dataset_source": "FLOODY SHIELD Synthetic Hydrograph Generator"
+    },
+    "M11": {
+      "model_id": "M11",
+      "sample_size": 3,
+      "primary_metric": "RMSE_m",
+      "primary_value": 0.42,
+      "ci_95": [
+        0.35,
+        0.51
+      ],
+      "metrics": {
+        "RMSE_m": 0.42,
+        "MAE_m": 0.31
+      },
+      "evidence_tier": "PROXY_VALIDATED_PROTOTYPE",
+      "dataset_id": "BENCHMARK_PROXY_M11_SAR_EXTENTS",
+      "dataset_source": "ISRO NRSC / Copernicus Sentinel-1 SAR Water Masks"
+    },
+    "M12": {
+      "model_id": "M12",
+      "sample_size": 111,
+      "primary_metric": "Peak_Q_RMSE_pct",
+      "primary_value": 24.5,
+      "ci_95": [
+        19.2,
+        29.8
+      ],
+      "metrics": {
+        "Peak_Q_RMSE_pct": 24.5,
+        "Peak_Q_MAE_pct": 18.2,
+        "Breach_Width_RMSE_m": 14.8
+      },
+      "evidence_tier": "GLOBAL_EMPIRICAL_BENCHMARK",
+      "dataset_id": "GLOBAL_DAM_BREACH_FROEHLICH_111",
+      "dataset_source": "Froehlich (2008) / Costa (1985) Published Historical Datasets"
+    },
+    "M13": {
+      "model_id": "M13",
+      "sample_size": 0,
+      "primary_metric": "NONE",
+      "primary_value": null,
+      "ci_95": null,
+      "metrics": {},
+      "evidence_tier": "PENDING_EXTERNAL_DATA",
+      "dataset_id": "NONE",
+      "dataset_source": "Census of India / DDMP Kullu",
+      "data_gap_status": "Ward-level micro-census and household surveys",
+      "limitations": "Pending integration of Census of India / DDMP Kullu operational data streams."
+    },
+    "M14": {
+      "model_id": "M14",
+      "sample_size": 510,
+      "primary_metric": "R2",
+      "primary_value": 0.9648,
+      "ci_95": [
+        0.9585,
+        0.9701
+      ],
+      "metrics": {
+        "R2": 0.9648,
+        "RMSE": 0.082,
+        "MAE": 0.054
+      },
+      "evidence_tier": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "BENCHMARK_SYNTH_M20_DAMAGE",
+      "dataset_source": "FLOODY SHIELD Synthetic Infrastructure Loss Fixture"
+    },
+    "M15": {
+      "model_id": "M15",
+      "sample_size": 120,
+      "primary_metric": "Route_Optimality_pct",
+      "primary_value": 98.2,
+      "ci_95": [
+        96.8,
+        99.1
+      ],
+      "metrics": {
+        "Route_Optimality_pct": 98.2,
+        "Mean_Detour_Factor": 1.14,
+        "Re_routing_Latency_ms": 42.0
+      },
+      "evidence_tier": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "OSM_KULLU_ROAD_NETWORK",
+      "dataset_source": "OpenStreetMap Graph Export + Synthetic Inundation Overlays"
+    },
+    "M16": {
+      "model_id": "M16",
+      "sample_size": 150,
+      "primary_metric": "Rank_Correlation",
+      "primary_value": 0.912,
+      "ci_95": [
+        0.875,
+        0.938
+      ],
+      "metrics": {
+        "Rank_Correlation": 0.912,
+        "Brier_Score": 0.098
+      },
+      "evidence_tier": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "SIMULATED_MONSOON_SCENARIOS",
+      "dataset_source": "FLOODY SHIELD Multi-Hazard Simulation Testbench"
+    },
+    "M17": {
+      "model_id": "M17",
+      "sample_size": 85,
+      "primary_metric": "False_Alarm_Reduction_pct",
+      "primary_value": 78.5,
+      "ci_95": [
+        69.4,
+        85.3
+      ],
+      "metrics": {
+        "False_Alarm_Reduction_pct": 78.5,
+        "Missed_Detection_Rate_pct": 1.2
+      },
+      "evidence_tier": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "HISTORICAL_WARNING_LOGS",
+      "dataset_source": "FLOODY SHIELD Warning Simulation Fixture"
+    },
+    "M18": {
+      "model_id": "M18",
+      "sample_size": 60,
+      "primary_metric": "Bias_Reduction_pct",
+      "primary_value": 86.4,
+      "ci_95": [
+        79.1,
+        91.2
+      ],
+      "metrics": {
+        "Bias_Reduction_pct": 86.4,
+        "Residual_RMSE": 0.042
+      },
+      "evidence_tier": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "FIELD_CALIBRATION_LOGS",
+      "dataset_source": "Benchtop Laboratory Environmental Chamber Simulation"
+    },
+    "M19": {
+      "model_id": "M19",
+      "sample_size": 55,
+      "primary_metric": "MAPE_pct",
+      "primary_value": 4.73,
+      "ci_95": [
+        3.74,
+        5.91
+      ],
+      "metrics": {
+        "MAPE_pct": 4.73,
+        "RMSE_min": 3.28,
+        "MAE_min": 2.45
+      },
+      "evidence_tier": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "BENCHMARK_SYNTH_M19_PROPAGATION",
+      "dataset_source": "Synthetic Torrent Wave Simulation Harness"
+    },
+    "M20": {
+      "model_id": "M20",
+      "sample_size": 510,
+      "primary_metric": "Macro_F1",
+      "primary_value": 0.8388,
+      "ci_95": [
+        0.8066,
+        0.8702
+      ],
+      "metrics": {
+        "Macro_F1": 0.8388,
+        "Accuracy": 0.8529
+      },
+      "evidence_tier": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "BENCHMARK_SYNTH_M20_DAMAGE",
+      "dataset_source": "Synthesized Structural Damage Inspection Fixture"
+    }
+  }
+}

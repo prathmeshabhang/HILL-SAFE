@@ -1,0 +1,61 @@
+{
+  "audit_version": "v3.8.1",
+  "audit_date": "2026-09-22",
+  "target_basin": "Upper Beas River Basin, Kullu-Manali, Himachal Pradesh, India",
+  "system_maturity_declaration": "Level 1 - Prototype / Research Decision-Support System",
+  "executive_summary": "FLOODY SHIELD v3.8.1 successfully transitioned the repository from nominal 'implemented external validation' into an independently auditable, reproducible, provenance-controlled scientific validation baseline. Frozen model bit-immutability is 100% verified, synthetic datasets have been honestly reclassified as simulation fixtures, spatial leakage has been rigorously mapped and isolated, claim guards prevent ungrounded claims, and model statuses reflect actual empirical evidence.",
+  "frozen_model_immutability": {
+    "total_frozen_models": 4,
+    "verified_identical": 4,
+    "m2_sha256": "a3f349f6d10547ed1f378bf44f8240e840029f011c6afa0855f91fc7d7d9100b",
+    "m4_sha256": "45aa1823c395e14ff99612019c728732f776c9c0a5f6f4f92e0ec25076ee7e07",
+    "m6_sha256": "e4f5f933668373cbedaa4968faeddc89822af123bc574fbca42817c02a4e627c",
+    "m7_sha256": "f3b8e88d37013747d72a5ddb80bf230cf0e41d5f028944f1f127c981256c1b8a",
+    "status": "PASS - Zero weight modifications, zero retraining"
+  },
+  "scientific_model_status_breakdown": {
+    "total_models": 20,
+    "preliminary_external_evidence": 3,
+    "proxy_validated_prototype": 2,
+    "empirically_benchmarked": 9,
+    "pending_external_data": 6,
+    "model_mapping": {
+      "M1": "PENDING_EXTERNAL_DATA",
+      "M2": "PRELIMINARY_EXTERNAL_EVIDENCE",
+      "M3": "PENDING_EXTERNAL_DATA",
+      "M4": "PROXY_VALIDATED_PROTOTYPE",
+      "M5": "PENDING_EXTERNAL_DATA",
+      "M6": "PRELIMINARY_EXTERNAL_EVIDENCE",
+      "M7": "PRELIMINARY_EXTERNAL_EVIDENCE",
+      "M8": "PENDING_EXTERNAL_DATA",
+      "M9": "EMPIRICALLY_BENCHMARKED",
+      "M10": "EMPIRICALLY_BENCHMARKED",
+      "M11": "PROXY_VALIDATED_PROTOTYPE",
+      "M12": "PENDING_EXTERNAL_DATA",
+      "M13": "PENDING_EXTERNAL_DATA",
+      "M14": "EMPIRICALLY_BENCHMARKED",
+      "M15": "EMPIRICALLY_BENCHMARKED",
+      "M16": "EMPIRICALLY_BENCHMARKED",
+      "M17": "EMPIRICALLY_BENCHMARKED",
+      "M18": "EMPIRICALLY_BENCHMARKED",
+      "M19": "EMPIRICALLY_BENCHMARKED",
+      "M20": "EMPIRICALLY_BENCHMARKED"
+    }
+  },
+  "warnings_resolution": {
+    "baseline_warnings_count": 14,
+    "v3_8_1_warnings_count": 0,
+    "root_causes_resolved": [
+      "11 scikit-learn / LightGBM UserWarnings resolved by passing pandas DataFrame with column names in model adapters, inference runners, and smoke tests.",
+      "1 SQLAlchemy duplicate primary key SAWarning resolved by catching expected warning in transaction rollback test.",
+      "2 third-party Starlette/AnyIO deprecation warnings suppressed via pytest.ini configuration."
+    ]
+  },
+  "hardware_field_pilot_truth": {
+    "physical_stations_deployed_in_situ": 0,
+    "physical_stations_bench_calibrated": 5,
+    "operational_status": "PROTOTYPE_STAGING",
+    "telemetry_stream": "SYNTHETIC_INGESTION_HARNESS (Soak tested)",
+    "soak_test_pdr_meaning": "Measures software ingestion throughput and deduping logic resilience. Does not represent in-river hardware survivability in Himalayan conditions."
+  }
+}

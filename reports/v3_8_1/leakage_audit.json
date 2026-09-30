@@ -1,0 +1,947 @@
+{
+  "audit_version": "v3.8.2",
+  "audit_classification": "AUDIT_ENGINE_VERIFICATION",
+  "timestamp_utc": "2026-09-22T04:36:00Z",
+  "detector_verification": {
+    "status": "VERIFIED",
+    "details": "The leakage detector engine correctly identifies spatial proximity (<500m), exact coordinate duplicates, temporal bounds, and target derivation leakage."
+  },
+  "training_dataset_scope": {
+    "status": "PROCESSED_BASELINE_VERIFIED",
+    "details": "Evaluated against 10,000 baseline training points in data/processed/upper_beas/ (landslide and flood). Confirms zero spatial overlap (<500m) with active validation points. Pre-2023 historical agency training records were not independently re-acquired."
+  },
+  "spatial_leakage_audits": {
+    "m6_landslides_raw": {
+      "summary": {
+        "total_evaluated": 20,
+        "buffer_threshold_m": 500.0,
+        "exact_duplicates": 0,
+        "spatial_leakages": 14,
+        "spatially_independent_accepted": 6
+      },
+      "points": [
+        {
+          "point_id": "HP-KUL-2023-01",
+          "latitude": 32.2712,
+          "longitude": 77.1894,
+          "nearest_training_distance_m": 661.35,
+          "nearest_training_idx": 1151,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (661.3m >= 500.0m)"
+        },
+        {
+          "point_id": "HP-KUL-2023-02",
+          "latitude": 32.2281,
+          "longitude": 77.1852,
+          "nearest_training_distance_m": 573.03,
+          "nearest_training_idx": 3471,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (573.0m >= 500.0m)"
+        },
+        {
+          "point_id": "HP-KUL-2023-03",
+          "latitude": 32.1994,
+          "longitude": 77.1883,
+          "nearest_training_distance_m": 667.84,
+          "nearest_training_idx": 5157,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (667.8m >= 500.0m)"
+        },
+        {
+          "point_id": "HP-KUL-2023-04",
+          "latitude": 32.1268,
+          "longitude": 77.1471,
+          "nearest_training_distance_m": 317.49,
+          "nearest_training_idx": 3170,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (317.5m < 500.0m to train idx 3170)"
+        },
+        {
+          "point_id": "HP-KUL-2023-05",
+          "latitude": 32.0583,
+          "longitude": 77.1259,
+          "nearest_training_distance_m": 366.98,
+          "nearest_training_idx": 8949,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (367.0m < 500.0m to train idx 8949)"
+        },
+        {
+          "point_id": "HP-KUL-2023-06",
+          "latitude": 31.9852,
+          "longitude": 77.1518,
+          "nearest_training_distance_m": 767.04,
+          "nearest_training_idx": 3547,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (767.0m >= 500.0m)"
+        },
+        {
+          "point_id": "HP-KUL-2023-07",
+          "latitude": 32.3082,
+          "longitude": 77.1784,
+          "nearest_training_distance_m": 846.91,
+          "nearest_training_idx": 7050,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (846.9m >= 500.0m)"
+        },
+        {
+          "point_id": "HP-KUL-2023-08",
+          "latitude": 32.2895,
+          "longitude": 77.1843,
+          "nearest_training_distance_m": 202.86,
+          "nearest_training_idx": 80,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (202.9m < 500.0m to train idx 80)"
+        },
+        {
+          "point_id": "HP-KUL-2023-09",
+          "latitude": 32.145,
+          "longitude": 77.162,
+          "nearest_training_distance_m": 423.55,
+          "nearest_training_idx": 1134,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (423.5m < 500.0m to train idx 1134)"
+        },
+        {
+          "point_id": "HP-KUL-2023-10",
+          "latitude": 32.1025,
+          "longitude": 77.138,
+          "nearest_training_distance_m": 170.12,
+          "nearest_training_idx": 6008,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (170.1m < 500.0m to train idx 6008)"
+        },
+        {
+          "point_id": "HP-KUL-2023-11",
+          "latitude": 31.992,
+          "longitude": 77.131,
+          "nearest_training_distance_m": 252.23,
+          "nearest_training_idx": 7054,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (252.2m < 500.0m to train idx 7054)"
+        },
+        {
+          "point_id": "HP-KUL-2023-12",
+          "latitude": 31.8845,
+          "longitude": 77.1542,
+          "nearest_training_distance_m": 322.12,
+          "nearest_training_idx": 2162,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (322.1m < 500.0m to train idx 2162)"
+        },
+        {
+          "point_id": "HP-KUL-2023-13",
+          "latitude": 31.849,
+          "longitude": 77.161,
+          "nearest_training_distance_m": 85.86,
+          "nearest_training_idx": 4593,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (85.9m < 500.0m to train idx 4593)"
+        },
+        {
+          "point_id": "HP-KUL-2023-14",
+          "latitude": 31.7452,
+          "longitude": 77.2048,
+          "nearest_training_distance_m": 154.29,
+          "nearest_training_idx": 8621,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (154.3m < 500.0m to train idx 8621)"
+        },
+        {
+          "point_id": "HP-KUL-2023-15",
+          "latitude": 31.7245,
+          "longitude": 77.218,
+          "nearest_training_distance_m": 86.88,
+          "nearest_training_idx": 8603,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (86.9m < 500.0m to train idx 8603)"
+        },
+        {
+          "point_id": "HP-KUL-2023-16",
+          "latitude": 32.358,
+          "longitude": 77.225,
+          "nearest_training_distance_m": 524.34,
+          "nearest_training_idx": 2553,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (524.3m >= 500.0m)"
+        },
+        {
+          "point_id": "HP-KUL-2023-17",
+          "latitude": 32.321,
+          "longitude": 77.195,
+          "nearest_training_distance_m": 397.7,
+          "nearest_training_idx": 408,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (397.7m < 500.0m to train idx 408)"
+        },
+        {
+          "point_id": "HP-KUL-2023-18",
+          "latitude": 32.115,
+          "longitude": 77.172,
+          "nearest_training_distance_m": 448.64,
+          "nearest_training_idx": 7084,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (448.6m < 500.0m to train idx 7084)"
+        },
+        {
+          "point_id": "HP-KUL-2023-19",
+          "latitude": 32.138,
+          "longitude": 77.155,
+          "nearest_training_distance_m": 385.11,
+          "nearest_training_idx": 1495,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (385.1m < 500.0m to train idx 1495)"
+        },
+        {
+          "point_id": "HP-KUL-2023-20",
+          "latitude": 31.895,
+          "longitude": 77.148,
+          "nearest_training_distance_m": 425.16,
+          "nearest_training_idx": 6277,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (425.2m < 500.0m to train idx 6277)"
+        }
+      ]
+    },
+    "m6_stable_controls_raw": {
+      "summary": {
+        "total_evaluated": 12,
+        "buffer_threshold_m": 500.0,
+        "exact_duplicates": 0,
+        "spatial_leakages": 10,
+        "spatially_independent_accepted": 2
+      },
+      "points": [
+        {
+          "point_id": "CTRL_M6_01",
+          "latitude": 32.118,
+          "longitude": 77.175,
+          "nearest_training_distance_m": 512.05,
+          "nearest_training_idx": 7084,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (512.0m >= 500.0m)"
+        },
+        {
+          "point_id": "CTRL_M6_02",
+          "latitude": 31.851,
+          "longitude": 77.159,
+          "nearest_training_distance_m": 250.46,
+          "nearest_training_idx": 4593,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (250.5m < 500.0m to train idx 4593)"
+        },
+        {
+          "point_id": "CTRL_M6_03",
+          "latitude": 32.268,
+          "longitude": 77.192,
+          "nearest_training_distance_m": 431.75,
+          "nearest_training_idx": 1151,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (431.8m < 500.0m to train idx 1151)"
+        },
+        {
+          "point_id": "CTRL_M6_04",
+          "latitude": 31.956,
+          "longitude": 77.112,
+          "nearest_training_distance_m": 224.65,
+          "nearest_training_idx": 7034,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (224.7m < 500.0m to train idx 7034)"
+        },
+        {
+          "point_id": "CTRL_M6_05",
+          "latitude": 31.637,
+          "longitude": 77.342,
+          "nearest_training_distance_m": 462.85,
+          "nearest_training_idx": 4563,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (462.8m < 500.0m to train idx 4563)"
+        },
+        {
+          "point_id": "CTRL_M6_06",
+          "latitude": 32.148,
+          "longitude": 77.185,
+          "nearest_training_distance_m": 638.51,
+          "nearest_training_idx": 6400,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (638.5m >= 500.0m)"
+        },
+        {
+          "point_id": "CTRL_M6_07",
+          "latitude": 31.65,
+          "longitude": 77.398,
+          "nearest_training_distance_m": 360.13,
+          "nearest_training_idx": 1038,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (360.1m < 500.0m to train idx 1038)"
+        },
+        {
+          "point_id": "CTRL_M6_08",
+          "latitude": 32.355,
+          "longitude": 77.228,
+          "nearest_training_distance_m": 425.94,
+          "nearest_training_idx": 2553,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (425.9m < 500.0m to train idx 2553)"
+        },
+        {
+          "point_id": "CTRL_M6_09",
+          "latitude": 32.321,
+          "longitude": 77.149,
+          "nearest_training_distance_m": 367.81,
+          "nearest_training_idx": 4787,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (367.8m < 500.0m to train idx 4787)"
+        },
+        {
+          "point_id": "CTRL_M6_10",
+          "latitude": 32.01,
+          "longitude": 77.315,
+          "nearest_training_distance_m": 42.04,
+          "nearest_training_idx": 2061,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (42.0m < 500.0m to train idx 2061)"
+        },
+        {
+          "point_id": "CTRL_M6_11",
+          "latitude": 32.195,
+          "longitude": 77.21,
+          "nearest_training_distance_m": 122.38,
+          "nearest_training_idx": 9665,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (122.4m < 500.0m to train idx 9665)"
+        },
+        {
+          "point_id": "CTRL_M6_12",
+          "latitude": 31.714,
+          "longitude": 77.221,
+          "nearest_training_distance_m": 119.53,
+          "nearest_training_idx": 6169,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (119.5m < 500.0m to train idx 6169)"
+        }
+      ]
+    },
+    "m7_landslides_processed": {
+      "summary": {
+        "total_evaluated": 22,
+        "buffer_threshold_m": 500.0,
+        "exact_duplicates": 0,
+        "spatial_leakages": 14,
+        "spatially_independent_accepted": 8
+      },
+      "points": [
+        {
+          "point_id": "HP-KUL-2023-01",
+          "latitude": 32.2712,
+          "longitude": 77.1894,
+          "nearest_training_distance_m": 661.35,
+          "nearest_training_idx": 1151,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (661.3m >= 500.0m)"
+        },
+        {
+          "point_id": "HP-KUL-2023-02",
+          "latitude": 32.2281,
+          "longitude": 77.1852,
+          "nearest_training_distance_m": 573.03,
+          "nearest_training_idx": 3471,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (573.0m >= 500.0m)"
+        },
+        {
+          "point_id": "HP-KUL-2023-03",
+          "latitude": 32.1994,
+          "longitude": 77.1883,
+          "nearest_training_distance_m": 667.84,
+          "nearest_training_idx": 5157,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (667.8m >= 500.0m)"
+        },
+        {
+          "point_id": "HP-KUL-2023-06",
+          "latitude": 31.9852,
+          "longitude": 77.1518,
+          "nearest_training_distance_m": 767.04,
+          "nearest_training_idx": 3547,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (767.0m >= 500.0m)"
+        },
+        {
+          "point_id": "HP-KUL-2023-07",
+          "latitude": 32.3082,
+          "longitude": 77.1784,
+          "nearest_training_distance_m": 846.91,
+          "nearest_training_idx": 7050,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (846.9m >= 500.0m)"
+        },
+        {
+          "point_id": "HP-KUL-2023-08",
+          "latitude": 32.2895,
+          "longitude": 77.1843,
+          "nearest_training_distance_m": 202.86,
+          "nearest_training_idx": 80,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (202.9m < 500.0m to train idx 80)"
+        },
+        {
+          "point_id": "HP-KUL-2023-11",
+          "latitude": 31.992,
+          "longitude": 77.131,
+          "nearest_training_distance_m": 252.23,
+          "nearest_training_idx": 7054,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (252.2m < 500.0m to train idx 7054)"
+        },
+        {
+          "point_id": "HP-KUL-2023-12",
+          "latitude": 31.8845,
+          "longitude": 77.1542,
+          "nearest_training_distance_m": 322.12,
+          "nearest_training_idx": 2162,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (322.1m < 500.0m to train idx 2162)"
+        },
+        {
+          "point_id": "HP-KUL-2023-14",
+          "latitude": 31.7452,
+          "longitude": 77.2048,
+          "nearest_training_distance_m": 154.29,
+          "nearest_training_idx": 8621,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (154.3m < 500.0m to train idx 8621)"
+        },
+        {
+          "point_id": "HP-KUL-2023-16",
+          "latitude": 32.358,
+          "longitude": 77.225,
+          "nearest_training_distance_m": 524.34,
+          "nearest_training_idx": 2553,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (524.3m >= 500.0m)"
+        },
+        {
+          "point_id": "HP-KUL-2023-18",
+          "latitude": 32.115,
+          "longitude": 77.172,
+          "nearest_training_distance_m": 448.64,
+          "nearest_training_idx": 7084,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (448.6m < 500.0m to train idx 7084)"
+        },
+        {
+          "point_id": "CTRL-NEG-01",
+          "latitude": 31.954,
+          "longitude": 77.108,
+          "nearest_training_distance_m": 199.91,
+          "nearest_training_idx": 2116,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (199.9m < 500.0m to train idx 2116)"
+        },
+        {
+          "point_id": "CTRL-NEG-02",
+          "latitude": 31.961,
+          "longitude": 77.112,
+          "nearest_training_distance_m": 275.58,
+          "nearest_training_idx": 1489,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (275.6m < 500.0m to train idx 1489)"
+        },
+        {
+          "point_id": "CTRL-NEG-03",
+          "latitude": 31.875,
+          "longitude": 77.158,
+          "nearest_training_distance_m": 338.53,
+          "nearest_training_idx": 5945,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (338.5m < 500.0m to train idx 5945)"
+        },
+        {
+          "point_id": "CTRL-NEG-04",
+          "latitude": 31.862,
+          "longitude": 77.165,
+          "nearest_training_distance_m": 184.69,
+          "nearest_training_idx": 6769,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (184.7m < 500.0m to train idx 6769)"
+        },
+        {
+          "point_id": "CTRL-NEG-05",
+          "latitude": 32.045,
+          "longitude": 77.135,
+          "nearest_training_distance_m": 255.45,
+          "nearest_training_idx": 8908,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (255.4m < 500.0m to train idx 8908)"
+        },
+        {
+          "point_id": "CTRL-NEG-06",
+          "latitude": 32.085,
+          "longitude": 77.142,
+          "nearest_training_distance_m": 314.7,
+          "nearest_training_idx": 961,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (314.7m < 500.0m to train idx 961)"
+        },
+        {
+          "point_id": "CTRL-NEG-07",
+          "latitude": 32.122,
+          "longitude": 77.162,
+          "nearest_training_distance_m": 577.82,
+          "nearest_training_idx": 1335,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (577.8m >= 500.0m)"
+        },
+        {
+          "point_id": "CTRL-NEG-08",
+          "latitude": 32.175,
+          "longitude": 77.182,
+          "nearest_training_distance_m": 543.74,
+          "nearest_training_idx": 235,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (543.7m >= 500.0m)"
+        },
+        {
+          "point_id": "CTRL-NEG-09",
+          "latitude": 32.215,
+          "longitude": 77.175,
+          "nearest_training_distance_m": 98.3,
+          "nearest_training_idx": 9785,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (98.3m < 500.0m to train idx 9785)"
+        },
+        {
+          "point_id": "CTRL-NEG-10",
+          "latitude": 32.245,
+          "longitude": 77.181,
+          "nearest_training_distance_m": 312.84,
+          "nearest_training_idx": 1407,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (312.8m < 500.0m to train idx 1407)"
+        },
+        {
+          "point_id": "CTRL-NEG-11",
+          "latitude": 32.26,
+          "longitude": 77.172,
+          "nearest_training_distance_m": 313.34,
+          "nearest_training_idx": 6471,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (313.3m < 500.0m to train idx 6471)"
+        }
+      ]
+    },
+    "flood_events_raw": {
+      "summary": {
+        "total_evaluated": 24,
+        "buffer_threshold_m": 500.0,
+        "exact_duplicates": 0,
+        "spatial_leakages": 18,
+        "spatially_independent_accepted": 6
+      },
+      "points": [
+        {
+          "point_id": "FL_01",
+          "latitude": 32.2536,
+          "longitude": 77.1855,
+          "nearest_training_distance_m": 460.02,
+          "nearest_training_idx": 769,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (460.0m < 500.0m to train idx 769)"
+        },
+        {
+          "point_id": "FL_02",
+          "latitude": 32.2858,
+          "longitude": 77.1782,
+          "nearest_training_distance_m": 101.93,
+          "nearest_training_idx": 2207,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (101.9m < 500.0m to train idx 2207)"
+        },
+        {
+          "point_id": "FL_03",
+          "latitude": 32.2312,
+          "longitude": 77.1895,
+          "nearest_training_distance_m": 816.59,
+          "nearest_training_idx": 1176,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (816.6m >= 500.0m)"
+        },
+        {
+          "point_id": "FL_04",
+          "latitude": 32.1985,
+          "longitude": 77.195,
+          "nearest_training_distance_m": 587.96,
+          "nearest_training_idx": 6392,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (588.0m >= 500.0m)"
+        },
+        {
+          "point_id": "FL_05",
+          "latitude": 32.129,
+          "longitude": 77.172,
+          "nearest_training_distance_m": 327.58,
+          "nearest_training_idx": 5237,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (327.6m < 500.0m to train idx 5237)"
+        },
+        {
+          "point_id": "FL_06",
+          "latitude": 32.0585,
+          "longitude": 77.151,
+          "nearest_training_distance_m": 273.16,
+          "nearest_training_idx": 8968,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (273.2m < 500.0m to train idx 8968)"
+        },
+        {
+          "point_id": "FL_07",
+          "latitude": 31.9615,
+          "longitude": 77.1085,
+          "nearest_training_distance_m": 562.26,
+          "nearest_training_idx": 1489,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (562.3m >= 500.0m)"
+        },
+        {
+          "point_id": "FL_08",
+          "latitude": 31.879,
+          "longitude": 77.154,
+          "nearest_training_distance_m": 94.08,
+          "nearest_training_idx": 2035,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (94.1m < 500.0m to train idx 2035)"
+        },
+        {
+          "point_id": "FL_09",
+          "latitude": 31.745,
+          "longitude": 77.208,
+          "nearest_training_distance_m": 249.67,
+          "nearest_training_idx": 4607,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (249.7m < 500.0m to train idx 4607)"
+        },
+        {
+          "point_id": "FL_10",
+          "latitude": 31.716,
+          "longitude": 77.225,
+          "nearest_training_distance_m": 134.53,
+          "nearest_training_idx": 9268,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (134.5m < 500.0m to train idx 9268)"
+        },
+        {
+          "point_id": "FL_11",
+          "latitude": 31.782,
+          "longitude": 77.305,
+          "nearest_training_distance_m": 320.61,
+          "nearest_training_idx": 8777,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (320.6m < 500.0m to train idx 8777)"
+        },
+        {
+          "point_id": "FL_12",
+          "latitude": 32.316,
+          "longitude": 77.158,
+          "nearest_training_distance_m": 661.13,
+          "nearest_training_idx": 2720,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (661.1m >= 500.0m)"
+        },
+        {
+          "point_id": "NFL_01",
+          "latitude": 32.268,
+          "longitude": 77.192,
+          "nearest_training_distance_m": 431.75,
+          "nearest_training_idx": 1151,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (431.8m < 500.0m to train idx 1151)"
+        },
+        {
+          "point_id": "NFL_02",
+          "latitude": 32.118,
+          "longitude": 77.175,
+          "nearest_training_distance_m": 512.05,
+          "nearest_training_idx": 7084,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (512.0m >= 500.0m)"
+        },
+        {
+          "point_id": "NFL_03",
+          "latitude": 32.195,
+          "longitude": 77.21,
+          "nearest_training_distance_m": 122.38,
+          "nearest_training_idx": 9665,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (122.4m < 500.0m to train idx 9665)"
+        },
+        {
+          "point_id": "NFL_04",
+          "latitude": 31.956,
+          "longitude": 77.112,
+          "nearest_training_distance_m": 224.65,
+          "nearest_training_idx": 7034,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (224.7m < 500.0m to train idx 7034)"
+        },
+        {
+          "point_id": "NFL_05",
+          "latitude": 32.321,
+          "longitude": 77.149,
+          "nearest_training_distance_m": 367.81,
+          "nearest_training_idx": 4787,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (367.8m < 500.0m to train idx 4787)"
+        },
+        {
+          "point_id": "NFL_06",
+          "latitude": 31.851,
+          "longitude": 77.159,
+          "nearest_training_distance_m": 250.46,
+          "nearest_training_idx": 4593,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (250.5m < 500.0m to train idx 4593)"
+        },
+        {
+          "point_id": "NFL_07",
+          "latitude": 32.027,
+          "longitude": 77.348,
+          "nearest_training_distance_m": 294.28,
+          "nearest_training_idx": 3891,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (294.3m < 500.0m to train idx 3891)"
+        },
+        {
+          "point_id": "NFL_08",
+          "latitude": 31.637,
+          "longitude": 77.342,
+          "nearest_training_distance_m": 462.85,
+          "nearest_training_idx": 4563,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (462.8m < 500.0m to train idx 4563)"
+        },
+        {
+          "point_id": "NFL_09",
+          "latitude": 31.65,
+          "longitude": 77.398,
+          "nearest_training_distance_m": 360.13,
+          "nearest_training_idx": 1038,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (360.1m < 500.0m to train idx 1038)"
+        },
+        {
+          "point_id": "NFL_10",
+          "latitude": 32.148,
+          "longitude": 77.185,
+          "nearest_training_distance_m": 638.51,
+          "nearest_training_idx": 6400,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": false,
+          "is_accepted": true,
+          "status_reason": "SPATIALLY_INDEPENDENT (638.5m >= 500.0m)"
+        },
+        {
+          "point_id": "NFL_11",
+          "latitude": 32.355,
+          "longitude": 77.228,
+          "nearest_training_distance_m": 425.94,
+          "nearest_training_idx": 2553,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (425.9m < 500.0m to train idx 2553)"
+        },
+        {
+          "point_id": "NFL_12",
+          "latitude": 32.01,
+          "longitude": 77.315,
+          "nearest_training_distance_m": 42.04,
+          "nearest_training_idx": 2061,
+          "is_exact_duplicate": false,
+          "is_spatial_leakage": true,
+          "is_accepted": false,
+          "status_reason": "SPATIAL_LEAKAGE_BUFFER_EXCEEDED (42.0m < 500.0m to train idx 2061)"
+        }
+      ]
+    }
+  },
+  "temporal_leakage_audit": {
+    "m6_training_window": "Historical baseline 2018-2022 (pre-2023)",
+    "m6_external_event_date": "2023-07-09 to 2023-07-10 (Monsoon Surge)",
+    "temporal_overlap_detected": false,
+    "event_identity_leakage_detected": false,
+    "notes": "External validation captures exclusively the July 2023 extreme monsoon catastrophe, strictly post-dating training period."
+  },
+  "feature_leakage_audit": {
+    "m6_features_checked": [
+      "elevation_m",
+      "slope_deg",
+      "aspect_deg",
+      "profile_curvature",
+      "lithology_code",
+      "dist_to_road_m",
+      "dist_to_river_m",
+      "lulc_code"
+    ],
+    "m7_features_checked": [
+      "slope_deg",
+      "rainfall_1h",
+      "antecedent_rain_3d",
+      "soil_moisture_pct",
+      "pore_pressure_est_kpa"
+    ],
+    "target_variable_in_features": false,
+    "derived_target_in_features": false,
+    "notes": "Feature sets independently verified. No ground truth or downstream target indicators present in inference feature tensors."
+  },
+  "leakage_governance_verdict": "PASSED - All leakage points properly flagged and excluded from pristine validation subsets."
+}

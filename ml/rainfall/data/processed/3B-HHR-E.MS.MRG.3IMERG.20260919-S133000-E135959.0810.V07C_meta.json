@@ -1,0 +1,25 @@
+{
+  "source_file": "3B-HHR-E.MS.MRG.3IMERG.20260919-S133000-E135959.0810.V07C.HDF5",
+  "observation_time_utc": "2026-09-19T13:30:00Z",
+  "product": "GPM_3IMERGHHE_V07",
+  "units": "mm/hr",
+  "variable_type": "instantaneous_precipitation_rate",
+  "variable_description": "Rainfall rate in mm/hr (NOT accumulated mm)",
+  "bounding_box": {
+    "west": 76.5,
+    "south": 30.5,
+    "east": 78.5,
+    "north": 32.0
+  },
+  "grid_shape": [
+    15,
+    20
+  ],
+  "resolution_deg": 0.1,
+  "valid_pixels": 300,
+  "nan_pixels": 0,
+  "total_pixels": 300,
+  "min_rate_mm_per_hr": 0.0,
+  "max_rate_mm_per_hr": 0.0,
+  "mean_rate_mm_per_hr": 0.0
+}

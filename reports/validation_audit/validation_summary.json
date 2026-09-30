@@ -1,0 +1,91 @@
+{
+  "audit_timestamp_utc": "2026-09-20T13:52:08.807811+00:00",
+  "stage": "STAGE_A_VALIDATION_INTERPRETATION",
+  "models_audited": [
+    "M6",
+    "M7",
+    "M2",
+    "M4"
+  ],
+  "validation_tier_summary": {
+    "M6": "INSUFFICIENT_SAMPLE",
+    "M7": "PARTIALLY_VALIDATED",
+    "M2": "PARTIALLY_VALIDATED",
+    "M4": "PARTIALLY_VALIDATED"
+  },
+  "spatial_independence_summary": {
+    "M6": {
+      "total": 20,
+      "independent": 11,
+      "non_independent": 9
+    },
+    "M7": {
+      "total": 22,
+      "independent": 11,
+      "non_independent": 11
+    },
+    "M2": {
+      "total": 24,
+      "independent": 6,
+      "non_independent": 18
+    },
+    "M4": {
+      "total": 24,
+      "independent": 6,
+      "non_independent": 18
+    }
+  },
+  "event_independence_summary": {
+    "M7": {
+      "spatial_samples": 22,
+      "independent_events": 1,
+      "is_clustered_forcing": true
+    }
+  },
+  "control_quality_summary": {
+    "M2": {
+      "total_controls": 12,
+      "valid_controls": 1,
+      "provisional_controls": 11,
+      "invalid_controls": 0
+    }
+  },
+  "metrics_marked_not_estimable": [
+    {
+      "model": "M6",
+      "metric": "roc_auc",
+      "reason": "not_estimable_due_to_single_class: external dataset contains positives (failures/floods) only (N=11). Discrimination metrics require both positive and negative observation controls."
+    },
+    {
+      "model": "M6",
+      "metric": "pr_auc",
+      "reason": "not_estimable_due_to_single_class: external dataset contains positives (failures/floods) only (N=11). Discrimination metrics require both positive and negative observation controls."
+    },
+    {
+      "model": "M6",
+      "metric": "specificity",
+      "reason": "not_estimable_due_to_zero_negative_controls: dataset contains no negative controls to evaluate true negatives."
+    },
+    {
+      "model": "M6",
+      "metric": "precision",
+      "reason": "not_estimable_due_to_zero_negative_controls: false positives cannot occur when dataset contains only positive cases."
+    },
+    {
+      "model": "M7",
+      "metric": "event_level_roc_auc",
+      "reason": "not_estimable_due_to_single_event: evaluation dataset covers only 1 event(s) (22 spatial points). Point-level spatial discrimination cannot be reported as independent event-level validation."
+    },
+    {
+      "model": "M4",
+      "metric": "external_2d_dice",
+      "reason": "not_available_authoritative_mask_missing: authoritative independent 10m digital flood delineation rasters or shapefiles (Copernicus EMS / NRSC) are not publicly released for this single scene. Internal benchmark achieves Dice=0.969-0.973 against SAR-HAND pseudo-reference, but this is an internal physical benchmark, not independent external validation."
+    },
+    {
+      "model": "M4",
+      "metric": "external_2d_iou",
+      "reason": "not_available_authoritative_mask_missing: authoritative independent 10m digital flood delineation rasters or shapefiles (Copernicus EMS / NRSC) are not publicly released for this single scene. Internal benchmark achieves IoU=0.939-0.948 against SAR-HAND pseudo-reference."
+    }
+  ],
+  "zero_fabrication_compliance": true
+}

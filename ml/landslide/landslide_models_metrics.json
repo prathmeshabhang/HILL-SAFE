@@ -1,0 +1,32 @@
+{
+  "m6_susceptibility": {
+    "algorithm": "RandomForestClassifier",
+    "f1_macro": 0.8717,
+    "feature_importances": {
+      "slope": 0.5417,
+      "lithology": 0.2051,
+      "dist_to_stream": 0.1418,
+      "curvature": 0.0764,
+      "elevation": 0.0158,
+      "aspect": 0.0154,
+      "land_cover": 0.0038
+    },
+    "classes": [
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+    ]
+  },
+  "m7_dynamic_trigger": {
+    "algorithm": "LGBMClassifier",
+    "roc_auc": 0.8174,
+    "f1_score": 0.7334,
+    "features": [
+      "susceptibility_class",
+      "slope",
+      "rainfall_1h",
+      "antecedent_rain_3d",
+      "soil_moisture"
+    ]
+  }
+}

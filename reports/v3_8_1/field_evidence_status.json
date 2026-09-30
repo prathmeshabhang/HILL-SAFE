@@ -1,0 +1,71 @@
+{
+  "audit_version": "v3.8.1",
+  "evaluated_at": "2026-09-22T04:00:00Z",
+  "target_basin": "Upper Beas River Basin, Kullu-Manali, Himachal Pradesh, India",
+  "system_maturity_tier": "Level 1 - Prototype / Research Decision-Support System",
+  "hardware_pilot_status": {
+    "stations_planned": 5,
+    "stations_bench_tested": 5,
+    "stations_physically_deployed_in_river": 0,
+    "operational_state": "PROTOTYPE_STAGING",
+    "deployment_notes": "Physical ESP32 LoRa sensor nodes, RS485 ultrasonic stage sensors, and tipping-bucket rain gauges are bench-calibrated and staged in emulation mode. In-situ riverbank deployment requires local district administration / CWC permits and physical mounting."
+  },
+  "stations": [
+    {
+      "station_id": "STN_SOAL_01",
+      "name": "Solang Valley Hydro-Met",
+      "latitude": 32.3167,
+      "longitude": 77.1556,
+      "elevation_m": 2480.0,
+      "status": "PROTOTYPE_STAGING",
+      "telemetry_link": "LoRa 865MHz / SX1276",
+      "in_situ_verified": false
+    },
+    {
+      "station_id": "STN_KOTI_01",
+      "name": "Kothi Geotechnical & Met",
+      "latitude": 32.3214,
+      "longitude": 77.1989,
+      "elevation_m": 2530.0,
+      "status": "PROTOTYPE_STAGING",
+      "telemetry_link": "LoRa 865MHz / SX1276",
+      "in_situ_verified": false
+    },
+    {
+      "station_id": "STN_MANA_01",
+      "name": "Manali Central Beas Gauge",
+      "latitude": 32.2396,
+      "longitude": 77.1887,
+      "elevation_m": 2050.0,
+      "status": "PROTOTYPE_STAGING",
+      "telemetry_link": "LoRa 865MHz / SX1276",
+      "in_situ_verified": false
+    },
+    {
+      "station_id": "STN_ALEN_01",
+      "name": "Allain Barrage Hydro Station",
+      "latitude": 32.2150,
+      "longitude": 77.2100,
+      "elevation_m": 1920.0,
+      "status": "PROTOTYPE_STAGING",
+      "telemetry_link": "LoRa 865MHz / SX1276",
+      "in_situ_verified": false
+    },
+    {
+      "station_id": "STN_PAND_01",
+      "name": "Pandoh Dam Hydrometric Array",
+      "latitude": 31.6700,
+      "longitude": 77.0600,
+      "elevation_m": 900.0,
+      "status": "PROTOTYPE_STAGING",
+      "telemetry_link": "LoRa 865MHz / SX1276",
+      "in_situ_verified": false
+    }
+  ],
+  "telemetry_provenance_declaration": {
+    "live_pilot_stream": "SYNTHETIC_INGESTION_HARNESS",
+    "packet_delivery_ratio_context": "Software-in-the-loop stress testing. Does not represent in-river physical hardware reliability under mountain weather conditions.",
+    "real_time_gateways": "Virtual LoRaWAN Gateway Forwarder (Emulated)",
+    "official_cwc_stream": "PENDING_API_CREDENTIALS"
+  }
+}

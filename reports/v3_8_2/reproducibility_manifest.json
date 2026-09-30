@@ -1,0 +1,119 @@
+{
+  "audit_version": "v3.8.2",
+  "created_at_utc": "2026-09-22T11:51:26.348447+00:00",
+  "purpose": "Precise execution recipes and cryptographic hashes for independent reviewer reproduction.",
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python_version": "3.11.9",
+    "scikit_learn_version": "1.6.0",
+    "numpy_version": "2.4.6",
+    "pandas_version": "3.0.6"
+  },
+  "models": [
+    {
+      "model_id": "M2",
+      "reproduction_command": "python tools/validation/reproduce_metrics.py --model M2",
+      "model_path": "ml/hydrology/m2_runoff_lstm.joblib",
+      "model_sha256": "FILE_NOT_FOUND",
+      "dataset_path": "data/external/flood/raw/upper_beas_flood_events_2023_raw.csv",
+      "dataset_sha256": "484c7677b5bc072cc944e9ae90670332cb1cba4ed470a0aed89051c44fa2b7cd",
+      "configuration": {
+        "threshold": 0.5,
+        "bootstrap_resamples": 1000,
+        "random_state": 42
+      },
+      "timestamp": "2026-09-22T11:51:26.330939+00:00",
+      "environment": {
+        "os": "Windows-10-10.0.26200-SP0",
+        "python_version": "3.11.9",
+        "scikit_learn_version": "1.6.0",
+        "numpy_version": "2.4.6",
+        "pandas_version": "3.0.6"
+      }
+    },
+    {
+      "model_id": "M4",
+      "reproduction_command": "python tools/validation/reproduce_metrics.py --model M4",
+      "model_path": "ml/satellite/m4_flood_unet.pth",
+      "model_sha256": "FILE_NOT_FOUND",
+      "dataset_path": "data/validation_datasets/M11_satellite_flood_extents.json",
+      "dataset_sha256": "99a14f7f733ad83f98e1f713dc13e73c0b173cf6eb3ab22c7f9ad47a8f04fc4e",
+      "configuration": {
+        "threshold": 0.5,
+        "bootstrap_resamples": 1000,
+        "random_state": 42
+      },
+      "timestamp": "2026-09-22T11:51:26.330939+00:00",
+      "environment": {
+        "os": "Windows-10-10.0.26200-SP0",
+        "python_version": "3.11.9",
+        "scikit_learn_version": "1.6.0",
+        "numpy_version": "2.4.6",
+        "pandas_version": "3.0.6"
+      }
+    },
+    {
+      "model_id": "M6",
+      "reproduction_command": "python tools/validation/reproduce_metrics.py --model M6",
+      "model_path": "ml/landslide/m6_beas_susceptibility_rf.joblib",
+      "model_sha256": "e4f5f933668373cbedaa4968faeddc89822af123bc574fbca42817c02a4e627c",
+      "dataset_path": "data/external/m6/upper_beas/processed/m7_external_event_dataset.csv",
+      "dataset_sha256": "61b8af53d9140f08a4649b51201c2525ab531ed3493bf908d9421c02a7b58717",
+      "configuration": {
+        "threshold": 0.5,
+        "bootstrap_resamples": 1000,
+        "random_state": 42
+      },
+      "timestamp": "2026-09-22T11:51:26.345454+00:00",
+      "environment": {
+        "os": "Windows-10-10.0.26200-SP0",
+        "python_version": "3.11.9",
+        "scikit_learn_version": "1.6.0",
+        "numpy_version": "2.4.6",
+        "pandas_version": "3.0.6"
+      }
+    },
+    {
+      "model_id": "M7",
+      "reproduction_command": "python tools/validation/reproduce_metrics.py --model M7",
+      "model_path": "ml/landslide/m7_beas_trigger_lgbm.joblib",
+      "model_sha256": "f3b8e88d37013747d72a5ddb80bf230cf0e41d5f028944f1f127c981256c1b8a",
+      "dataset_path": "data/external/m6/upper_beas/processed/m7_external_event_dataset.csv",
+      "dataset_sha256": "61b8af53d9140f08a4649b51201c2525ab531ed3493bf908d9421c02a7b58717",
+      "configuration": {
+        "threshold": 0.5,
+        "bootstrap_resamples": 1000,
+        "random_state": 42
+      },
+      "timestamp": "2026-09-22T11:51:26.347446+00:00",
+      "environment": {
+        "os": "Windows-10-10.0.26200-SP0",
+        "python_version": "3.11.9",
+        "scikit_learn_version": "1.6.0",
+        "numpy_version": "2.4.6",
+        "pandas_version": "3.0.6"
+      }
+    },
+    {
+      "model_id": "M10",
+      "reproduction_command": "python tools/validation/reproduce_metrics.py --model M10",
+      "model_path": "ml/flood/m10_water_level/infer.py",
+      "model_sha256": "75cbe913d16de9e86ec2522b63939556c200e2f6f862eb625b230296ff2b362f",
+      "dataset_path": "data/validation_datasets/M10_cwc_thalout_water_level.csv",
+      "dataset_sha256": "3ba4fccdf9c1d3e2878cb09adeb1ab172045a34981ea4d90ff32748e1ba764d5",
+      "configuration": {
+        "threshold": 0.5,
+        "bootstrap_resamples": 1000,
+        "random_state": 42
+      },
+      "timestamp": "2026-09-22T11:51:26.348447+00:00",
+      "environment": {
+        "os": "Windows-10-10.0.26200-SP0",
+        "python_version": "3.11.9",
+        "scikit_learn_version": "1.6.0",
+        "numpy_version": "2.4.6",
+        "pandas_version": "3.0.6"
+      }
+    }
+  ]
+}

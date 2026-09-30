@@ -1,0 +1,88 @@
+{
+  "event_date": "2023-07-09",
+  "region": "Upper Beas Catchment (Kullu - Manali)",
+  "model_engine": "FLOODY_SHIELD_PWP_SLOPE_STABILITY_V1.0",
+  "scientific_disclaimer": "Direct pore-water pressure validation data are currently unavailable.",
+  "snapshots": [
+    {
+      "timestep": "T_0",
+      "minutes_from_onset": 0,
+      "description": "Pre-storm baseline",
+      "rainfall_rate_mm_h": 5.0,
+      "antecedent_3d_mm": 40.0,
+      "mean_pore_pressure_kpa": 2.2699999809265137,
+      "max_pore_pressure_kpa": 3.6700000762939453,
+      "mean_slope_stability_indicator": 0.6539999842643738,
+      "critical_slope_area_pct": 0.0,
+      "files": {
+        "pore_pressure_tif": "hazard_timeseries\\2023-07-09\\T_0\\pore_pressure_kpa.tif",
+        "slope_stability_tif": "hazard_timeseries\\2023-07-09\\T_0\\slope_stability_indicator.tif",
+        "factor_of_safety_tif": "hazard_timeseries\\2023-07-09\\T_0\\factor_of_safety.tif"
+      }
+    },
+    {
+      "timestep": "T_15",
+      "minutes_from_onset": 15,
+      "description": "Early convective cell",
+      "rainfall_rate_mm_h": 25.0,
+      "antecedent_3d_mm": 60.0,
+      "mean_pore_pressure_kpa": 3.7100000381469727,
+      "max_pore_pressure_kpa": 5.940000057220459,
+      "mean_slope_stability_indicator": 0.6269999742507935,
+      "critical_slope_area_pct": 0.0,
+      "files": {
+        "pore_pressure_tif": "hazard_timeseries\\2023-07-09\\T_15\\pore_pressure_kpa.tif",
+        "slope_stability_tif": "hazard_timeseries\\2023-07-09\\T_15\\slope_stability_indicator.tif",
+        "factor_of_safety_tif": "hazard_timeseries\\2023-07-09\\T_15\\factor_of_safety.tif"
+      }
+    },
+    {
+      "timestep": "T_30",
+      "minutes_from_onset": 30,
+      "description": "Peak cloudburst intensity",
+      "rainfall_rate_mm_h": 65.0,
+      "antecedent_3d_mm": 85.0,
+      "mean_pore_pressure_kpa": 5.849999904632568,
+      "max_pore_pressure_kpa": 9.539999961853027,
+      "mean_slope_stability_indicator": 0.5879999995231628,
+      "critical_slope_area_pct": 0.0,
+      "files": {
+        "pore_pressure_tif": "hazard_timeseries\\2023-07-09\\T_30\\pore_pressure_kpa.tif",
+        "slope_stability_tif": "hazard_timeseries\\2023-07-09\\T_30\\slope_stability_indicator.tif",
+        "factor_of_safety_tif": "hazard_timeseries\\2023-07-09\\T_30\\factor_of_safety.tif"
+      }
+    },
+    {
+      "timestep": "T_45",
+      "minutes_from_onset": 45,
+      "description": "Extreme infiltration & saturation",
+      "rainfall_rate_mm_h": 95.0,
+      "antecedent_3d_mm": 110.0,
+      "mean_pore_pressure_kpa": 10.270000457763672,
+      "max_pore_pressure_kpa": 16.290000915527344,
+      "mean_slope_stability_indicator": 0.5189999938011169,
+      "critical_slope_area_pct": 53.76,
+      "files": {
+        "pore_pressure_tif": "hazard_timeseries\\2023-07-09\\T_45\\pore_pressure_kpa.tif",
+        "slope_stability_tif": "hazard_timeseries\\2023-07-09\\T_45\\slope_stability_indicator.tif",
+        "factor_of_safety_tif": "hazard_timeseries\\2023-07-09\\T_45\\factor_of_safety.tif"
+      }
+    },
+    {
+      "timestep": "T_60",
+      "minutes_from_onset": 60,
+      "description": "Maximum transient pore pressure & slope failure window",
+      "rainfall_rate_mm_h": 40.0,
+      "antecedent_3d_mm": 140.0,
+      "mean_pore_pressure_kpa": 11.640000343322754,
+      "max_pore_pressure_kpa": 17.940000534057617,
+      "mean_slope_stability_indicator": 0.5009999871253967,
+      "critical_slope_area_pct": 63.6,
+      "files": {
+        "pore_pressure_tif": "hazard_timeseries\\2023-07-09\\T_60\\pore_pressure_kpa.tif",
+        "slope_stability_tif": "hazard_timeseries\\2023-07-09\\T_60\\slope_stability_indicator.tif",
+        "factor_of_safety_tif": "hazard_timeseries\\2023-07-09\\T_60\\factor_of_safety.tif"
+      }
+    }
+  ]
+}

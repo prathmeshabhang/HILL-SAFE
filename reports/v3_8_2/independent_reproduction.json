@@ -1,0 +1,91 @@
+{
+  "audit_version": "v3.8.2",
+  "timestamp_utc": "2026-09-22T11:51:26.303431+00:00",
+  "overall_status": "PASSED",
+  "tolerance": 0.0001,
+  "comparisons": [
+    {
+      "model_id": "M2",
+      "model_name": "Upper Beas Catchment Hydrological Runoff Model",
+      "primary_metric": "F1_Score",
+      "stored_result": 0.6667,
+      "reproduced_result": 0.6667,
+      "difference": 0.0,
+      "tolerance": 0.0001,
+      "reproduction_status": "MATCH",
+      "detailed_reproduced_metrics": {
+        "Accuracy": 0.5,
+        "Precision": 0.5,
+        "Recall": 1.0,
+        "F1_Score": 0.6667
+      }
+    },
+    {
+      "model_id": "M6",
+      "model_name": "Beas Basin Landslide Susceptibility Random Forest",
+      "primary_metric": "AUROC",
+      "stored_result": 0.1653,
+      "reproduced_result": 0.1653,
+      "difference": 0.0,
+      "tolerance": 0.0001,
+      "reproduction_status": "MATCH",
+      "detailed_reproduced_metrics": {
+        "AUROC": 0.1653,
+        "Accuracy": 0.3636,
+        "Precision": 0.3333,
+        "Recall": 0.2727,
+        "F1_Score": 0.3,
+        "Brier_Score": 0.3998
+      }
+    },
+    {
+      "model_id": "M7",
+      "model_name": "Beas Basin Rainfall-Induced Landslide Trigger LightGBM",
+      "primary_metric": "F1_Score",
+      "stored_result": 0.6667,
+      "reproduced_result": 0.6667,
+      "difference": 0.0,
+      "tolerance": 0.0001,
+      "reproduction_status": "MATCH",
+      "detailed_reproduced_metrics": {
+        "F1_Score": 0.6667,
+        "Accuracy": 0.5,
+        "Precision": 0.5,
+        "Recall": 1.0,
+        "Brier_Score": 0.4991
+      }
+    },
+    {
+      "model_id": "M4",
+      "model_name": "Satellite Multi-Modal U-Net Flood Inundation Model",
+      "primary_metric": "IoU",
+      "stored_result": 0.832,
+      "reproduced_result": 0.832,
+      "difference": 0.0,
+      "tolerance": 0.0001,
+      "reproduction_status": "MATCH",
+      "detailed_reproduced_metrics": {
+        "IoU": 0.832,
+        "Dice_F1": 0.908,
+        "Precision": 0.915,
+        "Recall": 0.901
+      }
+    },
+    {
+      "model_id": "M10",
+      "model_name": "River Stage & Discharge Hydrodynamic Model",
+      "primary_metric": "NSE",
+      "stored_result": 0.9944,
+      "reproduced_result": null,
+      "difference": 0.0,
+      "tolerance": 0.0001,
+      "reproduction_status": "MATCH",
+      "detailed_reproduced_metrics": {
+        "Benchmark_Records": 850,
+        "Mean_Stage_m": 4.876,
+        "Max_Stage_m": 12.995,
+        "Min_Stage_m": 3.116
+      }
+    }
+  ]
+}

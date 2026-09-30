@@ -1,0 +1,110 @@
+{
+  "freeze_manifest_version": "v3.9.0",
+  "frozen_at_utc": "2026-09-22T05:25:00Z",
+  "target_version": "v3.9.0",
+  "next_track": "Track B: v4.0 Independent External Validation & Operational Readiness",
+  "immutability_declaration": "All 20 models (M1-M20) are permanently frozen. Retraining is strictly prohibited. Zero new ML models added.",
+  "frozen_model_hashes": {
+    "M2": {
+      "name": "Upper Beas Catchment Hydrological Runoff Model",
+      "artifact_path": "ml/rainfall_runoff/m2_beas_runoff_rf.joblib",
+      "sha256": "a3f349f6d10547ed1f378bf44f8240e840029f011c6afa0855f91fc7d7d9100b",
+      "status": "FROZEN_VERIFIED"
+    },
+    "M4": {
+      "name": "Satellite Multi-Modal U-Net Flood Inundation Model",
+      "artifact_path": "data/satellite_output/flood_multimodal_unet.pt",
+      "sha256": "45aa1823c395e14ff99612019c728732f776c9c0a5f6f4f92e0ec25076ee7e07",
+      "status": "FROZEN_VERIFIED"
+    },
+    "M6": {
+      "name": "Beas Basin Landslide Susceptibility Random Forest",
+      "artifact_path": "ml/landslide/m6_beas_susceptibility_rf.joblib",
+      "sha256": "e4f5f933668373cbedaa4968faeddc89822af123bc574fbca42817c02a4e627c",
+      "status": "FROZEN_VERIFIED"
+    },
+    "M7": {
+      "name": "Beas Basin Rainfall-Induced Landslide Trigger LightGBM",
+      "artifact_path": "ml/landslide/m7_beas_trigger_lgbm.txt",
+      "sha256": "f3b8e88d37013747d72a5ddb80bf230cf0e41d5f028944f1f127c981256c1b8a",
+      "status": "FROZEN_VERIFIED"
+    }
+  },
+  "frozen_datasets": {
+    "EXT_REAL_M6_KULLU_LANDSLIDES_2023": {
+      "file_path": "data/external/m6/upper_beas/raw/kullu_upper_beas_landslides_2023_raw.csv",
+      "sha256": "e56c5ecd043eb796dd1a034bf038939b47d1af0ad09b7e61ede3768a294123df",
+      "sample_size": 20,
+      "provenance": "REAL_FIELD_OBSERVATION"
+    },
+    "EXT_REAL_M6_KULLU_CONTROLS_2023": {
+      "file_path": "data/external/m6/upper_beas/raw/kullu_upper_beas_stable_controls_raw.csv",
+      "sha256": "066c6bcf8aad621f72d5f196455998efc468d9202f9038ef11dcb90e2e5783c2",
+      "sample_size": 12,
+      "provenance": "REAL_FIELD_OBSERVATION"
+    },
+    "EXT_REAL_M7_HIMALAYAN_STORM_CATALOG": {
+      "file_path": "data/external/events/himalayan_storm_landslide_catalog.csv",
+      "sha256": "a82acb45b41b3ba5859e11b96e3a81d5dfb7d8db3d6f5434ee65010e876b57cd",
+      "sample_size": 7,
+      "provenance": "REAL_HISTORICAL_EVENT"
+    },
+    "EXT_REAL_M7_PROCESSED_EVENTS": {
+      "file_path": "data/external/m6/upper_beas/processed/m7_external_event_dataset.csv",
+      "sha256": "61b8af53d9140f08a4649b51201c2525ab531ed3493bf908d9421c02a7b58717",
+      "sample_size": 22,
+      "provenance": "REAL_FIELD_OBSERVATION"
+    },
+    "EXT_REAL_M2_FLOOD_EVENTS_2023": {
+      "file_path": "data/external/flood/raw/upper_beas_flood_events_2023_raw.csv",
+      "sha256": "484c7677b5bc072cc944e9ae90670332cb1cba4ed470a0aed89051c44fa2b7cd",
+      "sample_size": 24,
+      "provenance": "REAL_FIELD_OBSERVATION"
+    },
+    "BENCHMARK_PROXY_M11_SAR_EXTENTS": {
+      "file_path": "data/validation_datasets/M11_satellite_flood_extents.json",
+      "sha256": "99a14f7f733ad83f98e1f713dc13e73c0b173cf6eb3ab22c7f9ad47a8f04fc4e",
+      "sample_size": 3,
+      "provenance": "PROXY_DATA"
+    },
+    "GLOBAL_DAM_BREACH_FROEHLICH_111": {
+      "file_path": "ml/flood/m12_cascade/data/global_dam_breach_111.csv",
+      "sha256": "e6729a88bf0a0cd89a8ef65e4e89dfcf54f4886616016e7ad7f48037a1f592d1",
+      "sample_size": 111,
+      "provenance": "GLOBAL_EMPIRICAL_BENCHMARK"
+    },
+    "BENCHMARK_SYNTH_M10_CWC_STAGE": {
+      "file_path": "data/validation_datasets/M10_cwc_thalout_water_level.csv",
+      "sha256": "3ba4fccdf9c1d3e2878cb09adeb1ab172045a34981ea4d90ff32748e1ba764d5",
+      "sample_size": 850,
+      "provenance": "SYNTHETIC"
+    },
+    "BENCHMARK_SYNTH_M19_PROPAGATION": {
+      "file_path": "data/validation_datasets/M19_time_to_impact_events.csv",
+      "sha256": "1114536587c0a1a1db7abc543daf9b4c499becf79e833ba03126bd9a147c4adb",
+      "sample_size": 55,
+      "provenance": "SYNTHETIC"
+    },
+    "BENCHMARK_SYNTH_M20_DAMAGE": {
+      "file_path": "data/validation_datasets/M20_damage_assessment_ground_truth.csv",
+      "sha256": "78d41650f53c2228ac5e466025ecd20ea448742adea36e479bf8d66f78882665",
+      "sample_size": 510,
+      "provenance": "SYNTHETIC"
+    }
+  },
+  "physical_field_deployment_state": {
+    "total_stations_planned": 5,
+    "total_stations_bench_commissioned": 5,
+    "total_stations_active_in_river_water": 0,
+    "classification": "PROTOTYPE_STAGING",
+    "deployment_demonstrated": false,
+    "status": "NOT_DEMONSTRATED"
+  },
+  "simulated_reliability_state": {
+    "soak_test_duration_hours": 24,
+    "soak_test_ingestion_rate_pkts_per_sec": 77.99,
+    "soak_test_packet_delivery_ratio_pct": 100.0,
+    "classification": "SIMULATION_DEMONSTRATED",
+    "field_rf_link_provenance": "NOT_DEMONSTRATED"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "manifest_version": "v4.0.0",
+  "generated_at_utc": "2026-09-22T05:30:00Z",
+  "system_environment": {
+    "python_version": "3.11",
+    "operating_system": "Windows 11 / Server",
+    "architecture": "AMD64 / x86_64",
+    "random_seed": 42
+  },
+  "frozen_model_artifacts": {
+    "M2": {
+      "path": "ml/rainfall_runoff/m2_beas_runoff_rf.joblib",
+      "sha256": "a3f349f6d10547ed1f378bf44f8240e840029f011c6afa0855f91fc7d7d9100b",
+      "status": "BIT_IDENTICAL_FROZEN"
+    },
+    "M4": {
+      "path": "data/satellite_output/flood_multimodal_unet.pt",
+      "sha256": "45aa1823c395e14ff99612019c728732f776c9c0a5f6f4f92e0ec25076ee7e07",
+      "status": "BIT_IDENTICAL_FROZEN"
+    },
+    "M6": {
+      "path": "ml/landslide/m6_beas_susceptibility_rf.joblib",
+      "sha256": "e4f5f933668373cbedaa4968faeddc89822af123bc574fbca42817c02a4e627c",
+      "status": "BIT_IDENTICAL_FROZEN"
+    },
+    "M7": {
+      "path": "ml/landslide/m7_beas_trigger_lgbm.txt",
+      "sha256": "f3b8e88d37013747d72a5ddb80bf230cf0e41d5f028944f1f127c981256c1b8a",
+      "status": "BIT_IDENTICAL_FROZEN"
+    }
+  },
+  "authentic_datasets": {
+    "EXT_REAL_M6_KULLU_LANDSLIDES_2023": {
+      "path": "data/external/m6/upper_beas/raw/kullu_upper_beas_landslides_2023_raw.csv",
+      "sha256": "e56c5ecd043eb796dd1a034bf038939b47d1af0ad09b7e61ede3768a294123df"
+    },
+    "EXT_REAL_M6_KULLU_CONTROLS_2023": {
+      "path": "data/external/m6/upper_beas/raw/kullu_upper_beas_stable_controls_raw.csv",
+      "sha256": "066c6bcf8aad621f72d5f196455998efc468d9202f9038ef11dcb90e2e5783c2"
+    },
+    "EXT_REAL_M7_HIMALAYAN_STORM_CATALOG": {
+      "path": "data/external/events/himalayan_storm_landslide_catalog.csv",
+      "sha256": "a82acb45b41b3ba5859e11b96e3a81d5dfb7d8db3d6f5434ee65010e876b57cd"
+    },
+    "EXT_REAL_M7_PROCESSED_EVENTS": {
+      "path": "data/external/m6/upper_beas/processed/m7_external_event_dataset.csv",
+      "sha256": "61b8af53d9140f08a4649b51201c2525ab531ed3493bf908d9421c02a7b58717"
+    },
+    "EXT_REAL_M2_FLOOD_EVENTS_2023": {
+      "path": "data/external/flood/raw/upper_beas_flood_events_2023_raw.csv",
+      "sha256": "484c7677b5bc072cc944e9ae90670332cb1cba4ed470a0aed89051c44fa2b7cd"
+    }
+  },
+  "reproduction_recipe": [
+    {
+      "step": 1,
+      "description": "Verify frozen model SHA-256 hashes bit-for-bit",
+      "command": "python tools/verify_model_hashes.py",
+      "expected_exit_code": 0
+    },
+    {
+      "step": 2,
+      "description": "Execute independent external validation across M1-M20 with bootstrap confidence intervals",
+      "command": "python tools/validation/v40_independent_validator.py",
+      "expected_exit_code": 0
+    },
+    {
+      "step": 3,
+      "description": "Run automated claim qualification and consistency scanner",
+      "command": "python tools/validation/claim_guard.py",
+      "expected_exit_code": 0
+    },
+    {
+      "step": 4,
+      "description": "Execute full regression and operational failure test suite",
+      "command": "pytest -q",
+      "expected_exit_code": 0
+    }
+  ]
+}

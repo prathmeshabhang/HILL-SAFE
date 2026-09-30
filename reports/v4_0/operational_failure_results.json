@@ -1,0 +1,170 @@
+{
+  "failure_injection_suite_version": "v4.0.0",
+  "executed_at_utc": "2026-09-22T05:38:00Z",
+  "total_injections": 20,
+  "passed_injections": 20,
+  "failed_injections": 0,
+  "overall_verdict": "ALL_OPERATIONAL_FAILURES_CONTAINED",
+  "injections": [
+    {
+      "id": "FAIL_01_SENSOR_FLATLINE",
+      "subsystem": "Telemetry Stream QC",
+      "fault_injected": "Static constant readings across consecutive time windows",
+      "detection_mechanism": "QualityGate.check_flatlining()",
+      "expected_outcome": "QC_FLATLINE flag attached; quality_state degraded from FRESH to DEGRADED",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_02_SUDDEN_SPIKE",
+      "subsystem": "Telemetry Stream QC",
+      "fault_injected": "Unphysical instantaneous step jump in water level (+4.5m in 60s)",
+      "detection_mechanism": "QualityGate.check_rate_of_change()",
+      "expected_outcome": "QC_SPIKE flag attached; quality_state degraded to DEGRADED",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_03_LORA_PACKET_LOSS",
+      "subsystem": "LoRa Gateway & Protocol",
+      "fault_injected": "Sequence number jump from 100 to 110 (10 missing packets)",
+      "detection_mechanism": "DeviceSequenceTracker.register_sequence()",
+      "expected_outcome": "total_gaps and total_dropped incremented; packet_loss_pct updated",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_04_LORA_CRC_CORRUPTION",
+      "subsystem": "LoRa Gateway & Protocol",
+      "fault_injected": "Single bit-flip in binary payload causing CRC-16 mismatch",
+      "detection_mechanism": "LoRaGatewayService.process_raw_frame()",
+      "expected_outcome": "Frame rejected at gateway; 400 Bad Request returned",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_05_PACKET_REPLAY_TAMPER",
+      "subsystem": "Telemetry Ingestion Service",
+      "fault_injected": "Replayed source_event_id with conflicting measurement value",
+      "detection_mechanism": "TelemetryIngestionService.ingest_telemetry_packet()",
+      "expected_outcome": "409 Conflict returned with error code TELEMETRY_INTEGRITY_VIOLATION",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_06_EXCESSIVE_CLOCK_SKEW",
+      "subsystem": "Telemetry Ingestion Service",
+      "fault_injected": "Observation timestamp set 3 hours into the future",
+      "detection_mechanism": "Temporal skew bounds checking (>7200s future)",
+      "expected_outcome": "422 Unprocessable Entity returned with code TELEMETRY_FUTURE_TIMESTAMP",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_07_EXPIRED_STALE_TELEMETRY",
+      "subsystem": "Telemetry Ingestion Service",
+      "fault_injected": "Observation delayed by 36 hours before delivery",
+      "detection_mechanism": "Latency calculation (>86400s past)",
+      "expected_outcome": "Packet ingested but tagged with temporal_state=EXPIRED and quality_state=EXPIRED",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_08_GATEWAY_BACKHAUL_OFFLINE",
+      "subsystem": "LoRa Gateway & Protocol",
+      "fault_injected": "Cellular backhaul disconnect event",
+      "detection_mechanism": "LoRaGatewayService.set_backhaul_status(False)",
+      "expected_outcome": "Frames buffered locally in ring buffer without dropping data",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_09_GATEWAY_BUFFER_FLUSH",
+      "subsystem": "LoRa Gateway & Protocol",
+      "fault_injected": "Cellular backhaul restoration event",
+      "detection_mechanism": "LoRaGatewayService.flush_offline_buffer()",
+      "expected_outcome": "Buffered packets written to database in strict chronological order",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_10_UNCOMMISSIONED_STATION_INGEST",
+      "subsystem": "Sensor Registry",
+      "fault_injected": "Telemetry packet received from uncommissioned station ID",
+      "detection_mechanism": "Station registry status inspection",
+      "expected_outcome": "Station status maintained as PROTOTYPE_STAGING; observations restricted",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_11_FORGED_PROVENANCE_ESCALATION",
+      "subsystem": "Data Provenance Governance",
+      "fault_injected": "Client attempts to submit simulated test vector labeled REAL_FIELD_OBSERVATION",
+      "detection_mechanism": "Native provenance schema column enforcement",
+      "expected_outcome": "Provenance tracked explicitly as submitted; audit ledger preserves exact origin",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_12_DATABASE_TRANSACTION_ROLLBACK",
+      "subsystem": "Database Persistence",
+      "fault_injected": "Simulated database constraint violation during batch ingestion",
+      "detection_mechanism": "Session.rollback() in ingestion exception block",
+      "expected_outcome": "Clean transaction rollback without orphaned or corrupted state",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_13_MODEL_M6_OUT_OF_DISTRIBUTION",
+      "subsystem": "ML Inference Layer",
+      "fault_injected": "Negative slope angles and impossible elevations passed to M6",
+      "detection_mechanism": "Model input validation adapter",
+      "expected_outcome": "Inputs clipped to physical domain boundaries; model evaluates without crashing",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_14_DAM_BREACH_EXTREME_TOPOGRAPHY",
+      "subsystem": "Hydraulic Cascade Engine",
+      "fault_injected": "Massive catastrophic dam breach volume (50,000 m3/s) in narrow gorge",
+      "detection_mechanism": "Froehlich breach wave celerity limiter",
+      "expected_outcome": "Wave downstream attenuation computed stably without numerical divergence",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_15_ROAD_SEVERANCE_DYNAMIC_REROUTE",
+      "subsystem": "Lifeline & Routing Engine",
+      "fault_injected": "Simulated bridge collapse on NH-3 between Kullu and Manali",
+      "detection_mechanism": "Evacuation graph edge weight penalty",
+      "expected_outcome": "Primary route marked severed; dynamic alternative route generated",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_16_ISOLATED_SETTLEMENT_DETECTION",
+      "subsystem": "Lifeline & Rescue Priority",
+      "fault_injected": "Complete perimeter road inundation surrounding residential cluster",
+      "detection_mechanism": "Graph connectivity component analysis",
+      "expected_outcome": "Cluster classified as ISOLATED_SETTLEMENT with high rescue priority index",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_17_MULTI_HAZARD_THRESHOLD_ESCALATION",
+      "subsystem": "Multi-Hazard Aggregator",
+      "fault_injected": "Simultaneous rainfall nowcast (M1) and landslide trigger (M7) alerts",
+      "detection_mechanism": "Compound multi-hazard risk fusion",
+      "expected_outcome": "Composite risk escalated from MODERATE to CRITICAL/EXTREME",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_18_FALSE_ALARM_SUPPRESSION_TRANSIENT",
+      "subsystem": "Decision Gating",
+      "fault_injected": "Single 1-second acoustic vibration spike without rain or water level rise",
+      "detection_mechanism": "M17 False Alarm Decision Gating",
+      "expected_outcome": "Transient flagged as isolated noise; public siren trigger suppressed",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_19_UNAUTHORIZED_ALERT_BROADCAST_BLOCKED",
+      "subsystem": "Human Authorization Gateway",
+      "fault_injected": "Automated ML background job attempts to post public CAP alert directly",
+      "detection_mechanism": "HumanAuthorizationGateway.verify_role_permission()",
+      "expected_outcome": "AuthorizationError raised; status code 403 Forbidden",
+      "status": "PASSED"
+    },
+    {
+      "id": "FAIL_20_SINGLE_OPERATOR_ALERT_REJECTED",
+      "subsystem": "Human Authorization Gateway",
+      "fault_injected": "Analyst role attempts to authorize alert without Senior Incident Commander token",
+      "detection_mechanism": "HumanAuthorizationGateway.authorize_alert_dispatch()",
+      "expected_outcome": "AuthorizationError raised: 'Action requires SENIOR_INCIDENT_COMMANDER'",
+      "status": "PASSED"
+    }
+  ]
+}

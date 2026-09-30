@@ -1,0 +1,539 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1855,
+          32.2536
+        ]
+      },
+      "properties": {
+        "event_id": "FL_01",
+        "location_name": "Old Manali Club House Beas",
+        "hazard_type": "flash_flood_overtopping",
+        "inundation_observed": 1,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 3.2,
+        "damage_description": "Beas river overtopped banks washed parking structures",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1782,
+          32.2858
+        ]
+      },
+      "properties": {
+        "event_id": "FL_02",
+        "location_name": "Nehru Kund Bahang Corridor",
+        "hazard_type": "flash_flood_debris",
+        "inundation_observed": 1,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 2.8,
+        "damage_description": "Beas flash flood and lateral nallah submerged hotels and road",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA Kullu Disaster Assessment 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1895,
+          32.2312
+        ]
+      },
+      "properties": {
+        "event_id": "FL_03",
+        "location_name": "Aloo Ground Siyal Manali",
+        "hazard_type": "floodplain_inundation",
+        "inundation_observed": 1,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 4.5,
+        "damage_description": "Complete floodplain submergence multi-storey collapse into river",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.195,
+          32.1985
+        ]
+      },
+      "properties": {
+        "event_id": "FL_04",
+        "location_name": "Kalath Green Tax Barrier",
+        "hazard_type": "flash_flood_inundation",
+        "inundation_observed": 1,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 2.5,
+        "damage_description": "River overtopped NH-3 silted hot springs and toll barrier",
+        "source_agency": "CWC",
+        "source_document": "CWC Flood Situation Report July 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.172,
+          32.129
+        ]
+      },
+      "properties": {
+        "event_id": "FL_05",
+        "location_name": "15 Mile Patli Kuhal Terrace",
+        "hazard_type": "floodplain_widening",
+        "inundation_observed": 1,
+        "event_date": "2023-07-10",
+        "peak_depth_m": 3.0,
+        "damage_description": "Beas widened 200m inundated apple orchards and bypass",
+        "source_agency": "CWC",
+        "source_document": "CWC Flood Situation Report July 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.151,
+          32.0585
+        ]
+      },
+      "properties": {
+        "event_id": "FL_06",
+        "location_name": "Raison Adventure Camps Terrace",
+        "hazard_type": "floodplain_inundation",
+        "inundation_observed": 1,
+        "event_date": "2023-07-10",
+        "peak_depth_m": 2.6,
+        "damage_description": "Lower river terrace submerged adventure camps washed away",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1085,
+          31.9615
+        ]
+      },
+      "properties": {
+        "event_id": "FL_07",
+        "location_name": "Akhara Bazar Kullu Confluence",
+        "hazard_type": "urban_flash_flood",
+        "inundation_observed": 1,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 2.2,
+        "damage_description": "Sarvari nallah flash flood + Beas backwater inundated commercial heart",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA Kullu Disaster Assessment 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.154,
+          31.879
+        ]
+      },
+      "properties": {
+        "event_id": "FL_08",
+        "location_name": "Bhuntar Airport Parbati Confluence",
+        "hazard_type": "confluence_floodplain",
+        "inundation_observed": 1,
+        "event_date": "2023-07-10",
+        "peak_depth_m": 3.8,
+        "damage_description": "Beas-Parbati confluence backwater runway apron breached HFL",
+        "source_agency": "CWC",
+        "source_document": "CWC Indus Basin Flood Report 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.208,
+          31.745
+        ]
+      },
+      "properties": {
+        "event_id": "FL_09",
+        "location_name": "Aut Tunnel Highway Approach",
+        "hazard_type": "valley_flood_submergence",
+        "inundation_observed": 1,
+        "event_date": "2023-07-10",
+        "peak_depth_m": 3.1,
+        "damage_description": "Beas overtopped NH approach to Aut tunnel debris submergence",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.225,
+          31.716
+        ]
+      },
+      "properties": {
+        "event_id": "FL_10",
+        "location_name": "Thalout Bazaar Reservoir Margins",
+        "hazard_type": "reservoir_backwater_flood",
+        "inundation_observed": 1,
+        "event_date": "2023-07-10",
+        "peak_depth_m": 2.4,
+        "damage_description": "Pandoh reservoir backwater flooded commercial shops on NH",
+        "source_agency": "CWC",
+        "source_document": "CWC Flood Situation Report July 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.305,
+          31.782
+        ]
+      },
+      "properties": {
+        "event_id": "FL_11",
+        "location_name": "Sainj Valley Market Larji Margin",
+        "hazard_type": "flash_flood_debris",
+        "inundation_observed": 1,
+        "event_date": "2023-07-10",
+        "peak_depth_m": 3.5,
+        "damage_description": "Sainj river flash flood inundated 40 shops powerhouse approach",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.158,
+          32.316
+        ]
+      },
+      "properties": {
+        "event_id": "FL_12",
+        "location_name": "Palchan Solang Confluence",
+        "hazard_type": "flash_flood_overtopping",
+        "inundation_observed": 1,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 3.0,
+        "damage_description": "High-velocity debris flood overtopped bridge abutment",
+        "source_agency": "NRSC",
+        "source_document": "NRSC Flood Inundation Assessment HP 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.192,
+          32.268
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_01",
+        "location_name": "Vashisht Upper Village Ridge",
+        "hazard_type": "stable_upland_bench",
+        "inundation_observed": 0,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 0.0,
+        "damage_description": "Elevated bedrock spur 250m above river unflooded",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.175,
+          32.118
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_02",
+        "location_name": "Naggar Castle Heritage Ridge",
+        "hazard_type": "stable_upper_terrace",
+        "inundation_observed": 0,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 0.0,
+        "damage_description": "Elevated terrace 400m above river unflooded",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.21,
+          32.195
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_03",
+        "location_name": "Jagatsukh Upper Village",
+        "hazard_type": "stable_upper_terrace",
+        "inundation_observed": 0,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 0.0,
+        "damage_description": "Upper left bank terrace well above HFL unflooded",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.112,
+          31.956
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_04",
+        "location_name": "Kullu Dhalpur Upper Ground",
+        "hazard_type": "elevated_civic_ridge",
+        "inundation_observed": 0,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 0.0,
+        "damage_description": "Elevated civic ground unflooded",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.149,
+          32.321
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_05",
+        "location_name": "Solang Village Upper Moraine",
+        "hazard_type": "steep_upper_moraine",
+        "inundation_observed": 0,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 0.0,
+        "damage_description": "High alpine moraine ridge unflooded",
+        "source_agency": "NRSC",
+        "source_document": "NRSC Flood Inundation Assessment HP 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.159,
+          31.851
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_06",
+        "location_name": "Bajaura Upper Temple Ridge",
+        "hazard_type": "stable_upper_terrace",
+        "inundation_observed": 0,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 0.0,
+        "damage_description": "High terrace bench 50m above HFL unflooded",
+        "source_agency": "CWC",
+        "source_document": "CWC Indus Basin Flood Report 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.348,
+          32.027
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_07",
+        "location_name": "Manikaran Upper Slope",
+        "hazard_type": "valley_wall_bench",
+        "inundation_observed": 0,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 0.0,
+        "damage_description": "Upper valley wall slope unflooded",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.342,
+          31.637
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_08",
+        "location_name": "Banjar Upper Town Ridge",
+        "hazard_type": "stable_upland_ridge",
+        "inundation_observed": 0,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 0.0,
+        "damage_description": "Elevated ridge in Tirthan basin unflooded",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.398,
+          31.65
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_09",
+        "location_name": "Gushaini Upper Terrace",
+        "hazard_type": "elevated_ecozone_terrace",
+        "inundation_observed": 0,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 0.0,
+        "damage_description": "Elevated ecozone terrace unflooded",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.185,
+          32.148
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_10",
+        "location_name": "Haripur Upper Ridge",
+        "hazard_type": "left_bank_spur",
+        "inundation_observed": 0,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 0.0,
+        "damage_description": "Left bank upper ridge unflooded",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.228,
+          32.355
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_11",
+        "location_name": "Marhi Alpine Meadow",
+        "hazard_type": "high_alpine_watershed",
+        "inundation_observed": 0,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 0.0,
+        "damage_description": "High alpine watershed 3300m ASL unflooded",
+        "source_agency": "NRSC",
+        "source_document": "NRSC Flood Inundation Assessment HP 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.315,
+          32.01
+        ]
+      },
+      "properties": {
+        "event_id": "NFL_12",
+        "location_name": "Kasol Upper Forest Bench",
+        "hazard_type": "parbati_upper_slope",
+        "inundation_observed": 0,
+        "event_date": "2023-07-09",
+        "peak_depth_m": 0.0,
+        "damage_description": "Parbati upper valley forest bench unflooded",
+        "source_agency": "HPSDMA",
+        "source_document": "HPSDMA PDNA Monsoons 2023",
+        "verification_status": "OFFICIAL_GOV_RECORD"
+      }
+    }
+  ]
+}

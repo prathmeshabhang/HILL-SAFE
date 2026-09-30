@@ -1,0 +1,332 @@
+{
+  "validation_run_timestamp": "2026-09-22T11:51:27.414968+00:00",
+  "floody_shield_version": "3.8.0",
+  "audit_version": "v3.8.2",
+  "total_models_evaluated": 20,
+  "preliminary_external_evidence_count": 3,
+  "proxy_validated_count": 2,
+  "global_empirical_benchmark_count": 1,
+  "synthetic_benchmarked_count": 9,
+  "pending_external_data_count": 5,
+  "frozen_models_immutability_verified": true,
+  "models": [
+    {
+      "model_id": "M1",
+      "name": "Extreme Rainfall Nowcast",
+      "status": "PENDING_EXTERNAL_DATA",
+      "dataset_id": "NONE",
+      "sample_size": 0,
+      "metrics": {},
+      "notes": "Pending IMD high-resolution X-band Doppler radar volume scans for Upper Beas catchment."
+    },
+    {
+      "model_id": "M2",
+      "name": "Upper Beas Catchment Hydrological Runoff Model",
+      "status": "PRELIMINARY_EXTERNAL_EVIDENCE",
+      "dataset_id": "EXT_REAL_M2_FLOOD_EVENTS_2023",
+      "sample_size": 24,
+      "primary_metric": "F1_Score",
+      "primary_value": 0.6667,
+      "confidence_interval_95": [
+        NaN,
+        NaN
+      ],
+      "metrics": {
+        "Accuracy": 0.5,
+        "Precision": 0.5,
+        "Recall": 1.0,
+        "F1_Score": 0.6667
+      },
+      "notes": "Evaluated against N=24 authentic HPSDMA & CWC July 2023 disaster flood inundation points. Preliminary external evidence."
+    },
+    {
+      "model_id": "M3",
+      "name": "Snowmelt Runoff Model (SRM)",
+      "status": "PENDING_EXTERNAL_DATA",
+      "dataset_id": "NONE",
+      "sample_size": 0,
+      "metrics": {},
+      "notes": "Awaiting MODIS/Sentinel-3 snow covered area (SCA) cloud-free timeseries and glaciological ablation records."
+    },
+    {
+      "model_id": "M4",
+      "name": "Satellite Multi-Modal U-Net Flood Inundation Model",
+      "status": "PROXY_VALIDATED_PROTOTYPE",
+      "dataset_id": "BENCHMARK_PROXY_M11_SAR_EXTENTS",
+      "sample_size": 3,
+      "primary_metric": "IoU",
+      "primary_value": 0.832,
+      "metrics": {
+        "IoU": 0.832,
+        "Dice_F1": 0.908,
+        "Precision": 0.915,
+        "Recall": 0.901
+      },
+      "notes": "Benchmarked against Sentinel-1A SAR IW microwave backscatter flood extent polygons from July 2023 disaster."
+    },
+    {
+      "model_id": "M5",
+      "name": "Reservoir & Dam Operations Model",
+      "status": "PENDING_EXTERNAL_DATA",
+      "dataset_id": "NONE",
+      "sample_size": 0,
+      "metrics": {},
+      "notes": "Requires BBMB official spillway gate operation logbooks and Pandoh reservoir telemetry."
+    },
+    {
+      "model_id": "M6",
+      "name": "Beas Basin Landslide Susceptibility Random Forest",
+      "status": "PRELIMINARY_EXTERNAL_EVIDENCE",
+      "dataset_id": "EXT_REAL_M7_PROCESSED_EVENTS",
+      "sample_size": 22,
+      "primary_metric": "AUROC",
+      "primary_value": 0.1653,
+      "confidence_interval_95": [
+        NaN,
+        NaN
+      ],
+      "metrics": {
+        "AUROC": 0.1653,
+        "Accuracy": 0.3636,
+        "Precision": 0.3333,
+        "Recall": 0.2727,
+        "F1_Score": 0.3,
+        "Brier_Score": 0.3998
+      },
+      "notes": "Frozen artifact evaluated on N=22 field-verified points (GSI & HPSDMA real data)."
+    },
+    {
+      "model_id": "M7",
+      "name": "Beas Basin Rainfall-Induced Landslide Trigger LightGBM",
+      "status": "PRELIMINARY_EXTERNAL_EVIDENCE",
+      "dataset_id": "EXT_REAL_M7_PROCESSED_EVENTS",
+      "sample_size": 22,
+      "primary_metric": "F1_Score",
+      "primary_value": 0.6667,
+      "confidence_interval_95": [
+        NaN,
+        NaN
+      ],
+      "metrics": {
+        "F1_Score": 0.6667,
+        "Accuracy": 0.5,
+        "Precision": 0.5,
+        "Recall": 1.0,
+        "Brier_Score": 0.4991
+      },
+      "notes": "Frozen artifact evaluated on N=22 trigger events (GSI & HPSDMA real disaster data)."
+    },
+    {
+      "model_id": "M8",
+      "name": "InSAR & GNSS Geotechnical Slope Displacement",
+      "status": "PENDING_EXTERNAL_DATA",
+      "dataset_id": "NONE",
+      "sample_size": 0,
+      "metrics": {},
+      "notes": "Awaiting continuous sub-centimeter GNSS station data and processed Sentinel-1 PS-InSAR velocity maps."
+    },
+    {
+      "model_id": "M9",
+      "name": "Multi-Sensor Telemetry Anomaly Isolation Forest",
+      "status": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "INTERNAL_INJECTED_BENCHMARK",
+      "sample_size": 250,
+      "primary_metric": "F1_Score",
+      "primary_value": 0.942,
+      "metrics": {
+        "Precision": 0.961,
+        "Recall": 0.924,
+        "F1_Score": 0.942,
+        "AUC_PR": 0.958
+      },
+      "notes": "Tested against multi-sensor synthetic anomalies (stuck floats, acoustic spikes, sensor desync). Synthetic benchmark only."
+    },
+    {
+      "model_id": "M10",
+      "name": "River Stage & Discharge Hydrodynamic Model",
+      "status": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "BENCHMARK_SYNTH_M10_CWC_STAGE",
+      "sample_size": 850,
+      "primary_metric": "NSE",
+      "primary_value": 0.9942,
+      "confidence_interval_95": [
+        0.9933,
+        0.995
+      ],
+      "metrics": {
+        "NSE": 0.9942,
+        "KGE": 0.9918,
+        "RMSE_m": 0.2219,
+        "MAE_m": 0.1767
+      },
+      "notes": "Evaluated against continuous synthetic hydrograph fixture (N=850). Official real-time CWC API telemetry integration pending."
+    },
+    {
+      "model_id": "M11",
+      "name": "High-Resolution Flood Depth Delineation Model",
+      "status": "PROXY_VALIDATED_PROTOTYPE",
+      "dataset_id": "BENCHMARK_PROXY_M11_SAR_EXTENTS",
+      "sample_size": 3,
+      "primary_metric": "RMSE_m",
+      "primary_value": 0.42,
+      "metrics": {
+        "RMSE_m": 0.42,
+        "MAE_m": 0.31,
+        "Relative_Depth_Error_pct": 8.4
+      },
+      "notes": "Delineation tested against high-water marks and Sentinel-1 SAR flood extent polygons proxy (2D boundary proxy, not continuous in-situ depth profile)."
+    },
+    {
+      "model_id": "M12",
+      "name": "Landslide-Dam Burst & Cascade Flooding Model",
+      "status": "GLOBAL_EMPIRICAL_BENCHMARK",
+      "dataset_id": "GLOBAL_DAM_BREACH_FROEHLICH_111",
+      "sample_size": 111,
+      "primary_metric": "Peak_Q_RMSE_pct",
+      "primary_value": 24.5,
+      "confidence_interval_95": [
+        19.2,
+        29.8
+      ],
+      "metrics": {
+        "Peak_Q_RMSE_pct": 24.5,
+        "Himalayan_Bench_Events": [
+          "Sun Kosi 2014",
+          "Pareechu 2000",
+          "Chamoli 2021"
+        ],
+        "Himalayan_Consistency_pct": 100.0
+      },
+      "notes": "Global empirical benchmark calibrated on 111 global dam-breach cases (Froehlich 2008 / Costa 1985) and 3 Himalayan events. In-situ regional Upper Beas validation pending."
+    },
+    {
+      "model_id": "M13",
+      "name": "Multi-Dimensional Socio-Economic Vulnerability",
+      "status": "PENDING_EXTERNAL_DATA",
+      "dataset_id": "NONE",
+      "sample_size": 0,
+      "metrics": {},
+      "notes": "Census 2011 + District Disaster Management Plan (DDMP) Kullu socioeconomic validation pending."
+    },
+    {
+      "model_id": "M14",
+      "name": "Critical Infrastructure Loss & Disruptability Engine",
+      "status": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "BENCHMARK_SYNTH_M20_DAMAGE",
+      "sample_size": 510,
+      "primary_metric": "R2",
+      "primary_value": 0.9696,
+      "confidence_interval_95": [
+        0.9645,
+        0.9743
+      ],
+      "metrics": {
+        "R2": 0.9696,
+        "RMSE_pct": 5.0,
+        "MAE_pct": 3.99
+      },
+      "notes": "Tested against simulated structural loss benchmark fixture (N=510). Pipeline regression benchmark."
+    },
+    {
+      "model_id": "M15",
+      "name": "Emergency Evacuation Routing & Shelter Optimization",
+      "status": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "OSM_KULLU_ROAD_NETWORK",
+      "sample_size": 120,
+      "primary_metric": "Route_Optimality_pct",
+      "primary_value": 98.2,
+      "metrics": {
+        "Route_Optimality_pct": 98.2,
+        "Reachability_Ratio": 0.97
+      },
+      "notes": "Evaluated against OpenStreetMap road network graph for Kullu and Manali urban clusters."
+    },
+    {
+      "model_id": "M16",
+      "name": "Unified Multi-Hazard Risk Aggregator",
+      "status": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "SIMULATED_MONSOON_SCENARIOS",
+      "sample_size": 150,
+      "primary_metric": "Rank_Correlation",
+      "primary_value": 0.912,
+      "metrics": {
+        "Rank_Correlation": 0.912,
+        "Monotonicity_Score": 0.94
+      },
+      "notes": "Risk fusion consistency benchmarked across coupled rainfall-landslide-flood scenarios."
+    },
+    {
+      "model_id": "M17",
+      "name": "Early Warning Decision Gating & False Alarm Suppression",
+      "status": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "HISTORICAL_WARNING_LOGS",
+      "sample_size": 85,
+      "primary_metric": "False_Alarm_Reduction_pct",
+      "primary_value": 78.5,
+      "metrics": {
+        "False_Alarm_Reduction_pct": 78.5,
+        "Missed_Detection_Rate_pct": 1.2,
+        "Decision_Latency_sec": 0.45
+      },
+      "notes": "Evaluated on multi-source confirmation logic; 100% human-in-the-loop compliance in software test."
+    },
+    {
+      "model_id": "M18",
+      "name": "Multi-Sensor Dynamic Calibration & Drift Compensation",
+      "status": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "FIELD_CALIBRATION_LOGS",
+      "sample_size": 60,
+      "primary_metric": "Bias_Reduction_pct",
+      "primary_value": 86.4,
+      "metrics": {
+        "Bias_Reduction_pct": 86.4,
+        "Residual_Drift_pct": 2.1
+      },
+      "notes": "Verified against pressure transducer and ultrasonic stage sensor zero-drift benchmarks in test bench."
+    },
+    {
+      "model_id": "M19",
+      "name": "Flash Flood Wave Celerity & Time-to-Impact Forecaster",
+      "status": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "BENCHMARK_SYNTH_M19_PROPAGATION",
+      "sample_size": 55,
+      "primary_metric": "MAPE_pct",
+      "primary_value": 5.8,
+      "confidence_interval_95": [
+        4.4163,
+        7.263
+      ],
+      "metrics": {
+        "MAPE_pct": 5.8,
+        "MAE_min": 2.99,
+        "RMSE_min": 3.81
+      },
+      "notes": "Tested against synthesized mountain channel wave celerity simulation events (N=55)."
+    },
+    {
+      "model_id": "M20",
+      "name": "Post-Disaster Structural Damage Assessment Classifier",
+      "status": "SYNTHETIC_BENCHMARKED_PROTOTYPE",
+      "dataset_id": "BENCHMARK_SYNTH_M20_DAMAGE",
+      "sample_size": 510,
+      "primary_metric": "Macro_F1",
+      "primary_value": 0.8388,
+      "confidence_interval_95": [
+        0.8066,
+        0.8702
+      ],
+      "metrics": {
+        "Accuracy": 0.8451,
+        "Macro_F1": 0.8388,
+        "Damage_Grades": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "notes": "Tested against simulated civil engineering structural damage fixture (N=510)."
+    }
+  ]
+}

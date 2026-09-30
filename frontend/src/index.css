@@ -1,0 +1,127 @@
+@import 'maplibre-gl/dist/maplibre-gl.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 p-0 font-sans antialiased text-slate-900 bg-slate-50 dark:bg-[#0B0F19] dark:text-slate-100 transition-colors duration-200 overflow-x-hidden;
+  }
+
+  /* Custom scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 dark:bg-slate-700 rounded;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400 dark:bg-slate-600;
+  }
+}
+
+.maplibregl-popup-content {
+  @apply !bg-white dark:!bg-slate-900 !text-slate-900 dark:!text-slate-100 !rounded-xl !p-4 !shadow-2xl !border !border-slate-200 dark:!border-slate-800;
+}
+
+.maplibregl-popup-tip {
+  @apply !border-t-white dark:!border-t-slate-900;
+}
+
+/* Page Transition Animation */
+@keyframes pageSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-enter-animation {
+  animation: pageSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Radar pulse animation */
+@keyframes ping-slow {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.animate-ping-slow {
+  animation: ping-slow 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Institutional Clean Print Styles for PDF / Paper Generation */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  header,
+  nav,
+  aside,
+  footer,
+  button,
+  .no-print,
+  [role="navigation"],
+  .fixed {
+    display: none !important;
+  }
+
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .page-enter-animation {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  /* Force borders and cards to be clearly visible on white paper */
+  .border,
+  .border-slate-200,
+  .border-slate-800 {
+    border-color: #cbd5e1 !important;
+  }
+
+  .bg-white,
+  .dark\:bg-slate-900,
+  .bg-slate-50,
+  .dark\:bg-slate-800 {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  .text-white,
+  .dark\:text-white {
+    color: #0f172a !important;
+  }
+
+  .shadow-sm,
+  .shadow-md,
+  .shadow-lg,
+  .shadow-2xl {
+    box-shadow: none !important;
+  }
+}
